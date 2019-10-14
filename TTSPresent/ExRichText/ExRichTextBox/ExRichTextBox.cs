@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -154,6 +155,7 @@ namespace Khendys.Controls {
 		// The vertical resolution at which the control is being displayed
 		private float yDpi;
 
+
 		#endregion
 
 		#region Elements required to create an RTF document
@@ -263,7 +265,12 @@ namespace Khendys.Controls {
 				xDpi = _graphics.DpiX;
 				yDpi = _graphics.DpiY;
 			}
-		}
+
+                AllowDrop = true;
+                Multiline = true;
+                DragDrop += new DragEventHandler(MyTextBox_DragDrop);
+                DragEnter += new DragEventHandler(MyTextBox_DragEnter);
+        }
 
 		/// <summary>
 		/// Calls the default constructor then sets the text color.
@@ -853,6 +860,53 @@ namespace Khendys.Controls {
 			return _originalRtf.Replace("\0", "");
 		}
 
-		#endregion
-	}
+        #endregion
+
+        #region public Event
+
+        public event EventHandler OnDroped;
+
+        public class DropEventArgs : EventArgs
+        {
+            public string[] Lines { get; private set; }
+
+            public DropEventArgs(string[] lines)
+            {
+                Lines = lines;
+            }
+        }
+
+        #endregion
+
+        #region drag Drop
+
+
+        void MyTextBox_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        void MyTextBox_DragDrop(object sender, DragEventArgs e)
+        {
+            DataObject data = (DataObject)e.Data;
+            if (data.ContainsFileDropList())
+            {
+                string[] rawFiles = (string[])e.Data.GetData(DataFormats.FileDrop);
+                if (rawFiles != null)
+                {
+
+                    if (OnDroped != null)
+                    {
+                        DropEventArgs args = new DropEventArgs(rawFiles);
+
+                        this.OnDroped(this, args);
+                    }
+
+                }
+            }
+        }
+
+
+        #endregion drag Drop
+    }
 }

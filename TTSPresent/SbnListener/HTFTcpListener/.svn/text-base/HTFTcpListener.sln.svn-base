@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTFTcpListener", "HTFTcpListener\HTFTcpListener.csproj", "{498922CC-909D-4999-B715-B01373F572BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tester", "tester\tester.csproj", "{2CD5EE17-EC6B-4470-A686-95BEC8CA57AD}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HTFTcpListener\\HTFTcpListener.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = HTFTcpListener\\
+		SccProjectUniqueName2 = tester\\tester.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = tester\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{498922CC-909D-4999-B715-B01373F572BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498922CC-909D-4999-B715-B01373F572BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498922CC-909D-4999-B715-B01373F572BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498922CC-909D-4999-B715-B01373F572BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD5EE17-EC6B-4470-A686-95BEC8CA57AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD5EE17-EC6B-4470-A686-95BEC8CA57AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD5EE17-EC6B-4470-A686-95BEC8CA57AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD5EE17-EC6B-4470-A686-95BEC8CA57AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

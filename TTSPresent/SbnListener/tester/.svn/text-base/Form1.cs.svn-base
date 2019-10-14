@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace tester
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Net.IPAddress[] ips = System.Net.Dns.GetHostAddresses(System.Net.Dns.GetHostName());
+                HTFTcpListener.HTFTcpListener.StartListener(ips[0].ToString());
+            }
+            catch(Exception ex)
+
+            {
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                HTFTcpListener.HTFTcpClient.SendMessage("192.168.1.43", "govSession_217\\Catalogue_6\\Offer_123");
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            HTFTcpListener.HTFTcpListener.StopListener("192.168.1.43");
+        }
+    }
+}

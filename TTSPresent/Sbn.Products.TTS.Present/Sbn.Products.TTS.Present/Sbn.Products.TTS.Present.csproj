@@ -313,9 +313,25 @@
     <None Include="Resources\sheduled_task.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Calendar\DayView\DayView.csproj">
+      <Project>{4a161594-924a-4496-8995-c83fd8faad1f}</Project>
+      <Name>DayView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExRichText\ExRichTextBox\ExRichTextBox.csproj">
+      <Project>{1a63b1d0-d2f0-4f8c-b242-863e83e1419c}</Project>
+      <Name>ExRichTextBox</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj">
       <Project>{f52aa97e-180a-40ed-8f2b-09080171d6c7}</Project>
       <Name>Gma.UserActivityMonitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ReceiveFiles\ReceiveFiles\ReceiveFiles.csproj">
+      <Project>{49fadf7b-b738-495a-a37e-df957d7e7c07}</Project>
+      <Name>ReceiveFiles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SendFiles\SendFiles\SendFiles.csproj">
+      <Project>{cbf95d7d-4376-4b61-89e2-a0168d5afef8}</Project>
+      <Name>SendFiles</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

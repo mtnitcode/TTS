@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using Khendys.Controls;
+using static Khendys.Controls.ExRichTextBox;
+using System.IO;
 
 namespace RtfInsert
 {
@@ -58,7 +60,6 @@ namespace RtfInsert
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            this.rtBox_Main = new Khendys.Controls.ExRichTextBox();
             this.mainMenu1 = new System.Windows.Forms.MainMenu(this.components);
             this.menuItem2 = new System.Windows.Forms.MenuItem();
             this.menuItem8 = new System.Windows.Forms.MenuItem();
@@ -66,20 +67,9 @@ namespace RtfInsert
             this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.menuItem10 = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rtBox_Main = new Khendys.Controls.ExRichTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // rtBox_Main
-            // 
-            this.rtBox_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtBox_Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtBox_Main.HiglightColor = Khendys.Controls.RtfColor.White;
-            this.rtBox_Main.Location = new System.Drawing.Point(12, 12);
-            this.rtBox_Main.Name = "rtBox_Main";
-            this.rtBox_Main.Size = new System.Drawing.Size(730, 388);
-            this.rtBox_Main.TabIndex = 0;
-            this.rtBox_Main.Text = "";
-            this.rtBox_Main.TextColor = Khendys.Controls.RtfColor.Black;
             // 
             // mainMenu1
             // 
@@ -127,13 +117,27 @@ namespace RtfInsert
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(12);
-            this.panel1.Size = new System.Drawing.Size(754, 412);
+            this.panel1.Size = new System.Drawing.Size(754, 370);
             this.panel1.TabIndex = 1;
+            // 
+            // rtBox_Main
+            // 
+            this.rtBox_Main.AllowDrop = true;
+            this.rtBox_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtBox_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtBox_Main.HiglightColor = Khendys.Controls.RtfColor.White;
+            this.rtBox_Main.Location = new System.Drawing.Point(12, 12);
+            this.rtBox_Main.Name = "rtBox_Main";
+            this.rtBox_Main.Size = new System.Drawing.Size(730, 346);
+            this.rtBox_Main.TabIndex = 0;
+            this.rtBox_Main.Text = "";
+            this.rtBox_Main.TextColor = Khendys.Controls.RtfColor.Black;
+            this.rtBox_Main.OnDroped += new System.EventHandler(this.rtBox_Main_OnDroped);
             // 
             // RtfInsert
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(754, 412);
+            this.ClientSize = new System.Drawing.Size(754, 370);
             this.Controls.Add(this.panel1);
             this.Menu = this.mainMenu1;
             this.Name = "RtfInsert";
@@ -248,5 +252,18 @@ namespace RtfInsert
 			rtBox_Main.InsertTextAsRtf(_about[9], new Font(_fonts[1], FontStyle.Italic | FontStyle.Bold | FontStyle.Underline), RtfColor.Black, RtfColor.Red);
 			rtBox_Main.InsertImage(new Bitmap(typeof(RtfInsert), "Smilies.Beer.png"));
 		}
-	}
+
+        private void rtBox_Main_OnDroped(object sender, EventArgs e)
+        {
+            var ls = ((DropEventArgs)e).Lines;
+
+            foreach (string s in ls)
+            {
+                string[] ex = { ".jpg", ".png" };
+                if (Array.Exists(ex, ext => ext.StartsWith(Path.GetExtension(s))))
+                    rtBox_Main.InsertImage(Bitmap.FromFile(s));
+            }
+
+        }
+    }
 }
