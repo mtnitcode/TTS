@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file Created with LeitnerBox 
+ Don't edit it manually
+-->
+<LeitnerBox>
+  <Setting>
+    <QuestionTextBox>LeftToRight</QuestionTextBox>
+    <AnswerTextBox>LeftToRight</AnswerTextBox>
+    <Date>Persian</Date>
+    <StartTime>02/12/2015 11:13:46</StartTime>
+  </Setting>
+  <Box ID="1">
+    <Word ID="7" Question="sdf" Answer="sdf" Date="02/16/2015 16:52:55" />
+    <Word ID="8" Question="sdfsdfsdfsdf" Answer="sdfsdfsdfsdf" Date="02/16/2015 16:52:59" />
+  </Box>
+  <Box ID="2">
+    <Part ID="1"></Part>
+    <Part ID="2">
+      <Word ID="3" Question="qq" Answer="11" Date="02/12/2015 11:14:29" />
+      <Word ID="4" Question="qq4" Answer="114" Date="02/12/2015 11:19:13" />
+      <Word ID="5" Question="qq3" Answer="333" Date="02/12/2015 11:19:03" />
+      <Word ID="6" Question="qq2" Answer="111" Date="02/12/2015 11:18:58" />
+    </Part>
+  </Box>
+  <Box ID="3">
+    <Part ID="1"></Part>
+    <Part ID="2"></Part>
+    <Part ID="3"></Part>
+    <Part ID="4"></Part>
+    <Part ID="5"></Part>
+  </Box>
+  <Box ID="4">
+    <Part ID="1"></Part>
+    <Part ID="2"></Part>
+    <Part ID="3"></Part>
+    <Part ID="4"></Part>
+    <Part ID="5"></Part>
+    <Part ID="6"></Part>
+    <Part ID="7"></Part>
+    <Part ID="8"></Part>
+  </Box>
+  <Box ID="5">
+    <Part ID="1"></Part>
+    <Part ID="2"></Part>
+    <Part ID="3"></Part>
+    <Part ID="4"></Part>
+    <Part ID="5"></Part>
+    <Part ID="6"></Part>
+    <Part ID="7"></Part>
+    <Part ID="8"></Part>
+    <Part ID="9"></Part>
+    <Part ID="10"></Part>
+    <Part ID="11"></Part>
+    <Part ID="12"></Part>
+    <Part ID="13"></Part>
+    <Part ID="14"></Part>
+  </Box>
+  <DataBase></DataBase>
+</LeitnerBox>

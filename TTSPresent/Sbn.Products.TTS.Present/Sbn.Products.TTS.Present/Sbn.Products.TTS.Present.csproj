@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FEE31B48-8BC0-4452-9A59-18C6AD8AAFC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sbn.Products.TTS.Present</RootNamespace>
+    <AssemblyName>Sbn.Products.TTS.Present</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Sayban\DebugVersions\Products\TTS\TTSPresent\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Clock.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnalogClockControl, Version=1.0.5457.19637, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Sayban\DebugVersions\Controls\AnalogClock\AnalogClockControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Sbn.Controls.EventCalendar">
+      <HintPath>C:\Sayban\DebugVersions\Controls\Calendar\Sbn.Controls.EventCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Sbn.Controls.FDate.Resources">
+      <HintPath>C:\Sayban\DebugVersions\Controls\FDate\Utils\Sbn.Controls.FDate.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Sbn.Controls.FDate.Utils">
+      <HintPath>C:\Sayban\DebugVersions\Controls\FDate\Utils\Sbn.Controls.FDate.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Sbn.Controls.FDate.Win">
+      <HintPath>C:\Sayban\DebugVersions\Controls\FDate\Win\Sbn.Controls.FDate.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Sbn.Libs.TCPListener, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Sayban\DebugVersions\Libs\TCPListener\Sbn.Libs.TCPListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLeitnerCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeitnerCard.Designer.cs">
+      <DependentUpon>frmLeitnerCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChat.Designer.cs">
+      <DependentUpon>frmChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClock.Designer.cs">
+      <DependentUpon>frmClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLeitnerBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeitnerBox.Designer.cs">
+      <DependentUpon>frmLeitnerBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonth.Designer.cs">
+      <DependentUpon>frmMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReceivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceivers.Designer.cs">
+      <DependentUpon>frmReceivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReminderMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReminderMessage.Designer.cs">
+      <DependentUpon>frmReminderMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSticker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSticker.Designer.cs">
+      <DependentUpon>frmSticker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmToDoActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmToDoActions.Designer.cs">
+      <DependentUpon>frmToDoActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewAction.Designer.cs">
+      <DependentUpon>frmNewAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProcessStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProcessStatistics.Designer.cs">
+      <DependentUpon>FrmProcessStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReminder.Designer.cs">
+      <DependentUpon>frmReminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ucProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucProgress.Designer.cs">
+      <DependentUpon>ucProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="frmLeitnerCard.resx">
+      <DependentUpon>frmLeitnerCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChat.resx">
+      <DependentUpon>frmChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClock.resx">
+      <DependentUpon>frmClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeitnerBox.resx">
+      <DependentUpon>frmLeitnerBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonth.resx">
+      <DependentUpon>frmMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceivers.resx">
+      <DependentUpon>frmReceivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReminderMessage.resx">
+      <DependentUpon>frmReminderMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSticker.resx">
+      <DependentUpon>frmSticker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmToDoActions.resx">
+      <DependentUpon>frmToDoActions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewAction.resx">
+      <DependentUpon>frmNewAction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProcessStatistics.resx">
+      <DependentUpon>FrmProcessStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReminder.resx">
+      <DependentUpon>frmReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProgress.resx">
+      <DependentUpon>ucProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Action.datasource" />
+    <None Include="Properties\DataSources\TTSProcess.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Clock.ico" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\save_as.png" />
+    <None Include="Resources\check_boxes.png" />
+    <None Include="Resources\Refresh.png" />
+    <Content Include="xml\user.xml" />
+    <None Include="Resources\page_magnifier.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\edit_delete.png" />
+    <None Include="Resources\backup_manager.png" />
+    <None Include="Resources\bullet_add.png" />
+    <None Include="Resources\sheduled_task1.png" />
+    <None Include="Resources\bullet_delete.png" />
+    <None Include="Resources\exit1.png" />
+    <None Include="Resources\editpaste.png" />
+    <None Include="Resources\Calendar1.png" />
+    <None Include="Resources\calendar-selection-week1281.png" />
+    <None Include="Resources\Calender2.png" />
+    <None Include="Resources\Calender1.png" />
+    <None Include="Resources\Calender.png" />
+    <None Include="Resources\phone_handset.png" />
+    <None Include="Resources\calendar-selection-month128.png" />
+    <None Include="Resources\calendar_view_day.png" />
+    <None Include="Resources\calendar-selection-week128.png" />
+    <None Include="Resources\calendar-selection-day128.png" />
+    <None Include="Resources\Calendar.png" />
+    <None Include="Resources\Calendar_mirror.png" />
+    <None Include="Resources\shutdown1.png" />
+    <None Include="Resources\Shutdown.png" />
+    <None Include="Resources\emotion_question1.png" />
+    <None Include="Resources\emotion_question.png" />
+    <None Include="Resources\clock31pk1.png" />
+    <None Include="Resources\clock31pk.png" />
+    <None Include="Resources\clock31.png" />
+    <None Include="Resources\clock25.png" />
+    <None Include="Resources\clockPK34.png" />
+    <None Include="Resources\clockPK33.png" />
+    <None Include="Resources\clock24.png" />
+    <None Include="Resources\clock23.png" />
+    <None Include="Resources\clock22.png" />
+    <None Include="Resources\clock21.png" />
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\contact_email.png" />
+    <None Include="Resources\clockPK32.png" />
+    <None Include="Resources\clockPK31.png" />
+    <None Include="Resources\clockPK3.png" />
+    <None Include="Resources\clockPK2.png" />
+    <None Include="Resources\clock3.png" />
+    <None Include="Resources\clockPK.png" />
+    <None Include="Resources\clock2.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\clock_face_by_agf81-d4756ii.jpg" />
+    <None Include="Resources\Logo2.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\setting_tools.png" />
+    <None Include="Resources\Email Chat.png" />
+    <None Include="Resources\action_log.png" />
+    <None Include="Resources\calendar_edit.png" />
+    <None Include="Resources\document_todo.png" />
+    <None Include="Resources\sheduled_task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SbnPresentation\Controls\Calendar\DayView\DayView.csproj">
+      <Project>{4a161594-924a-4496-8995-c83fd8faad1f}</Project>
+      <Name>DayView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj">
+      <Project>{f52aa97e-180a-40ed-8f2b-09080171d6c7}</Project>
+      <Name>Gma.UserActivityMonitor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
