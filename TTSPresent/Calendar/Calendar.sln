@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendar", "Calendar\Calendar.csproj", "{AEB20B54-290E-4ED4-8684-821347014678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayView", "DayView\DayView.csproj", "{4A161594-924A-4496-8995-C83FD8FAAD1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEB20B54-290E-4ED4-8684-821347014678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB20B54-290E-4ED4-8684-821347014678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB20B54-290E-4ED4-8684-821347014678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB20B54-290E-4ED4-8684-821347014678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A161594-924A-4496-8995-C83FD8FAAD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A161594-924A-4496-8995-C83FD8FAAD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A161594-924A-4496-8995-C83FD8FAAD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A161594-924A-4496-8995-C83FD8FAAD1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
