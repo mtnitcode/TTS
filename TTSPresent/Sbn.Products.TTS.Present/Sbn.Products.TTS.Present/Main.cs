@@ -1,4 +1,5 @@
 ﻿using Gma.UserActivityMonitor;
+using Khendys.Controls;
 using Sbn.Controls.EventCalendar;
 using Sbn.Controls.FDate.Utils;
 using Sbn.Libs.TCPListener;
@@ -438,10 +439,10 @@ namespace Sbn.Products.TTS.Present
 
         List<string> _ReceivedDatas = new List<string>();
 
-        void TCPListener_ReceivedData(string data)
+        void TCPListener_ReceivedData(object data)
         {
 
-            _ReceivedDatas.Add(data);
+            _ReceivedDatas.Add((string)data);
 
         }
 
@@ -891,6 +892,13 @@ namespace Sbn.Products.TTS.Present
                             {
                                 if (f._ReceiverIPAddress == sData[0])
                                 {
+
+                                    f.rtBox_Main.InsertTextAsRtf("\n" + sData[2]+"\n", new Font(this.Font, FontStyle.Bold | FontStyle.Underline), RtfColor.Blue, RtfColor.Yellow);
+                                    //f.rtBox_Main.Text += "\n" + sData[2] + "\n";
+                                    //f.rtBox_Main.SelectionStart = f.txtDialogues.Text.Length;
+                                    f.rtBox_Main.ScrollToCaret();
+
+
                                     f.txtDialogues.Text += "\n" + sData[2] + "\n";
                                     f.TopMost = true;
                                     if (!f.Visible) f.Show();
@@ -916,10 +924,19 @@ namespace Sbn.Products.TTS.Present
                                 frmCH.cmdNames.Text = sData[0] + "/" + sData[1];
                                 frmCH.Text = sData[0] + "/" + sData[1];
                                 frmCH.txtDialogues.Text += "\n" + sData[2] + "\n";
+
+
+
+
                                 frmCH.cmdNames.Enabled = false;
                                 frmCH.TopMost = true;
                                 frmCH.Show();
-                                
+
+
+                                frmCH.rtBox_Main.InsertTextAsRtf("\n" + sData[2] + "\n", new Font(this.Font, FontStyle.Bold | FontStyle.Underline), RtfColor.Blue, RtfColor.Yellow);
+                                //f.rtBox_Main.Text += "\n" + sData[2] + "\n";
+                                //f.rtBox_Main.SelectionStart = f.txtDialogues.Text.Length;
+                                frmCH.rtBox_Main.ScrollToCaret();
 
                                 frmCH.txtDialogues.SelectionStart = frmCH.txtDialogues.Text.Length;
                                 frmCH.txtDialogues.ScrollToCaret();

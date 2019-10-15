@@ -57,10 +57,6 @@
     <Reference Include="Sbn.Controls.FDate.Win">
       <HintPath>C:\Sayban\DebugVersions\Controls\FDate\Win\Sbn.Controls.FDate.Win.dll</HintPath>
     </Reference>
-    <Reference Include="Sbn.Libs.TCPListener, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Sayban\DebugVersions\Libs\TCPListener\Sbn.Libs.TCPListener.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -328,6 +324,10 @@
     <ProjectReference Include="..\..\ReceiveFiles\ReceiveFiles\ReceiveFiles.csproj">
       <Project>{49fadf7b-b738-495a-a37e-df957d7e7c07}</Project>
       <Name>ReceiveFiles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SbnListener\HTFTcpListener\SbnTCPListener.csproj">
+      <Project>{498922cc-909d-4999-b715-b01373f572bf}</Project>
+      <Name>SbnTCPListener</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SendFiles\SendFiles\SendFiles.csproj">
       <Project>{cbf95d7d-4376-4b61-89e2-a0168d5afef8}</Project>

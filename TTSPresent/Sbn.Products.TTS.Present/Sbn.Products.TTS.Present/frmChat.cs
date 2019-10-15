@@ -9,8 +9,10 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
+using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
+using static Khendys.Controls.ExRichTextBox;
 
 namespace Sbn.Products.TTS.Present
 {
@@ -171,7 +173,94 @@ namespace Sbn.Products.TTS.Present
             this.txtDialogues.Text = "";
             this.Hide();
         }
+        public bool ThumbnailCallback()
+        {
+            return false;
+        }
+        private void rtBox_Main_OnDroped(object sender, EventArgs e)
+        {
+            var ls = ((DropEventArgs)e).Lines;
 
+            foreach (string s in ls)
+            {
+                string[] ex = { ".jpg", ".png" };
+                if (Array.Exists(ex, ext => ext.StartsWith(Path.GetExtension(s))))
+                {
+
+                    using (var bmp = Bitmap.FromFile(s))
+                    {
+                        if (bmp.Size.Width > this.rtBox_Main.Width - 50)
+                        {
+
+                            float wscale = ((this.rtBox_Main.Width - 50) / (float)bmp.Size.Width) * bmp.Size.Width;
+
+                            float hscale = ((this.rtBox_Main.Width - 50) / (float)bmp.Size.Width) * bmp.Size.Height;
+                            Image thumb = bmp.GetThumbnailImage((int)wscale, (int)hscale, ThumbnailCallback, IntPtr.Zero);
+
+                            rtBox_Main.InsertImage(thumb);
+
+
+                            //
+
+                            TCPClient.SendMessage(_ReceiverIPAddress, "Attach=" + s, int.Parse(Utility._ChatPort));
+
+                            //
+                        }
+                        else
+                            rtBox_Main.InsertImage(bmp);
+                    }
+
+                    rtBox_Main.InsertLink(s);
+
+                }
+            }
+        }
+        public void SendTCP(string M, string IPA, Int32 PortN)
+        {
+            byte[] SendingBuffer = null;
+            TcpClient client = null;
+            
+            NetworkStream netstream = null;
+            try
+            {
+                int BufferSize = 1024;
+                client = new TcpClient(IPA, PortN);
+                netstream = client.GetStream();
+                FileStream Fs = new FileStream(M, FileMode.Open, FileAccess.Read);
+                int NoOfPackets = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(Fs.Length) / Convert.ToDouble(BufferSize)));
+                //progressBar1.Maximum = NoOfPackets;
+                int TotalLength = (int)Fs.Length, CurrentPacketLength, counter = 0;
+                for (int i = 0; i < NoOfPackets; i++)
+                {
+                    if (TotalLength > BufferSize)
+                    {
+                        CurrentPacketLength = BufferSize;
+                        TotalLength = TotalLength - CurrentPacketLength;
+                    }
+                    else
+                        CurrentPacketLength = TotalLength;
+                    SendingBuffer = new byte[CurrentPacketLength];
+                    Fs.Read(SendingBuffer, 0, CurrentPacketLength);
+                    netstream.Write(SendingBuffer, 0, (int)SendingBuffer.Length);
+
+                    //if (progressBar1.Value >= progressBar1.Maximum)
+                    //    progressBar1.Value = progressBar1.Minimum;
+                    //progressBar1.PerformStep();
+                }
+
+                Fs.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                netstream.Close();
+                client.Close();
+
+            }
+        }
 
     }
 }

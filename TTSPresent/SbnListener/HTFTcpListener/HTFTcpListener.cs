@@ -4,19 +4,23 @@ using System.Text;
 using System.Threading;
 using System.Net.Sockets;
 using System.Net;
+using System.IO;
+using System.Reflection;
 
 namespace Sbn.Libs.TCPListener
 {
-    public delegate void FireReceived(string data);
+    public delegate void FireReceived(object data);
 
     public static class TCPListener
     {
         public static string _ServerIPAddress = "";
         public static string _ReceivedData = "";
+        public static string _ReceivedBytes = "";
         static Thread _thread = null;
         public static string _ClientName = "";
         public static event FireReceived ReceivedData;
         private static bool _IsVisibleForAll = false;
+        private static bool _BinaryFilePending = false;
         public static void StartListener(string ServerIPAddress , int clientPort , bool IsVisibleForAll = true)
         {
             try
@@ -88,33 +92,60 @@ namespace Sbn.Libs.TCPListener
 
                         int i;
 
+
+                        int totalrecbytes = 0;
+                        FileStream Fs = null;
+                        if (_BinaryFilePending)
+                        {
+                            string[] atts = _ReceivedData.Split('=');
+                            Fs = new FileStream(AppDomain.CurrentDomain.BaseDirectory + "\\" + Path.GetFileName(atts[1]), FileMode.OpenOrCreate, FileAccess.Write);
+                        }
                         // Loop to receive all the data sent by the client.
-                        while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
+                        while ((i = stream.Read(bytes, 0, bytes.Length)) != 0 )
                         {
                             try
                             {
-                                // Translate data bytes to a ASCII string.
-                                data = System.Text.Encoding.UTF8.GetString(bytes, 0, i);
-                                //                    label2.Text = "Received: {0}" + data;
 
-                                // Process the data sent by the client.
-                                //data = data.ToUpper();
+                                if (!_BinaryFilePending)
+                                {
+                                    // Translate data bytes to a ASCII string.
+                                    data = System.Text.Encoding.UTF8.GetString(bytes, 0, i);
+                                    //                    label2.Text = "Received: {0}" + data;
 
-                                _ReceivedData = data;
 
-                                byte[] msg = System.Text.Encoding.ASCII.GetBytes("OK");
+                                    // Process the data sent by the client.
+                                    //data = data.ToUpper();
 
-                                //Byte[] data = System.Text.Encoding.UTF8.GetBytes(message);
-                                if (data == "Alive?" && _IsVisibleForAll)
-                                    msg = System.Text.Encoding.UTF8.GetBytes("?Alive;#;" + _ClientName);
+                                    _ReceivedData = data;
 
-                                // Send back a response.
-                                stream.Write(msg, 0, msg.Length);
-                                //Console.WriteLine("Sent: {0}", data);
+                                    byte[] msg = System.Text.Encoding.ASCII.GetBytes("OK");
 
-                                if (data != "Alive?")
-                                    ReceivedData(_ReceivedData);
+                                    //Byte[] data = System.Text.Encoding.UTF8.GetBytes(message);
+                                    if (data == "Alive?" && _IsVisibleForAll)
+                                        msg = System.Text.Encoding.UTF8.GetBytes("?Alive;#;" + _ClientName);
 
+                                    // Send back a response.
+                                    stream.Write(msg, 0, msg.Length);
+                                    //Console.WriteLine("Sent: {0}", data);
+
+                                    if(data.StartsWith("Attach"))
+                                    {
+                                        _BinaryFilePending = true;
+                            string[] atts = _ReceivedData.Split('=');
+                                        ReceivedData(atts[1]);
+
+                                    }
+                                    else if (data != "Alive?")
+                                        ReceivedData(_ReceivedData);
+
+
+                                }
+                                else
+                                {
+                                    Fs.Write(bytes, 0, i);
+                                    totalrecbytes += i;
+
+                                }
                             }
                             catch
                             {
@@ -123,6 +154,12 @@ namespace Sbn.Libs.TCPListener
 
                         }
 
+                        if (_BinaryFilePending)
+                        {
+                            _ReceivedData = "";
+                            _BinaryFilePending = false;
+                            Fs.Close();
+                        }
                         // Shutdown and end connection
                         client.Close();
                     }

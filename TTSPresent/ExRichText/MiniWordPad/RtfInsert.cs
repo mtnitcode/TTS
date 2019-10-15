@@ -7,6 +7,7 @@ using System.Data;
 using Khendys.Controls;
 using static Khendys.Controls.ExRichTextBox;
 using System.IO;
+using System.Diagnostics;
 
 namespace RtfInsert
 {
@@ -133,6 +134,7 @@ namespace RtfInsert
             this.rtBox_Main.Text = "";
             this.rtBox_Main.TextColor = Khendys.Controls.RtfColor.Black;
             this.rtBox_Main.OnDroped += new System.EventHandler(this.rtBox_Main_OnDroped);
+            this.rtBox_Main.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.rtBox_Main_LinkClicked);
             // 
             // RtfInsert
             // 
@@ -252,7 +254,10 @@ namespace RtfInsert
 			rtBox_Main.InsertTextAsRtf(_about[9], new Font(_fonts[1], FontStyle.Italic | FontStyle.Bold | FontStyle.Underline), RtfColor.Black, RtfColor.Red);
 			rtBox_Main.InsertImage(new Bitmap(typeof(RtfInsert), "Smilies.Beer.png"));
 		}
-
+            public bool ThumbnailCallback()
+            {
+                return false;
+            }
         private void rtBox_Main_OnDroped(object sender, EventArgs e)
         {
             var ls = ((DropEventArgs)e).Lines;
@@ -261,9 +266,40 @@ namespace RtfInsert
             {
                 string[] ex = { ".jpg", ".png" };
                 if (Array.Exists(ex, ext => ext.StartsWith(Path.GetExtension(s))))
-                    rtBox_Main.InsertImage(Bitmap.FromFile(s));
+                {
+
+                    using (var bmp = Bitmap.FromFile(s))
+                    {
+                        if(bmp.Size.Width > this.rtBox_Main.Width-50)
+                        {
+
+                            float wscale = ((this.rtBox_Main.Width - 50 )/ (float)bmp.Size.Width) * bmp.Size.Width;
+
+                            float hscale = ((this.rtBox_Main.Width - 50) / (float)bmp.Size.Width) * bmp.Size.Height;
+                            Image thumb = bmp.GetThumbnailImage((int)wscale , (int)hscale , ThumbnailCallback,  IntPtr.Zero);
+
+                            rtBox_Main.InsertImage(thumb);
+
+                        }
+                        else
+                            rtBox_Main.InsertImage(bmp);
+                    }
+
+                    rtBox_Main.InsertLink(s);
+
+                }
             }
 
+        }
+
+        private void Link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void rtBox_Main_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            Process.Start(e.LinkText);
         }
     }
 }

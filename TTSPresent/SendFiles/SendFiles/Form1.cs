@@ -14,7 +14,7 @@ namespace SendFiles
     public partial class Form1 : Form
     {
         public string SendingFilePath = string.Empty;
-        private const int BufferSize = 1024;
+        private const int BufferSize = 1300;
         public Form1()
         {
             InitializeComponent();
@@ -47,6 +47,7 @@ namespace SendFiles
         {
             if (SendingFilePath != string.Empty)
             {   
+                SendMsg("Attach="+ SendingFilePath, txtIP.Text, Int32.Parse(txtPort.Text));
                 SendTCP(SendingFilePath, txtIP.Text, Int32.Parse(txtPort.Text));
             }
             else
@@ -98,7 +99,34 @@ namespace SendFiles
 
             }
         }
-        
-      
+
+        public void SendMsg(string M, string IPA, Int32 PortN)
+        {
+            TcpClient client = null;
+            lblStatus.Text = "";
+            NetworkStream netstream = null;
+            try
+            {
+                client = new TcpClient(IPA, PortN);
+                lblStatus.Text = "Connected to the Server...\n";
+                netstream = client.GetStream();
+                Byte[] SendingBuffer = System.Text.Encoding.UTF8.GetBytes(M);
+                netstream.Write(SendingBuffer, 0, (int)SendingBuffer.Length);
+
+                lblStatus.Text = lblStatus.Text + "Sent " + M.Length + " bytes to the server";
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                netstream.Close();
+                client.Close();
+
+            }
+        }
+
     }
 }

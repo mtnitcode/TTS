@@ -36,6 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.rtBox_Main = new Khendys.Controls.ExRichTextBox();
             this.SuspendLayout();
             // 
             // txtDialogues
@@ -46,7 +47,7 @@
             this.txtDialogues.Location = new System.Drawing.Point(2, 32);
             this.txtDialogues.Name = "txtDialogues";
             this.txtDialogues.ReadOnly = true;
-            this.txtDialogues.Size = new System.Drawing.Size(404, 419);
+            this.txtDialogues.Size = new System.Drawing.Size(477, 138);
             this.txtDialogues.TabIndex = 0;
             this.txtDialogues.Text = "";
             // 
@@ -58,7 +59,7 @@
             this.txtText.Location = new System.Drawing.Point(96, 456);
             this.txtText.Multiline = true;
             this.txtText.Name = "txtText";
-            this.txtText.Size = new System.Drawing.Size(307, 90);
+            this.txtText.Size = new System.Drawing.Size(380, 93);
             this.txtText.TabIndex = 1;
             // 
             // button1
@@ -109,12 +110,30 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // rtBox_Main
+            // 
+            this.rtBox_Main.AllowDrop = true;
+            this.rtBox_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtBox_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtBox_Main.DetectUrls = true;
+            this.rtBox_Main.HiglightColor = Khendys.Controls.RtfColor.White;
+            this.rtBox_Main.Location = new System.Drawing.Point(2, 176);
+            this.rtBox_Main.Name = "rtBox_Main";
+            this.rtBox_Main.Size = new System.Drawing.Size(474, 277);
+            this.rtBox_Main.TabIndex = 13;
+            this.rtBox_Main.Text = "";
+            this.rtBox_Main.TextColor = Khendys.Controls.RtfColor.Black;
+            this.rtBox_Main.OnDroped += new System.EventHandler(this.rtBox_Main_OnDroped);
+            // 
             // frmChat
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 550);
+            this.ClientSize = new System.Drawing.Size(477, 553);
+            this.Controls.Add(this.rtBox_Main);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cmdNames);
@@ -146,5 +165,6 @@
         public System.Windows.Forms.RichTextBox txtDialogues;
         public System.Windows.Forms.ComboBox cmdNames;
         private System.Windows.Forms.Button btnSave;
+        public Khendys.Controls.ExRichTextBox rtBox_Main;
     }
 }
