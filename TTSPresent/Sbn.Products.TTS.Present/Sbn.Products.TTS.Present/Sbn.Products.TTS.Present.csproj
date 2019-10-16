@@ -252,6 +252,18 @@
     <None Include="Resources\save_as.png" />
     <None Include="Resources\check_boxes.png" />
     <None Include="Resources\Refresh.png" />
+    <Content Include="Contents\Actions.txt" />
+    <Content Include="Contents\Contacts.txt" />
+    <Content Include="Contents\DailyActivities.txt" />
+    <Content Include="Contents\LeitnerBox - Empty With 1100 Words.xml" />
+    <Content Include="Contents\LeitnerBox.xml" />
+    <Content Include="Contents\Processes.txt" />
+    <Content Include="Contents\Projects.txt" />
+    <Content Include="Contents\Receivers.txt" />
+    <Content Include="Contents\Relations.txt" />
+    <Content Include="Contents\Reminder.xml" />
+    <Content Include="Contents\Settings.txt" />
+    <Content Include="Contents\ToDoActions.txt" />
     <Content Include="Emoticons\AngelSmile.png" />
     <Content Include="Emoticons\AngrySmile.png" />
     <Content Include="Emoticons\Beer.png" />
@@ -340,17 +352,9 @@
       <Project>{f52aa97e-180a-40ed-8f2b-09080171d6c7}</Project>
       <Name>Gma.UserActivityMonitor</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\ReceiveFiles\ReceiveFiles\ReceiveFiles.csproj">
-      <Project>{49fadf7b-b738-495a-a37e-df957d7e7c07}</Project>
-      <Name>ReceiveFiles</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\SbnListener\HTFTcpListener\SbnTCPListener.csproj">
       <Project>{498922cc-909d-4999-b715-b01373f572bf}</Project>
       <Name>SbnTCPListener</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SendFiles\SendFiles\SendFiles.csproj">
-      <Project>{cbf95d7d-4376-4b61-89e2-a0168d5afef8}</Project>
-      <Name>SendFiles</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

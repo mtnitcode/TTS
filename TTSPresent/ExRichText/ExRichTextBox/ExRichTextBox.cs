@@ -436,9 +436,9 @@ namespace Khendys.Controls {
 			// RTF string
 			_rtf.Append(GetColorTable(_textColor, _backColor));
 
-			// Create the document area from the text to be added as RTF and append
-			// it to the RTF string.
-			_rtf.Append(GetDocumentArea(_text, _font));
+            // Create the document area from the text to be added as RTF and append
+            // it to the RTF string.
+            _rtf.Append(GetDocumentArea(_text, _font));
 
 			this.SelectedRtf = _rtf.ToString();
 		}
@@ -461,15 +461,17 @@ namespace Khendys.Controls {
 
 			StringBuilder _doc = new StringBuilder();
 			
+
+
 			// Append the standard RTF document area control string
 			_doc.Append(RTF_DOCUMENT_PRE);
 
-			// Set the highlight color (the color behind the text) to the
-			// third color in the color table.  See GetColorTable for more details.
-			_doc.Append(@"\highlight2");
+            // Set the highlight color (the color behind the text) to the
+            // third color in the color table.  See GetColorTable for more details.
+            _doc.Append(@"\highlight2");
 
-			// If the font is bold, attach corresponding tag
-			if (_font.Bold)
+            // If the font is bold, attach corresponding tag
+            if (_font.Bold)
 				_doc.Append(@"\b");
 
 			// If the font is italic, attach corresponding tag

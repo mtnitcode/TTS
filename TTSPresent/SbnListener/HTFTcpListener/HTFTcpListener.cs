@@ -103,8 +103,10 @@ namespace Sbn.Libs.TCPListener
                             {
                                 if (_BinaryFilePending && _ReceivedData.IndexOf("Attach") >=0 && Fs == null)
                                 {
+
                                     if (!Directory.Exists(AppDomain.CurrentDomain.BaseDirectory + "\\Attachments")) Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "\\Attachments");
                                     string[] atts = _ReceivedData.Split('=');
+                                    string sfilename = atts[1].Replace(" ", "_");
                                     Fs = new FileStream(AppDomain.CurrentDomain.BaseDirectory + "\\Attachments\\" + Path.GetFileName(atts[1]), FileMode.OpenOrCreate, FileAccess.Write);
                                 }
                                 if (!_BinaryFilePending)
@@ -131,7 +133,7 @@ namespace Sbn.Libs.TCPListener
 
                                     if (data.IndexOf("Attach")>=0)
                                     {
-
+                                        data = data.Replace(" ", "_");
                                         _BinaryFilePending = true;
                                         string[] atts = _ReceivedData.Split('=');
                                         ReceivedData(data);

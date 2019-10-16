@@ -35,14 +35,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtText = new Khendys.Controls.ExRichTextBox();
-            this.rtBox_Main = new Khendys.Controls.ExRichTextBox();
             this.tbar_SendMessage = new System.Windows.Forms.ToolBar();
             this.tbBtn_Font = new System.Windows.Forms.ToolBarButton();
             this.tbBtn_Emoticons = new System.Windows.Forms.ToolBarButton();
             this.cmenu_Emoticons = new System.Windows.Forms.ContextMenu();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.rtBox_Main = new Khendys.Controls.ExRichTextBox();
+            this.txtText = new Khendys.Controls.ExRichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -96,39 +96,6 @@
             this.btnSave.Text = "ذخیره و بستن";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // txtText
-            // 
-            this.txtText.AllowDrop = true;
-            this.txtText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtText.DetectUrls = true;
-            this.txtText.HiglightColor = Khendys.Controls.RtfColor.White;
-            this.txtText.Location = new System.Drawing.Point(105, 39);
-            this.txtText.Name = "txtText";
-            this.txtText.Size = new System.Drawing.Size(311, 85);
-            this.txtText.TabIndex = 14;
-            this.txtText.Text = "";
-            this.txtText.TextColor = Khendys.Controls.RtfColor.Black;
-            this.txtText.OnDroped += new System.EventHandler(this.rtBox_Main_OnDroped);
-            // 
-            // rtBox_Main
-            // 
-            this.rtBox_Main.AllowDrop = true;
-            this.rtBox_Main.BackColor = System.Drawing.SystemColors.Window;
-            this.rtBox_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtBox_Main.DetectUrls = true;
-            this.rtBox_Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtBox_Main.HideSelection = false;
-            this.rtBox_Main.HiglightColor = Khendys.Controls.RtfColor.White;
-            this.rtBox_Main.Location = new System.Drawing.Point(0, 0);
-            this.rtBox_Main.Name = "rtBox_Main";
-            this.rtBox_Main.ReadOnly = true;
-            this.rtBox_Main.Size = new System.Drawing.Size(419, 378);
-            this.rtBox_Main.TabIndex = 13;
-            this.rtBox_Main.Text = "";
-            this.rtBox_Main.TextColor = Khendys.Controls.RtfColor.Black;
-            this.rtBox_Main.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.rtBox_Main_LinkClicked);
             // 
             // tbar_SendMessage
             // 
@@ -190,6 +157,41 @@
             this.splitContainer1.Size = new System.Drawing.Size(419, 516);
             this.splitContainer1.SplitterDistance = 378;
             this.splitContainer1.TabIndex = 16;
+            // 
+            // rtBox_Main
+            // 
+            this.rtBox_Main.AllowDrop = true;
+            this.rtBox_Main.BackColor = System.Drawing.SystemColors.Window;
+            this.rtBox_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtBox_Main.DetectUrls = true;
+            this.rtBox_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtBox_Main.HideSelection = false;
+            this.rtBox_Main.HiglightColor = Khendys.Controls.RtfColor.White;
+            this.rtBox_Main.Location = new System.Drawing.Point(0, 0);
+            this.rtBox_Main.Name = "rtBox_Main";
+            this.rtBox_Main.ReadOnly = true;
+            this.rtBox_Main.Size = new System.Drawing.Size(419, 378);
+            this.rtBox_Main.TabIndex = 13;
+            this.rtBox_Main.TabStop = false;
+            this.rtBox_Main.Text = "";
+            this.rtBox_Main.TextColor = Khendys.Controls.RtfColor.Black;
+            this.rtBox_Main.WordWrap = false;
+            this.rtBox_Main.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.rtBox_Main_LinkClicked);
+            // 
+            // txtText
+            // 
+            this.txtText.AllowDrop = true;
+            this.txtText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtText.DetectUrls = true;
+            this.txtText.HiglightColor = Khendys.Controls.RtfColor.White;
+            this.txtText.Location = new System.Drawing.Point(105, 39);
+            this.txtText.Name = "txtText";
+            this.txtText.Size = new System.Drawing.Size(311, 85);
+            this.txtText.TabIndex = 14;
+            this.txtText.Text = "";
+            this.txtText.TextColor = Khendys.Controls.RtfColor.Black;
+            this.txtText.OnDroped += new System.EventHandler(this.rtBox_Main_OnDroped);
             // 
             // frmChat
             // 

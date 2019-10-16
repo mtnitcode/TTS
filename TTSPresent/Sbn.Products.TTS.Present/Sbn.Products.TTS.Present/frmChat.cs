@@ -1,4 +1,5 @@
-﻿using Sbn.Controls.FDate.Utils;
+﻿using Khendys.Controls;
+using Sbn.Controls.FDate.Utils;
 using Sbn.Libs.TCPListener;
 using System;
 using System.Collections.Generic;
@@ -112,8 +113,11 @@ namespace Sbn.Products.TTS.Present
 
                 TCPClient.SendMessage(_ReceiverIPAddress, Main._LocalIPAddress + ";#;" + Main._Name + ";#;" + this.txtText.Text , int.Parse(Utility._ChatPort));
 
+                rtBox_Main.ScrollToCaret();
 
-                rtBox_Main.InsertTextAsRtf("\n" + " شما : " + this.txtText.Text + "\n");
+                rtBox_Main.InsertTextAsRtf("\n");
+                rtBox_Main.InsertTextAsRtf( this.txtText.Text , new Font(this.Font, FontStyle.Regular), RtfColor.Black, RtfColor.White);
+                rtBox_Main.InsertTextAsRtf("\n");
 
 
                 this.txtText.Text = "";

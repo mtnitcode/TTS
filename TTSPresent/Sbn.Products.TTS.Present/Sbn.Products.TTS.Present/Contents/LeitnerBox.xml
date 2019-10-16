@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file Created with LeitnerBox 
+ Don't edit it manually
+-->
+<Reminder>
+  <Appointement ID="1" StartDate="" EndDate="" Title="" />
+  <Appointment ID="1" project="جلسه" title="تست" description="" isrepeat="False" isautostart="False" startDate="1394/03/04 17:57:00" endDate="" />
+  <Appointment ID="2" project="جلسه" title="323223" description="" isrepeat="False" isautostart="False" startDate="1394/07/08 08:34:00" endDate="" />
+  <Appointment ID="7" project="یادآوری" title="یبل" description="بل" isrepeat="False" isautostart="False" startDate="1393/10/20 09:05:00" endDate="" />
+  <Appointment ID="12" project="سدک" title="جلسه" description="جلسه فنی - جابجایی تجهیزات سدک به شرکت" isrepeat="False" isautostart="False" startDate="1394/12/04 14:00:00" endDate="1394/12/04 15:00:00" />
+  <Appointment ID="14" project="سدک" title="جلسه" description="وزارت کشور - آقای محمدی فر- فاضل و شهشهانی- مسائل سدک و بیومتریک و نرم افزارها" isrepeat="False" isautostart="False" startDate="1394/12/01 14:00:00" endDate="1394/12/01 16:00:00" />
+  <Appointment ID="16" project="" title="جلسه" description="جلسه آقای باریکانی" isrepeat="False" isautostart="False" startDate="1394/12/04 15:00:00" endDate="1394/12/04 16:00:00" />
+  <Appointment ID="19" project="فیدا" title="مدیریت پروژه" description="جلسه مبارزه با پولشویی بانک ملت" isrepeat="False" isautostart="True" startDate="1394/12/10 10:00:00" endDate="1394/12/10 11:00:00" />
+  <Appointment ID="20" project="کفالت" title="تحلیل سیستم" description="قرار با آقای مهریزی برای تحویل بخش آمایش 11" isrepeat="False" isautostart="True" startDate="1394/12/09 09:00:00" endDate="1394/12/09 12:00:00" />
+  <Appointment ID="21" project="کفالت" title="جلسه" description="جلسه کفالت - آقای فاضل محمدی شهرابی" isrepeat="False" isautostart="False" startDate="1394/12/11 07:30:00" endDate="1394/12/11 08:30:00" />
+  <Appointment ID="22" project="بیومتریک" title="جلسه" description="جلسه بیومتریک استان کرمان" isrepeat="False" isautostart="False" startDate="1394/12/15 08:00:00" endDate="1394/12/15 10:00:00" />
+  <Appointment ID="23" project="سدک" title="جلسه" description="جلسه با آقای فاضل - میدان حر" isrepeat="False" isautostart="False" startDate="1394/12/15 13:00:00" endDate="1394/12/15 16:00:00" />
+  <Appointment ID="24" project="سدک" title="جلسه" description="جلسه سدک - تجهیزات - اقدامات - فاضل - عروجی محمدی شهرابی" isrepeat="False" isautostart="False" startDate="1394/12/13 10:00:00" endDate="1394/12/13 12:00:00" />
+  <Appointment ID="26" project="فیدا" title="جلسه" description="دانشگاه آزاد - سازمان مرکزی دانشگاه" isrepeat="False" isautostart="True" startDate="1395/01/22 10:00:00" endDate="1395/01/22 12:00:00" />
+  <Appointment ID="27" project="سدک" title="جلسه" description="جلسه دموی سیستم با فناوری وزارت کشور" isrepeat="False" isautostart="False" startDate="1395/01/21 14:00:00" endDate="1395/01/21 16:00:00" />
+  <Appointment ID="28" project="فیدا" title="جلسه تامین اجتماعی" description="" isrepeat="False" isautostart="False" startDate="1396/06/13 08:00:00" endDate="1396/06/13 11:45:00" />
+  <Appointment ID="29" project="اسکان" title="جلسه" description="جلسه دموی کار انجام شده روی پردازش تصاویر پاسپورت" isrepeat="False" isautostart="False" startDate="1396/09/12 10:30:00" endDate="1396/09/12 12:00:00" />
+  <Appointment ID="30" project="فیدا" title="جلسه" description="جلسه پیگیری وضعیت پاسخگویی از تیم راهبری" isrepeat="False" isautostart="False" startDate="1396/09/18 08:00:00" endDate="1396/09/18 09:00:00" />
+  <Appointment ID="32" project="فیدا" title="جلسه سازمان دانشجویان درمورد شماره اختصاصی بیمه سلامت" description="" isrepeat="False" isautostart="True" startDate="1396/09/20 14:00:00" endDate="1396/09/20 15:00:00" />
+  <Appointment ID="33" project="فیدا" title="جلسه مرکز توسعه - بررسی فرایند تخصیص کد و جستجوی شرکتها" description="" isrepeat="False" isautostart="True" startDate="1396/09/22 09:30:00" endDate="1396/09/22 11:00:00" />
+  <Appointment ID="34" project="فیدا" title="جلسه بانک پاسارگاد در خصوص تبدیل ارز در فرودگاه" description="" isrepeat="False" isautostart="True" startDate="1396/09/26 14:00:00" endDate="1396/09/26 15:00:00" />
+  <Appointment ID="35" project="فیدا" title="قرارملاقات - با اموردانشجویان" description="" isrepeat="False" isautostart="False" startDate="1396/09/21 08:00:00" endDate="1396/09/21 09:30:00" />
+  <Appointment ID="36" project="امور" title="جلسه - امور خارجه" description="" isrepeat="False" isautostart="False" startDate="1393/10/21 09:30:00" endDate="1393/10/21 11:00:00" />
+  <Appointment ID="37" project="جلسه" title="قرارملاقات - جلسه" description="" isrepeat="False" isautostart="False" startDate="1396/09/21 09:30:00" endDate="1396/09/21 11:15:00" />
+  <Appointment ID="38" project="چلسه" title="جلسه" description="تست" isrepeat="False" isautostart="False" startDate="1396/09/19 09:00:00" endDate="1396/09/19 09:30:00" />
+</Reminder>

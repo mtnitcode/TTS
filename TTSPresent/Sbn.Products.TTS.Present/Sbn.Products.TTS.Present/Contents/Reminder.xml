@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file Created with LeitnerBox 
+ Don't edit it manually
+-->
+<Reminder>
+  <Appointement ID="1" StartDate="" EndDate="" Title="" />
+  <Appointment ID="38" project="چلسه" title="جلسه" description="تست" isrepeat="False" isautostart="False" startDate="1396/09/19 09:00:00" endDate="1396/09/19 09:30:00" />
+</Reminder>

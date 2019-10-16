@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file Created with LeitnerBox 
+ Don't edit it manually
+-->
+<LeitnerBox>
+  <Setting>
+    <QuestionTextBox>LeftToRight</QuestionTextBox>
+    <AnswerTextBox>LeftToRight</AnswerTextBox>
+    <Date>Persian</Date>
+    <StartTime>02/12/2015 11:13:46</StartTime>
+  </Setting>
+  <Box ID="1">
+    <Part ID="1">
+    </Part>
+  </Box>
+  <Box ID="2">
+  </Box>
+  <Box ID="3">
+  </Box>
+  <Box ID="4" />
+  <Box ID="5" />
+  <DataBase>
+    <Word ID="131" Question="apple" Answer="سیب" Date="93-12-08" />
+  </DataBase>
+  <Words1100>
+    <Word1100 Question="voracious" Answer="پر خور – سیری ناپذیر" Date="93-12-10" />
+    <Word1100 Question="indiscriminate" Answer="بی رویه – کورکورانه – بی هدف" Date="93-12-10" />
+    <Word1100 Question="eminent" Answer="مشهور – برجسته – سرشناس" Date="93-12-10" />
+    <Word1100 Question="steeped" Answer="غرق در – سرشار از – آکنده از" Date="93-12-10" />
+    <Word1100 Question="replete" Answer="پر از – مملو از – سرشار از" Date="93-12-10" />
+    <Word1100 Question="abound" Answer="فراوان بودن – پر بودن از" Date="93-12-10" />
+    <Word1100 Question="technology" Answer="تکنولوژی – دانش فنی – فن آوری" Date="93-12-10" />
+    <Word1100 Question="prognosticate" Answer="پیش بینی کردن – پیش گویی کردن" Date="93-12-10" />
+    <Word1100 Question="automaton" Answer="آدم مکانیکی – ماشین خودکار" Date="93-12-10" />
+    <Word1100 Question="matron" Answer="زن سالمند – بانوی خانواده – خانم بزرگ" Date="93-12-10" />
+    <Word1100 Question="paradox" Answer="پارادوکس – تناقض گویی" Date="93-12-10" />
+    <Word1100 Question="realm" Answer="قلمرو – حوزه – حیطه" Date="93-12-10" />
+    <Word1100 Question="annals" Answer="سالنامه – تاریخچه" Date="93-12-10" />
+    <Word1100 Question="compound" Answer="افزودن – تشدید – بدتر کردن – وخیم کردن" Date="93-12-10" />
+    <Word1100 Question="tinge" Answer="رگه – ته رنگ – اثر – نشان" Date="93-12-10" />
+    <Word1100 Question="badger" Answer="سرزنش کردن – نق زدن" Date="93-12-10" />
+    <Word1100 Question="implore" Answer="التماس کردن – استدعا کردن" Date="93-12-10" />
+    <Word1100 Question="drudgery" Answer="کار شاق – سخت" Date="93-12-10" />
+    <Word1100 Question="interminable" Answer="تمام نشدنی – بی پایان" Date="93-12-10" />
+    <Word1100 Question="perceive" Answer="متوجه شدن – پی بردن" Date="93-12-10" />
+    <Word1100 Question="iaconic" Answer="موجز – کوتاه – کم گو" Date="93-12-10" />
+    <Word1100 Question="throng" Answer="جمعیت – جماعت – جمع کثیر" Date="93-12-10" />
+    <Word1100 Question="intrepid" Answer="شجاع – بی باک – جسور" Date="93-12-10" />
+    <Word1100 Question="accost" Answer="نزدیک شدن – مشتری جلب کردن" Date="93-12-10" />
+    <Word1100 Question="reticent" Answer="خود دار – تو دار – کم حرف" Date="93-12-10" />
+    <Word1100 Question="furtive" Answer="دزدکی – یواشکی – مخفیانه" Date="93-12-10" />
+    <Word1100 Question="felon" Answer="جنایتکار – جانی – تبهکار" Date="93-12-10" />
+    <Word1100 Question="plethora" Answer="کثرت – زیادی" Date="93-12-10" />
+    <Word1100 Question="hapless" Answer="نگون بخت – بد بخت" Date="93-12-10" />
+    <Word1100 Question="irate" Answer="خشمگین – عصبانی" Date="93-12-10" />
+    <Word1100 Question="pretext" Answer="عذر – بهانه – دستاویز" Date="93-12-10" />
+    <Word1100 Question="fabricate" Answer="جعل کردن – ساختن – سرهم کردن" Date="93-12-10" />
+    <Word1100 Question="adroit" Answer="ماهر – زرنگ – زیرک" Date="93-12-10" />
+    <Word1100 Question="gesticulate" Answer="با اشاره فهماندن" Date="93-12-10" />
+    <Word1100 Question="vigilant" Answer="هشیار – بیدار – مراقب" Date="93-12-10" />
+    <Word1100 Question="avid" Answer="مشتاق – علاقه مند" Date="93-12-10" />
+    <Word1100 Question="cajole" Answer="چاپلوسی – گول زدن" Date="93-12-10" />
+    <Word1100 Question="rudimentary" Answer="ابتدایی – مقدماتی – نا چیز" Date="93-12-10" />
+    <Word1100 Question="enhance" Answer="افزایش دادن – بالا بردن – تقویت کردن" Date="93-12-10" />
+    <Word1100 Question="nuance" Answer="اختلاف نظر – فرق جزئی" Date="93-12-10" />
+    <Word1100 Question="loathe" Answer="متنفر بودن از – بیزار" Date="93-12-10" />
+    <Word1100 Question="reprimand" Answer="توبیخ – بازخواست کردن" Date="93-12-10" />
+    <Word1100 Question="lackluster" Answer="خسته کننده – بی روح" Date="93-12-10" />
+    <Word1100 Question="caustic" Answer="طعنه آمیز – حرف تند – نیشدار" Date="93-12-10" />
+    <Word1100 Question="wrest" Answer="به زور گرفتن – پیچاندن – واداشتن" Date="93-12-10" />
+    <Word1100 Question="infamous" Answer="بدنام – رسوا – انگشت نما – ننگین" Date="93-12-10" />
+    <Word1100 Question="jostle" Answer="خوردن به – تنه زدن به – هل دادن" Date="93-12-10" />
+    <Word1100 Question="dupe" Answer="آدم ساده لوح – فریب خورده" Date="93-12-10" />
+    <Word1100 Question="incipient" Answer="آغازین – نخستین" Date="93-12-10" />
+    <Word1100 Question="inadvertent" Answer="بی توجهی – بی دقت" Date="93-12-10" />
+    <Word1100 Question="ominous" Answer="نحس – شوم – ترسناک" Date="93-12-10" />
+    <Word1100 Question="tremulous" Answer="مرتعش – لرزان – نگران" Date="93-12-10" />
+    <Word1100 Question="repudiate" Answer="تکذیب – انکار کردن – رد کردن" Date="93-12-10" />
+    <Word1100 Question="cessation" Answer="قطع – توقف – وقفه" Date="93-12-10" />
+    <Word1100 Question="bristle" Answer="سیخ شدن – ترسیدن – عصبانی شدن" Date="93-12-10" />
+    <Word1100 Question="euphemism" Answer="حسن تعبیر" Date="93-12-10" />
+    <Word1100 Question="mundane" Answer="دنیوی – مادی" Date="93-12-10" />
+    <Word1100 Question="incongruous" Answer="نا هماهنگ – ناسازگار" Date="93-12-10" />
+    <Word1100 Question="condolence" Answer="تسلیت – همدردی – دلداری" Date="93-12-10" />
+    <Word1100 Question="stipulate" Answer="شرط کردن – مشرط – قید کردن" Date="93-12-10" />
+    <Word1100 Question="alacrity" Answer="شور و شوق – نشاط" Date="93-12-10" />
+    <Word1100 Question="disdain" Answer="تحقیر – خوار" Date="93-12-10" />
+    <Word1100 Question="belligerent" Answer="پرخاشگر – جنگ طلب – خصمانه" Date="93-12-10" />
+    <Word1100 Question="intimidate" Answer="ترساندن – مرعوب کردن – تهدید کردن" Date="93-12-10" />
+    <Word1100 Question="feint" Answer="حمله انحرافی – فریب – ترفند" Date="93-12-10" />
+    <Word1100 Question="pugnacious" Answer="ستیزه جو – جنگجو" Date="93-12-10" />
+    <Word1100 Question="promulgate" Answer="رسما اعلام کردن – اشاعه دادن – ترویج کردن" Date="93-12-10" />
+    <Word1100 Question="brash" Answer="گستاخ – وقیح – بی ادب – پر رو" Date="93-12-10" />
+    <Word1100 Question="scoff" Answer="مسخره کردن – تمسخر کردن" Date="93-12-10" />
+    <Word1100 Question="belittle" Answer="تحقیر کردن – کوچک کردن" Date="93-12-10" />
+    <Word1100 Question="tangible" Answer="قابل لمس – لمس شدنی" Date="93-12-10" />
+    <Word1100 Question="aspirant" Answer="جاه طلب – بلند پرواز" Date="93-12-10" />
+    <Word1100 Question="dregs" Answer="پس مانده – رسوب – تفاله" Date="93-12-10" />
+    <Word1100 Question="frenzy" Answer="دیوانگی – جنون – شیدایی" Date="93-12-10" />
+    <Word1100 Question="scurrilous" Answer="توهین آمیز – موهن" Date="93-12-10" />
+    <Word1100 Question="rampant" Answer="شایع – بی امان – بی حد و حصر" Date="93-12-10" />
+    <Word1100 Question="inane" Answer="احمقانه – ابلهانه" Date="93-12-10" />
+    <Word1100 Question="ethics" Answer="اخلاق – اخلاقیات" Date="93-12-10" />
+    <Word1100 Question="concur" Answer="موافق بودن – سازگار بودن" Date="93-12-10" />
+    <Word1100 Question="clandestine" Answer="مخفیانه – سری – پنهانی" Date="93-12-10" />
+    <Word1100 Question="flagrant" Answer="فاحش – آشکار – بی حیا – وقیح" Date="93-12-10" />
+    <Word1100 Question="admonish" Answer="ملامت – هشدار دادن – اخطار دادن" Date="93-12-10" />
+    <Word1100 Question="duress" Answer="فشار – تهدید – زور" Date="93-12-10" />
+    <Word1100 Question="culprit" Answer="مجرم – مقصر" Date="93-12-10" />
+    <Word1100 Question="inexorable" Answer="یک دنده – سر سخت – رام نشدنی" Date="93-12-10" />
+    <Word1100 Question="egregious" Answer="فاحش – آشکار – نمایان" Date="93-12-10" />
+    <Word1100 Question="distraught" Answer="شوریده – ناراحت – پریشان" Date="93-12-10" />
+    <Word1100 Question="duplicity" Answer="دو رویی – دو رنگی -ریا" Date="93-12-10" />
+    <Word1100 Question="acrimonious" Answer="تند – گزنده – تلخ" Date="93-12-10" />
+    <Word1100 Question="paucity" Answer="کمبود – کمی" Date="93-12-10" />
+    <Word1100 Question="elicit" Answer="بیرون کشیدن – در آوردن – استنباط کردن" Date="93-12-10" />
+    <Word1100 Question="pernicious" Answer="مخرب – مضر – زیان بار – خطرناک" Date="93-12-10" />
+    <Word1100 Question="tolerate" Answer="تحمل کردن – تاب آوردن" Date="93-12-10" />
+    <Word1100 Question="construe" Answer="استنباط کردن – تعبیر کردن" Date="93-12-10" />
+    <Word1100 Question="impunity" Answer="بخشودگی – مصونیت – معافیت" Date="93-12-10" />
+    <Word1100 Question="effluent" Answer="ثروتمند – غنی – فراوان" Date="93-12-10" />
+    <Word1100 Question="feasible" Answer="ممکن – عملی شدنی" Date="93-12-10" />
+    <Word1100 Question="discern" Answer="تشخیص دادن – دیدن" Date="93-12-10" />
+    <Word1100 Question="sally" Answer="شبیخون زدن – حمله کردن" Date="93-12-10" />
+    <Word1100 Question="consternation" Answer="هراس – دلهره – ترس" Date="93-12-10" />
+    <Word1100 Question="precocious" Answer="پیش افتاده – استثنایی" Date="93-12-10" />
+    <Word1100 Question="perfunctory" Answer="سرسری – سطحی – فرمالیته" Date="93-12-10" />
+    <Word1100 Question="chagrin" Answer="رنجش – تاسف – تلخ" Date="93-12-10" />
+    <Word1100 Question="perverse" Answer="خود سر – لجوج" Date="93-12-10" />
+    <Word1100 Question="deride" Answer="مسخره کردن – ریشخند زدن" Date="93-12-10" />
+    <Word1100 Question="disparage" Answer="ناچیز – کوچک شمردن – تحقیر کردن" Date="93-12-10" />
+    <Word1100 Question="laudable" Answer="ستوده – پسندیده – قابل ستایش" Date="93-12-10" />
+    <Word1100 Question="fiasco" Answer="ناکامی – شکست – مایه ی آبرو ریزی" Date="93-12-10" />
+    <Word1100 Question="masticate" Answer="جویدن" Date="93-12-10" />
+    <Word1100 Question="eschew" Answer="دوری جستن از – پرهیز" Date="93-12-10" />
+    <Word1100 Question="quell" Answer="سرکوب کردن – پایان دادن" Date="93-12-10" />
+    <Word1100 Question="voluble" Answer="پر حرف – وراج" Date="93-12-10" />
+    <Word1100 Question="confidant" Answer="محرم اسرار – راز دار" Date="93-12-10" />
+    <Word1100 Question="obsolescence" Answer="کهنگی – زوال – از مد افتادگی" Date="93-12-10" />
+    <Word1100 Question="dubious" Answer="مشکوک – مردد – دو دل" Date="93-12-10" />
+    <Word1100 Question="implacable" Answer="سر سخت – مصمم – سازش ناپذیر" Date="93-12-10" />
+    <Word1100 Question="paroxysm" Answer="هجوم – غلبه – حمله" Date="93-12-10" />
+    <Word1100 Question="reprehensible" Answer="قابل سرزنش – سزاوار ملامت" Date="93-12-10" />
+    <Word1100 Question="jurisdiction" Answer="حق قضاوت – اختیار – اختیارات قانونی" Date="93-12-10" />
+    <Word1100 Question="skirmish" Answer="در گیر – زد و خورد – بگو مگو" Date="93-12-10" />
+    <Word1100 Question="harass" Answer="اذیت کردن – به ستوه آمدن – مزاحم شدن" Date="93-12-10" />
+    <Word1100 Question="monolithic" Answer="یکپارچه – منسجم – یکدست – سرسخت" Date="93-12-10" />
+    <Word1100 Question="arbitrary" Answer="دلبخواهی – استبدادی – خود سرانه" Date="93-12-10" />
+    <Word1100 Question="indigent" Answer="فقیر – تنگدست" Date="93-12-10" />
+    <Word1100 Question="fray" Answer="دعوا – نزاع" Date="93-12-10" />
+    <Word1100 Question="stymie" Answer="تو هچل انداختن – خنثی کردن – جلوگیری" Date="93-12-10" />
+    <Word1100 Question="effigy" Answer="آدمک – تمثال – شمایل" Date="93-12-10" />
+    <Word1100 Question="flout" Answer="مسخره کردن – تحقیر کردن" Date="93-12-10" />
+    <Word1100 Question="cognizant" Answer="آگاه – مطلع – واقف به" Date="93-12-10" />
+    <Word1100 Question="turbulent" Answer="متلاطم – خروشان – طوفانی" Date="93-12-10" />
+    <Word1100 Question="terminate" Answer="پایان دادن – خاتمه دادن" Date="93-12-10" />
+    <Word1100 Question="forthwith" Answer="فورا – بلافاصله – بی درنگ" Date="93-12-10" />
+    <Word1100 Question="exacerbate" Answer="خشمگین – عصبانی" Date="93-12-10" />
+    <Word1100 Question="revert" Answer="بازگشتن – برگشتن" Date="93-12-10" />
+    <Word1100 Question="oust" Answer="بیرون کردن – اخراج کردن" Date="93-12-10" />
+    <Word1100 Question="emaciated" Answer="لاغر – نحیف – ضعیف" Date="93-12-10" />
+    <Word1100 Question="surge" Answer="هجوم آوردن – سرازیر شدن" Date="93-12-10" />
+    <Word1100 Question="tranquil" Answer="آرام – راحت – بی دغدغه" Date="93-12-10" />
+    <Word1100 Question="sanctuary" Answer="مکان مقدس – حرم – محل تحصن" Date="93-12-10" />
+    <Word1100 Question="ascend" Answer="بالا رفتن – صعود کردن" Date="93-12-10" />
+    <Word1100 Question="malnutrition" Answer="بد غذایی" Date="93-12-10" />
+    <Word1100 Question="afflict" Answer="ناراحت کردن – رنج دادن" Date="93-12-10" />
+    <Word1100 Question="besiege" Answer="محاصره کردن – احاطه کردن" Date="93-12-10" />
+    <Word1100 Question="privation" Answer="محرومیت – فقر" Date="93-12-10" />
+    <Word1100 Question="sinister" Answer="شوم – نحس" Date="93-12-10" />
+    <Word1100 Question="ubiquitous" Answer="همه جا حاضر – همیشه موجود" Date="93-12-10" />
+    <Word1100 Question="remote" Answer="دور دست – دور افتاده" Date="93-12-10" />
+    <Word1100 Question="thwart" Answer="ایجاد مانع کردن برای – خنثی کردن – نقش بر آب کردن" Date="93-12-10" />
+    <Word1100 Question="harbinger" Answer="طلیعه – پیام آور – منادی" Date="93-12-10" />
+    <Word1100 Question="malignant" Answer="خطرناک – مهلک – کشنده" Date="93-12-10" />
+    <Word1100 Question="excruciating" Answer="کشنده – عذاب آور – دیوانه کننده" Date="93-12-10" />
+    <Word1100 Question="respite" Answer="استراحت – امان – مهلت" Date="93-12-10" />
+    <Word1100 Question="fretful" Answer="نگران – مضطرب – ناراحت" Date="93-12-10" />
+    <Word1100 Question="succumb" Answer="تسلیم شدن – به زانو در آمدن" Date="93-12-10" />
+    <Word1100 Question="impresario" Answer="مدیر گروه – مدیر اجرایی" Date="93-12-10" />
+    <Word1100 Question="extortion" Answer="اخاذی – زورگویی" Date="93-12-10" />
+    <Word1100 Question="adverse" Answer="مخالف – ناسازگار" Date="93-12-10" />
+    <Word1100 Question="asset" Answer="دارایی – اموال – املاک – سرمایه" Date="93-12-10" />
+    <Word1100 Question="bigot" Answer="متعصب – متحجر – کوته فکر" Date="93-12-10" />
+    <Word1100 Question="blatant" Answer="وقیحانه – بی شرمانه" Date="93-12-10" />
+    <Word1100 Question="entourage" Answer="همراهان – اطرافیان – دسته – گروه" Date="93-12-10" />
+    <Word1100 Question="virulent" Answer="مهلک – کشنده – زهر آگین" Date="93-12-10" />
+    <Word1100 Question="venom" Answer="زهر – سم – کینه – نفرت" Date="93-12-10" />
+    <Word1100 Question="spew" Answer="بالا آوردن – استفراغ کردن – بیرون ریختن" Date="93-12-10" />
+    <Word1100 Question="loath" Answer="بی میل – بیزار – مخالف" Date="93-12-10" />
+    <Word1100 Question="solicit" Answer="درخواست کردن – تقاضا کردن" Date="93-12-10" />
+    <Word1100 Question="astute" Answer="زرنگ – زبل – ناقلا – تیز" Date="93-12-10" />
+    <Word1100 Question="advocate" Answer="حمایت کردن از – دفاع کردن از – جانبداری" Date="93-12-10" />
+    <Word1100 Question="ineffectual" Answer="ناتوان – نالایق – بی عرضه" Date="93-12-10" />
+    <Word1100 Question="scrutinize" Answer="دقیقا – با دقت – مو شکافانه" Date="93-12-10" />
+    <Word1100 Question="nefarious" Answer="شریر – شرور – زشت – خلاف قانون" Date="93-12-10" />
+    <Word1100 Question="amicable" Answer="دوستانه – مسالمت آمیز – صلح جویانه" Date="93-12-10" />
+    <Word1100 Question="vexatious" Answer="مشکل آفرین – پر دردسر – مزاحم" Date="93-12-10" />
+    <Word1100 Question="malady" Answer="بیماری – ناراحتی – درد" Date="93-12-10" />
+    <Word1100 Question="inclement" Answer="نامساعد – بد – سرد – توفانی" Date="93-12-10" />
+    <Word1100 Question="peruse" Answer="به دقت خواندن – مرور کردن" Date="93-12-10" />
+    <Word1100 Question="premonition" Answer="دلشوره – پیش آگاهی – خبر – گواهی دل" Date="93-12-10" />
+    <Word1100 Question="desist" Answer="دست کشیدن از – دست برداشتن از" Date="93-12-10" />
+    <Word1100 Question="recoil" Answer="پس رفتن – عقب رفتن – لگد زدن" Date="93-12-10" />
+    <Word1100 Question="pertinent" Answer="مربوط – مناسب – ذیربط – شایسته" Date="93-12-10" />
+    <Word1100 Question="mastiff" Answer="سگ نگهبان" Date="93-12-10" />
+    <Word1100 Question="obsess" Answer="آزار دهنده – ایجاد عقده روحی روانی – وسواس" Date="93-12-10" />
+    <Word1100 Question="doleful" Answer="ماتمزده – غمگین – غم انگیز" Date="93-12-10" />
+    <Word1100 Question="wan" Answer="رنگ پریده – بیمار" Date="93-12-10" />
+    <Word1100 Question="histrionics" Answer="تظاهر – رفتار ساختگی – ظاهر سازی" Date="93-12-10" />
+    <Word1100 Question="elusive" Answer="دست نیافتنی – گریز پا – مبهم – پیچیده" Date="93-12-10" />
+    <Word1100 Question="frustrate" Answer="نقش بر آب کردن – خنثی کردن – باطل کردن" Date="93-12-10" />
+    <Word1100 Question="symptomatic" Answer="نشانه بیماری – حاکی از علائم مرض" Date="93-12-10" />
+    <Word1100 Question="interject" Answer="گنجاندن – گفتن – پیش گشیدن – مداخله کردن" Date="93-12-10" />
+    <Word1100 Question="inert" Answer="بی حرکت – ساکن – سست" Date="93-12-10" />
+    <Word1100 Question="salient" Answer="برجسته – مهم – اصلی" Date="93-12-10" />
+    <Word1100 Question="imminent" Answer="قریب الوقوع – در شرف وقوع" Date="93-12-10" />
+    <Word1100 Question="squeamish" Answer="حساس – زود رنج – نازک نارنجی – سخت گیر" Date="93-12-10" />
+    <Word1100 Question="engross" Answer="مجذوب کردن – جلب کردن" Date="93-12-10" />
+    <Word1100 Question="poignant" Answer="اندوه بار – دردناک – تاثیر انگیز – تکان دهنده" Date="93-12-10" />
+    <Word1100 Question="inundate" Answer="زیر آب بردن – غرق کردن" Date="93-12-10" />
+    <Word1100 Question="fruitless" Answer="بی بار – بی ثمر – بی نتیجه" Date="93-12-10" />
+    <Word1100 Question="garbled" Answer="مغشوش – درهم برهم – تحریف شده" Date="93-12-10" />
+    <Word1100 Question="sanguine" Answer="خوش بین – امیدوار – خوش بینانه" Date="93-12-10" />
+    <Word1100 Question="phlegmatic" Answer="خویشتن دار – خونسرد – آرام" Date="93-12-10" />
+    <Word1100 Question="corroborate" Answer="تایید کردن – اثبات کردن – تقویت کردن" Date="93-12-10" />
+    <Word1100 Question="comprehensive" Answer="جامع – مفصل – کامل – فراگیر" Date="93-12-10" />
+    <Word1100 Question="zealous" Answer="مشتاق – علاقه مند" Date="93-12-10" />
+    <Word1100 Question="coerce" Answer="مجبور کردن – ناچار کردن – واداشتن" Date="93-12-10" />
+    <Word1100 Question="elapse" Answer="گذشتن – سپری شدن" Date="93-12-10" />
+    <Word1100 Question="meticulous" Answer="بسیار دقیق" Date="93-12-10" />
+    <Word1100 Question="domicile" Answer="خانه – مسکن – منزل" Date="93-12-10" />
+    <Word1100 Question="lax" Answer="آسان گیری – بی توجه – بی دقت" Date="93-12-10" />
+    <Word1100 Question="sporadic" Answer="پراکنده – متفرق" Date="93-12-10" />
+    <Word1100 Question="rash" Answer="عجولانه – شتابزده – نسنجیده" Date="93-12-10" />
+    <Word1100 Question="conjecture" Answer="حدس – گمان – فرض" Date="93-12-10" />
+    <Word1100 Question="obviate" Answer="برطرف کردن – مرتفع ساختن" Date="93-12-10" />
+    <Word1100 Question="lurid" Answer="هولناک – تکان دهنده – ترسناک" Date="93-12-10" />
+    <Word1100 Question="quip" Answer="لطیفه – بذله – متلک" Date="93-12-10" />
+    <Word1100 Question="diatribe" Answer="تند – سخن تلخ – درشتی" Date="93-12-10" />
+    <Word1100 Question="inhibition" Answer="کمرویی – خویشتن داری" Date="93-12-10" />
+    <Word1100 Question="fortuitous" Answer="اتفاقی – تصادفی" Date="93-12-10" />
+    <Word1100 Question="incoherent" Answer="فاقد انسجام – گسیخته – آشفته" Date="93-12-10" />
+    <Word1100 Question="nominal" Answer="اندک – ناچیز – صوری – ظاهری" Date="93-12-10" />
+    <Word1100 Question="expunge" Answer="حذف کردن – پاک کردن" Date="93-12-10" />
+    <Word1100 Question="flamboyant" Answer="پر زرق و برق – رنگارنگ" Date="93-12-10" />
+    <Word1100 Question="ilk" Answer="نوع – جور – قماش – دسته" Date="93-12-10" />
+    <Word1100 Question="prestigious" Answer="معتبر – صاحب نام – بلند آوازه" Date="93-12-10" />
+    <Word1100 Question="placard" Answer="شعار نوشته – پلاکارد – دیوار آویز" Date="93-12-10" />
+    <Word1100 Question="integral" Answer="لازم – اساسی – ضروری" Date="93-12-10" />
+    <Word1100 Question="remuneration" Answer="مزد – اجرت – دستمزد" Date="93-12-10" />
+    <Word1100 Question="anathema" Answer="حکم تکفیر – لعن – مایه تنفر" Date="93-12-10" />
+    <Word1100 Question="schism" Answer="شکاف – دودستگی – اختلاف" Date="93-12-10" />
+    <Word1100 Question="utopia" Answer="مدینه فاضله – آرمان شهر – باکجا آباد" Date="93-12-10" />
+    <Word1100 Question="truncated" Answer="کوتاه شده – مختصر شده – سانسور شده" Date="93-12-10" />
+    <Word1100 Question="jaunty" Answer="شاد – سرحال – شنگول" Date="93-12-10" />
+    <Word1100 Question="fractious" Answer="کج خلق – بد خلق – عبوس" Date="93-12-10" />
+    <Word1100 Question="ostentatious" Answer="متظاهر – خودنما – نمایشی" Date="93-12-10" />
+    <Word1100 Question="subjugate" Answer="مغلوب کردن – مقهور ساختن – شکست دادن" Date="93-12-10" />
+    <Word1100 Question="ultimate" Answer="نهایی – غایی – آخرین" Date="93-12-10" />
+    <Word1100 Question="eventuate" Answer="منجر شدن به – رخ دادن – اتفاق افتادن" Date="93-12-10" />
+    <Word1100 Question="emit" Answer="بیرون دادن – خارج کردن – بیرون ریختن" Date="93-12-10" />
+    <Word1100 Question="importune" Answer="مصرانه خواستن از – اصرار کردن به" Date="93-12-10" />
+    <Word1100 Question="incontrovertible" Answer="بی چون و چرا – مسلم – غیر قابل انکار" Date="93-12-10" />
+    <Word1100 Question="surreptitious" Answer="مخفیانه – پنهانی – دزدکی – یواشکی" Date="93-12-10" />
+    <Word1100 Question="haven" Answer="پناهگاه – جای دنج – گوشه ی امن" Date="93-12-10" />
+    <Word1100 Question="subterranean" Answer="زیر زمینی – مخفی – نهفته" Date="93-12-10" />
+    <Word1100 Question="viable" Answer="عملی – ممکن – شدنی" Date="93-12-10" />
+    <Word1100 Question="premise" Answer="فرض – مقدمه – قضایا" Date="93-12-10" />
+    <Word1100 Question="jeopardize" Answer="به مخاطره اندختن – به خطر اندختن" Date="93-12-10" />
+    <Word1100 Question="incredulous" Answer="دیر باور – شکاک – حاکی از ناباوری" Date="93-12-10" />
+    <Word1100 Question="permeate" Answer="فراگیر – پخش شدن – رخنه کردن" Date="93-12-10" />
+    <Word1100 Question="propitious" Answer="مناسب – مساعد – خجسته – فرخنده" Date="93-12-10" />
+    <Word1100 Question="surmise" Answer="حدس زدن – گمان بردن" Date="93-12-10" />
+    <Word1100 Question="curtailn" Answer="کوتاه کردن – مختصر کردن – کاستن از" Date="93-12-10" />
+    <Word1100 Question="repress" Answer="سرکوب کردن – واپس زدن – فرو خوردن" Date="93-12-10" />
+    <Word1100 Question="eryptic" Answer="گیج کننده – مبهم – رمزی – سری – اسرار آمیز" Date="93-12-10" />
+    <Word1100 Question="inchoate" Answer="تازه شکل گرفته – جوان – خام" Date="93-12-10" />
+    <Word1100 Question="aspire" Answer="آرزو کردن – اشتیاق داشتن – خواستن" Date="93-12-10" />
+    <Word1100 Question="inveigh" Answer="حمله کردن به – بد گفتن از – بد گویی کردن از" Date="93-12-10" />
+    <Word1100 Question="nettle" Answer="رنجاندن – آزرده کردن – عصبانی کردن" Date="93-12-10" />
+    <Word1100 Question="overt" Answer="آشکار – علنی – واضح" Date="93-12-10" />
+    <Word1100 Question="relegate" Answer="پایین آوردن – تنزل دادن – منتقل کردن" Date="93-12-10" />
+    <Word1100 Question="supine" Answer="به پشت خوابیده" Date="93-12-10" />
+    <Word1100 Question="mammoth" Answer="عظیم – بسیار بزرگ – غول پیکر" Date="93-12-10" />
+    <Word1100 Question="repulse" Answer="رد کردن – سرباز زدن – دفع کردن" Date="93-12-10" />
+    <Word1100 Question="havoc" Answer="خرابی – ویرانی – خسارت" Date="93-12-10" />
+    <Word1100 Question="raze" Answer="منهدم کردن – ویران کردن" Date="93-12-10" />
+    <Word1100 Question="lothal" Answer="مهلک – کشنده – مرگبار" Date="93-12-10" />
+    <Word1100 Question="scurry" Answer="دویدن – شتافتن" Date="93-12-10" />
+    <Word1100 Question="incisive" Answer="برنده – گزنده – صریح – بی پرده – روشن" Date="93-12-10" />
+    <Word1100 Question="precipitate" Answer="عجله کردن – تسریع کردن – جلو انداختن" Date="93-12-10" />
+    <Word1100 Question="stereotype" Answer="کلیشه ای – گفتار تکراری" Date="93-12-10" />
+    <Word1100 Question="stentorian" Answer="رسا – بسیار بلند" Date="93-12-10" />
+    <Word1100 Question="singular" Answer="فوق العاده – خارق العاده – برجسته" Date="93-12-10" />
+    <Word1100 Question="valor" Answer="شجاعت – دلیری" Date="93-12-10" />
+    <Word1100 Question="bias" Answer="تعصب – پیش داوری – جبهه گیری" Date="93-12-10" />
+    <Word1100 Question="accomplice" Answer="همدست – شریک جرم" Date="93-12-10" />
+    <Word1100 Question="recant" Answer="توبه کردن از – اظهار ندامت کردن" Date="93-12-10" />
+    <Word1100 Question="culpable" Answer="مقصر – مجرم – گناهکار" Date="93-12-10" />
+    <Word1100 Question="abrogate" Answer="لغو کردن – باطل کردن – منسوخ کردن" Date="93-12-10" />
+    <Word1100 Question="alleged" Answer="اظهار شده – ادعا شده – متهم" Date="93-12-10" />
+    <Word1100 Question="sinecure" Answer="شغل – مقام تشریفاتی" Date="93-12-10" />
+    <Word1100 Question="complicity" Answer="همدستی – تبانی – شرکت" Date="93-12-10" />
+    <Word1100 Question="liquidation" Answer="قتل – کشتن" Date="93-12-10" />
+    <Word1100 Question="access" Answer="راه رسیدن – ورود – دسترسی – دستیابی" Date="93-12-10" />
+    <Word1100 Question="invalidate" Answer="بی اعتبار کردن – باطل کردن" Date="93-12-10" />
+    <Word1100 Question="preclude" Answer="مانع شدن – جلوگیری کردن از" Date="93-12-10" />
+    <Word1100 Question="persevere" Answer="پشتکار داشتن – استقامت کردن – ادامه یافتن" Date="93-12-10" />
+    <Word1100 Question="landmark" Answer="رویداد بزرگ – تاریخی – مهم – نقطه ی عطف" Date="93-12-10" />
+    <Word1100 Question="extrinsic" Answer="بیرونی – خارجی – غیر ذاتی – غیر ضروری" Date="93-12-10" />
+    <Word1100 Question="declaim" Answer="دکلمه کردن – با احساس سخن گفتن" Date="93-12-10" />
+    <Word1100 Question="fetter" Answer="مقید کردن – محدود کردن – دست و پاگیر شدن" Date="93-12-10" />
+    <Word1100 Question="paragon" Answer="الگو – سرمشق – نمونه عالی" Date="93-12-10" />
+    <Word1100 Question="nomadic" Answer="عشیره ای – ایلیاتی – چادر نشینی – خانه به دوش" Date="93-12-10" />
+    <Word1100 Question="asperity" Answer="خشونت – تندی – درشتی" Date="93-12-10" />
+    <Word1100 Question="epithet" Answer="صفت – لقب – عنوان" Date="93-12-10" />
+    <Word1100 Question="controversial" Answer="بحث انگیز – جنجالی – اختلاف" Date="93-12-10" />
+    <Word1100 Question="indigenous" Answer="بومی – ذاتی – فطری – طبیعی" Date="93-12-10" />
+    <Word1100 Question="gregarious" Answer="اجتماعی – معاشرتی – خونگرم" Date="93-12-10" />
+    <Word1100 Question="habitat" Answer="زیستگاه – بوم" Date="93-12-10" />
+    <Word1100 Question="cursory" Answer="سرسری – شتاب زده – سطحی" Date="93-12-10" />
+    <Word1100 Question="interloper" Answer="مزاحم – فضول – نخود هر آش" Date="93-12-10" />
+    <Word1100 Question="prolific" Answer="پر بار – پر کار – فعال" Date="93-12-10" />
+    <Word1100 Question="bulwark" Answer="حافظ – محافظ – مدافع – نگهبان" Date="93-12-10" />
+    <Word1100 Question="sedentary" Answer="نشستنی – نشسته – کم تحرک – بی تحرک" Date="93-12-10" />
+    <Word1100 Question="frugal" Answer="صرفه جو – صرفه جویانه – مقتصدانه" Date="93-12-10" />
+    <Word1100 Question="antithesis" Answer="نقطه ی متقابل – ضد – عکس – تضاد" Date="93-12-10" />
+    <Word1100 Question="altruistic" Answer="نوع دوستانه – ایثار گرانه" Date="93-12-10" />
+    <Word1100 Question="embellish" Answer="تزیین کردن – زینت دادن" Date="93-12-10" />
+    <Word1100 Question="cache" Answer="مخفیگاه – نهانگاه" Date="93-12-10" />
+    <Word1100 Question="coterie" Answer="محفل – حلقه – گروه" Date="93-12-10" />
+    <Word1100 Question="cupidity" Answer="حرص – آز – طمع" Date="93-12-10" />
+    <Word1100 Question="virtuosity" Answer="هنرمندی – مهارت – استادی" Date="93-12-10" />
+    <Word1100 Question="temerity" Answer="جسارت – گستاخی – وقاحت" Date="93-12-10" />
+    <Word1100 Question="amorous" Answer="عاشقانه – احساساتی – رمانتیک" Date="93-12-10" />
+    <Word1100 Question="progeny" Answer="فرزندان – اولاد – بچه ها" Date="93-12-10" />
+    <Word1100 Question="saturate" Answer="خیساندن – کاملا خیس کردن – اشباع کردن" Date="93-12-10" />
+    <Word1100 Question="perpetrate" Answer="مرتکب شدن – عمل زشت انجام دادن" Date="93-12-10" />
+    <Word1100 Question="consummate" Answer="کامل – تمام عیار – تمام و کامل – ماهر" Date="93-12-10" />
+    <Word1100 Question="subterfuge" Answer="بهانه – ترفند – تزویر – حیله" Date="93-12-10" />
+    <Word1100 Question="concoct" Answer="سر هم کردن – جور کردن – از خود در آوردن" Date="93-12-10" />
+    <Word1100 Question="fallacious" Answer="گمراه کننده – فریبنده – اشتباه" Date="93-12-10" />
+    <Word1100 Question="manifold" Answer="متعدد – بسیار زیاد – متنوع" Date="93-12-10" />
+    <Word1100 Question="assiduous" Answer="سخت کوش – کوشا – با پشتکار" Date="93-12-10" />
+    <Word1100 Question="impeccable" Answer="بی عیب – بی نقص – کامل" Date="93-12-10" />
+    <Word1100 Question="fraught" Answer="نگران کننده – دلهره آور" Date="93-12-10" />
+    <Word1100 Question="resourceful" Answer="کاردان – با تدبیر – مبتکر" Date="93-12-10" />
+    <Word1100 Question="murky" Answer="تاریک – تار – مبهم – غم انگیز – کثیف" Date="93-12-10" />
+    <Word1100 Question="component" Answer="تشکیل دهنده – سازنده – مولفه – عنصر" Date="93-12-10" />
+    <Word1100 Question="hoax" Answer="حقه – کلک – دروغ" Date="93-12-10" />
+    <Word1100 Question="labyrinth" Answer="پیچ در پیچ – تو در تو – هزار تو" Date="93-12-10" />
+    <Word1100 Question="evaluate" Answer="ارزیابی کردن – برآورد کردن – سنجیدن" Date="93-12-10" />
+    <Word1100 Question="exult" Answer="ذوق کردن – شادی کردن" Date="93-12-10" />
+    <Word1100 Question="attest" Answer="اثبات کردن – گواهی کردن – تصدیق کردن" Date="93-12-10" />
+    <Word1100 Question="gullible" Answer="ساده لوح – ساده – هالو – زودباور" Date="93-12-10" />
+    <Word1100 Question="deploy" Answer="مستقر شدن – موضع گرفتن – وارد میدان کردن" Date="93-12-10" />
+    <Word1100 Question="enigma" Answer="معما – چیستان" Date="93-12-10" />
+    <Word1100 Question="abortive" Answer="بیهوده – بی نتیجه – بی حاصل" Date="93-12-10" />
+    <Word1100 Question="modify" Answer="تغییر مختصر دادن – اصلاح کردن" Date="93-12-10" />
+    <Word1100 Question="accommodate" Answer="سازگار کردن با – وفق دادن با – سازگار شدن با" Date="93-12-10" />
+    <Word1100 Question="spontaneous" Answer="خود جوش – خود به خود – خود انگیخته" Date="93-12-10" />
+    <Word1100 Question="innate" Answer="ذاتی – فطری – خدادادی – مادر زاد" Date="93-12-10" />
+    <Word1100 Question="veneer" Answer="پوشش – لایه – روکش" Date="93-12-10" />
+    <Word1100 Question="myriad" Answer="تعداد زیادی – صدها – هزاران – میلیون ها" Date="93-12-10" />
+    <Word1100 Question="urbane" Answer="مبادی آداب – با نزاکت – مودبانه" Date="93-12-10" />
+    <Word1100 Question="crave" Answer="آرزوی چیزی را داشتن – مردن برای – خواستن" Date="93-12-10" />
+    <Word1100 Question="irrelevant" Answer="نامربوط – بی ربط" Date="93-12-10" />
+    <Word1100 Question="deem" Answer="معتقد بودن – انگاشتن – تصور کردن" Date="93-12-10" />
+    <Word1100 Question="inherent" Answer="ذاتی – فطری" Date="93-12-10" />
+    <Word1100 Question="buff" Answer="طرفدار – سینه چاک – کشته مرده" Date="93-12-10" />
+    <Word1100 Question="romp" Answer="بازی کردن – جست و خیز کردن – ورجه ورجه کردن" Date="93-12-10" />
+    <Word1100 Question="latent" Answer="پنهان – نهان – خفته" Date="93-12-10" />
+    <Word1100 Question="tortuous" Answer="پر پیچ و خم – پیچ در پیچ – مارپیچ" Date="93-12-10" />
+    <Word1100 Question="itinerant" Answer="دوره گرد – سیار" Date="93-12-10" />
+    <Word1100 Question="peregrination" Answer="مسافرت – سفر" Date="93-12-10" />
+    <Word1100 Question="conjugal" Answer="زناشویی – زن و شوهر" Date="93-12-10" />
+    <Word1100 Question="barometer" Answer="فشار سنج – جو سنج" Date="93-12-10" />
+    <Word1100 Question="amnesty" Answer="عفو عمومی – عفو" Date="93-12-10" />
+    <Word1100 Question="expatriate" Answer="مهاجر – مقیم" Date="93-12-10" />
+    <Word1100 Question="expatriate" Answer="تبعید کردن" Date="93-12-10" />
+    <Word1100 Question="exonerate" Answer="تبرئه کردن – مبرا کردن – بی گناه دانستن" Date="93-12-10" />
+    <Word1100 Question="fiat" Answer="حکم – فرمان – دستور" Date="93-12-10" />
+    <Word1100 Question="mendacious" Answer="دروغ – نادرست – بی اساس – کاذب" Date="93-12-10" />
+    <Word1100 Question="megalomania" Answer="خود بزرگ بینی" Date="93-12-10" />
+    <Word1100 Question="profligate" Answer="اسراف کارانه – بی رویه – بی حیا – بی شرم – فاسد" Date="93-12-10" />
+    <Word1100 Question="strife" Answer="درگیری – کشمکش – نزاع – مبارزه" Date="93-12-10" />
+    <Word1100 Question="legion" Answer="لشکر – تعداد زیادی – انبوه" Date="93-12-10" />
+    <Word1100 Question="coup" Answer="کودتا – ضربه ی کاری – اقدام قاطع" Date="93-12-10" />
+    <Word1100 Question="parsimonious" Answer="خسیس – ممسک – بخیل" Date="93-12-10" />
+    <Word1100 Question="pecuniary" Answer="مادی – مالی – پولی" Date="93-12-10" />
+    <Word1100 Question="dismantle" Answer="باز کردن – پیاده کردن – اوراق کردن" Date="93-12-10" />
+    <Word1100 Question="sumptuous" Answer="مجلل – شاهانه – باشکوه – فاخر" Date="93-12-10" />
+    <Word1100 Question="underwrite" Answer="پشت نویسی کردن – امضا کردن" Date="93-12-10" />
+    <Word1100 Question="restrictive" Answer="محدود کننده – بازدارنده" Date="93-12-10" />
+    <Word1100 Question="balk" Answer="دو دل بودن – پا پس کشیدن – نپذیرفتن" Date="93-12-10" />
+    <Word1100 Question="blunt" Answer="رک – بی پرده – صریح" Date="93-12-10" />
+    <Word1100 Question="nostalgia" Answer="حسرت گذشته – غم غربت – احساس غربت" Date="93-12-10" />
+    <Word1100 Question="rife" Answer="شایع – رایج – گسترده – متداول" Date="93-12-10" />
+    <Word1100 Question="revile" Answer="دشنام دادن به – ناسزا گفتن به – عیب گویی کردن از" Date="93-12-10" />
+    <Word1100 Question="reviled" Answer="منفور" Date="93-12-10" />
+    <Word1100 Question="derogatory" Answer="اهانت آمیز – توهین آمیز – موهن" Date="93-12-10" />
+    <Word1100 Question="indict" Answer="اعلام جرم کردن علیه – متهم کردن به" Date="93-12-10" />
+    <Word1100 Question="nebulous" Answer="مغشوش – درهم برهم – آشفته" Date="93-12-10" />
+    <Word1100 Question="pesky" Answer="مزاحم – موذی – ناخوشایند" Date="93-12-10" />
+    <Word1100 Question="redolent" Answer="خوشبو – معطر" Date="93-12-10" />
+    <Word1100 Question="repose" Answer="حالت استراحت – خواب – آرامش" Date="93-12-10" />
+    <Word1100 Question="omnivorous" Answer="همه چیز خوار – همه چیز دوست" Date="93-12-10" />
+    <Word1100 Question="disparate" Answer="متفاوت – مختلف – بی شباهت – ناهمخوان" Date="93-12-10" />
+    <Word1100 Question="abstemious" Answer="صرفه جو – اعتدال گر – معتدل – میانه رو" Date="93-12-10" />
+    <Word1100 Question="extant" Answer="موجود – باقی – بازمانده" Date="93-12-10" />
+    <Word1100 Question="vicissitude" Answer="فراز و نشیب – ناملایمات – پستی و بلندی" Date="93-12-10" />
+    <Word1100 Question="edifice" Answer="عمارت – بنای مجلل" Date="93-12-10" />
+    <Word1100 Question="sultry" Answer="دم کرده – گرم و مرطوب – شرجی" Date="93-12-10" />
+    <Word1100 Question="trenchant" Answer="قاطع – کوبنده – قوی – صریح – بی پرده" Date="93-12-10" />
+    <Word1100 Question="puissant" Answer="مقتدر – قوی – با نفوذ" Date="93-12-10" />
+    <Word1100 Question="unabated" Answer="سیری ناپذیر – کاهش پذیر – بی وقفه ادامه دادن" Date="93-12-10" />
+    <Word1100 Question="maudlin" Answer="احساساتی – دلتنگ – سوزناک" Date="93-12-10" />
+    <Word1100 Question="levity" Answer="سبک سری – لودگی – دمدمی مزاجی" Date="93-12-10" />
+    <Word1100 Question="lugubrious" Answer="غم انگیز – حزن انگیز – ماتمزده" Date="93-12-10" />
+    <Word1100 Question="scion" Answer="فرزند – نو – نهال – تازه" Date="93-12-10" />
+    <Word1100 Question="indoctrinate" Answer="تلقین کردن – القا کردن – شست و شوی مغزی – یاد دادن" Date="93-12-10" />
+    <Word1100 Question="opulence" Answer="ثروت – دارایی – ارزش – ناز و نعمت" Date="93-12-10" />
+    <Word1100 Question="fulsome" Answer="اغراق آمیز – مبالغه آمیز – بیش از حد" Date="93-12-10" />
+    <Word1100 Question="lush" Answer="تجملی – لوکس – مجلل" Date="93-12-10" />
+    <Word1100 Question="destitution" Answer="فقر – تهیدستی – بینوایی" Date="93-12-10" />
+    <Word1100 Question="ponder" Answer="تامل کردن درباره – اندیشیدن به – فکر کردن" Date="93-12-10" />
+    <Word1100 Question="supplication" Answer="التماس – درخواست" Date="93-12-10" />
+    <Word1100 Question="decadence" Answer="سقوط – زوال – پوسیدگی – فساد" Date="93-12-10" />
+    <Word1100 Question="penance" Answer="توبه" Date="93-12-10" />
+    <Word1100 Question="ascetic" Answer="زاهد – پارسا – پرهیزکار" Date="93-12-10" />
+    <Word1100 Question="bona fide" Answer="واقعی – اصلی – اصیل – با اصالت" Date="93-12-10" />
+    <Word1100 Question="salvation" Answer="رستگاری – آمرزش – نجات" Date="93-12-10" />
+    <Word1100 Question="materialism" Answer="ماده گرایی – مادی گری" Date="93-12-10" />
+    <Word1100 Question="nurture" Answer="پرورش دادن – بزرگ کردن – به ثمر رساندن" Date="93-12-10" />
+    <Word1100 Question="nirvana" Answer="آرامش ابدی – سعادت ابدی" Date="93-12-10" />
+    <Word1100 Question="juxtapose" Answer="کنار هم گذاشتن – پهلوی هم گذاشتن" Date="93-12-10" />
+    <Word1100 Question="plight" Answer="وضعیت اسفناک – مشکل – گرفتاری" Date="93-12-10" />
+    <Word1100 Question="covert" Answer="پنهانی – مخفی" Date="93-12-10" />
+    <Word1100 Question="cope" Answer="از عهده برآمدن – حریف شدن – کنار آمدن با" Date="93-12-10" />
+    <Word1100 Question="incompatibility" Answer="ناسازگار – مغایرت – ناهماهنگی" Date="93-12-10" />
+    <Word1100 Question="incapacitate" Answer="عاجز کردن – ناتوان کردن – سلب صلاحیت کردن" Date="93-12-10" />
+    <Word1100 Question="fabricate" Answer="جعل کردن – ساختن – سر هم کردن" Date="93-12-10" />
+    <Word1100 Question="connubial" Answer="زناشویی – زن و شوهری – همسری" Date="93-12-10" />
+    <Word1100 Question="demur" Answer="مخالفت – اعتراض کردن – تردید کردن" Date="93-12-10" />
+    <Word1100 Question="appellation" Answer="نام – عنوان – لقب" Date="93-12-10" />
+    <Word1100 Question="escalation" Answer="افزایش – گسترش – تشدید" Date="93-12-10" />
+    <Word1100 Question="indefference" Answer="بی اعتنایی – بی تفاوتی – بی علاقگی" Date="93-12-10" />
+    <Word1100 Question="potential" Answer="استعداد – ظرفیت – توانایی – بالقوه" Date="93-12-10" />
+    <Word1100 Question="comulative" Answer="فزاینده – روبه افزایش – متراکم – اضافی" Date="93-12-10" />
+    <Word1100 Question="recondite" Answer="مشکل – پیچیده – اسرار آمیز – مبهم" Date="93-12-10" />
+    <Word1100 Question="palliate" Answer="آرام کردن – تسکین دادن" Date="93-12-10" />
+    <Word1100 Question="delude" Answer="فریب دادن – گمراه کردن – گول زدن" Date="93-12-10" />
+    <Word1100 Question="prelude" Answer="مقدمه – سرآغاز – پیش در آمد" Date="93-12-10" />
+    <Word1100 Question="chimerical" Answer="خیالی – موهوم – غیر واقعی" Date="93-12-10" />
+    <Word1100 Question="acknowledge" Answer="اعتراف کردن – تائید کردن – قبول کردن" Date="93-12-10" />
+    <Word1100 Question="heterogeneous" Answer="نامتجانس – ناهمگن – ناجور" Date="93-12-10" />
+    <Word1100 Question="gamut" Answer="طیف – گسترده – اشکال مختلف" Date="93-12-10" />
+    <Word1100 Question="perspicacious" Answer="زیرک – باهوش -با ذکاوت – با بصیرت" Date="93-12-10" />
+    <Word1100 Question="analogous" Answer="قابل قیاس – هم تراز – شبیه" Date="93-12-10" />
+    <Word1100 Question="maladjusted" Answer="ناسازگار – نامیزان" Date="93-12-10" />
+    <Word1100 Question="phenomenon" Answer="پدیده – خارق العاده" Date="93-12-10" />
+    <Word1100 Question="mortality" Answer="فناپذیری – میرندگی – تلفات" Date="93-12-10" />
+    <Word1100 Question="dacade" Answer="دهه – ده سال" Date="93-12-10" />
+    <Word1100 Question="susceptible" Answer="حساس – آسیب پذیر – احساساتی – مستعد" Date="93-12-10" />
+    <Word1100 Question="neurotic" Answer="عصبی – روان رنجور – وسواسی" Date="93-12-10" />
+    <Word1100 Question="pedagogue" Answer="معلم – آموزگار" Date="93-12-10" />
+    <Word1100 Question="enunciate" Answer="تلفظ کردن – ادا کردن – بیان کردن" Date="93-12-10" />
+    <Word1100 Question="inordinate" Answer="بیش از حد – بی شمار" Date="93-12-10" />
+    <Word1100 Question="irascible" Answer="تندخو – عصبی" Date="93-12-10" />
+    <Word1100 Question="introspective" Answer="درون نگر – خودکاو" Date="93-12-10" />
+    <Word1100 Question="perpetuate" Answer="ادامه دادن – تداوم بخشیدن" Date="93-12-10" />
+    <Word1100 Question="mandate" Answer="حکم – فرمان – دستور" Date="93-12-10" />
+    <Word1100 Question="compensatory" Answer="ترمیمی – جبرانی – به عنوان خسارت" Date="93-12-10" />
+    <Word1100 Question="neutralize" Answer="خنثی کردن – بی اثر کردن – بی طرف اعلام کردن" Date="93-12-10" />
+    <Word1100 Question="anthropologist" Answer="انسان شناس – مردم شناس" Date="93-12-10" />
+    <Word1100 Question="bizarre" Answer="عجیب و غریب – غیر عادی – باور نکردنی" Date="93-12-10" />
+    <Word1100 Question="inanimate" Answer="بی جان – فاقد حیات – بی روح – مرده" Date="93-12-10" />
+    <Word1100 Question="fetish" Answer="بت – شی جادویی" Date="93-12-10" />
+    <Word1100 Question="artifact" Answer="مصنوعی – دست ساخت – دست ساز" Date="93-12-10" />
+    <Word1100 Question="taboo" Answer="تحریم شده – منع شده – حرام" Date="93-12-10" />
+    <Word1100 Question="imprudent" Answer="بی احتیاط – بی فکر – نسنجیده – عجولانه" Date="93-12-10" />
+    <Word1100 Question="prohibition" Answer="منع – بازداری – ممنوعیت – تحریم" Date="93-12-10" />
+    <Word1100 Question="imperative" Answer="ضروری – لازم – واجب – اجباری" Date="93-12-10" />
+    <Word1100 Question="taint" Answer="فساد – آلودگی – خراب کردن" Date="93-12-10" />
+    <Word1100 Question="universal" Answer="همگانی – عمومی – کلی – جهانی" Date="93-12-10" />
+    <Word1100 Question="contemptuous" Answer="تحقیر آمیز – موهن – اهانت آمیز" Date="93-12-10" />
+    <Word1100 Question="absurd" Answer="پوچ – بی معنی – مسخره – مزخرف" Date="93-12-10" />
+    <Word1100 Question="bigot" Answer="کوته فکر – شخص متعصب" Date="93-12-10" />
+    <Word1100 Question="abhor" Answer="متنفر بودن از – نفرت داشتن از" Date="93-12-10" />
+    <Word1100 Question="vulnerable" Answer="آسیب پذیر – ضعیف – حساس" Date="93-12-10" />
+    <Word1100 Question="entreaty" Answer="خواهش و تمنا – درخواست – التماس" Date="93-12-10" />
+    <Word1100 Question="tradition" Answer="سنت – رسم – رسوم – اداب" Date="93-12-10" />
+    <Word1100 Question="originate" Answer="نشئت گرفتن – ریشه داشتن – آغاز شدن" Date="93-12-10" />
+    <Word1100 Question="inviolable" Answer="مقدس – محترم – تخطی ناپذیر" Date="93-12-10" />
+    <Word1100 Question="awesome" Answer="مهیب – ترسناک – مخوف" Date="93-12-10" />
+    <Word1100 Question="eruption" Answer="فوران – غلیان – درگیری" Date="93-12-10" />
+    <Word1100 Question="puny" Answer="ضعیف – نحیف – فسقلی – ریزه میزه" Date="93-12-10" />
+    <Word1100 Question="debris" Answer="آت و اشغال – ویرانه ها – خاکسترها" Date="93-12-10" />
+    <Word1100 Question="disperse" Answer="پخش کردن – پراکنده کردن – متفرق کردن" Date="93-12-10" />
+    <Word1100 Question="obliterate" Answer="محو کردن – نابود کردن" Date="93-12-10" />
+    <Word1100 Question="deplorable" Answer="اسفناک – تاسف انگیز – بسیار بد" Date="93-12-10" />
+    <Word1100 Question="initiate" Answer="شروع کردن – آغاز کردن – راه اندختن" Date="93-12-10" />
+    <Word1100 Question="conflagration" Answer="حریق بزرگ – آتش سوزی عظیم" Date="93-12-10" />
+    <Word1100 Question="rue" Answer="تاسف خوردن از – افسوس خوردن از – پشیمان شدن از" Date="93-12-10" />
+    <Word1100 Question="congenial" Answer="همدل – همدم – دلسوز" Date="93-12-10" />
+    <Word1100 Question="board" Answer="ذخیره کردن – جمع کردن – اندوختن" Date="93-12-10" />
+    <Word1100 Question="sage" Answer="خردمند – فرزانه – دانا – هوشمند" Date="93-12-10" />
+    <Word1100 Question="aegis" Answer="حمایت – پشتیبانی" Date="93-12-10" />
+    <Word1100 Question="detriment" Answer="زیان – ضرر – آسیب" Date="93-12-10" />
+    <Word1100 Question="longevity" Answer="عمر طولانی – طول عمر" Date="93-12-10" />
+    <Word1100 Question="imbibe" Answer="توشیدن – آشامیدن – مشروب" Date="93-12-10" />
+    <Word1100 Question="virile" Answer="مردانه – نیرومند – قوی – پرتوان" Date="93-12-10" />
+    <Word1100 Question="senile" Answer="پیر – فرتوت – خرفت" Date="93-12-10" />
+    <Word1100 Question="dodder" Answer="لرزیدن – لنگان لنگان رفتن – مرتعش" Date="93-12-10" />
+    <Word1100 Question="lethargic" Answer="خسته – کسل – سست – خواب آلود – سنگین" Date="93-12-10" />
+    <Word1100 Question="prevalent" Answer="رایج – متداول – فراگیر – شایع" Date="93-12-10" />
+    <Word1100 Question="paramount" Answer="مهم – بسیار مهم – عالی – فوق العاده" Date="93-12-10" />
+    <Word1100 Question="remiss" Answer="بی توجه – بی دقت – سهل انگار" Date="93-12-10" />
+    <Word1100 Question="hostile" Answer="خصمانه – دشمن – متخاصم" Date="93-12-10" />
+    <Word1100 Question="rebuke" Answer="توبیخ – مواخذه – سرزنش" Date="93-12-10" />
+    <Word1100 Question="aversion" Answer="بیزاری – نفرت – تنفر" Date="93-12-10" />
+    <Word1100 Question="vogue" Answer="مد – مورد پسند – مد بودن – باب" Date="93-12-10" />
+    <Word1100 Question="superficial" Answer="سطحی – در سطح کم عمق – سطحی" Date="93-12-10" />
+    <Word1100 Question="jettison" Answer="دور ریختن – بیرون ریختن – کنار گذاشتن" Date="93-12-10" />
+    <Word1100 Question="lucrative" Answer="سود آور – پر منفعت – پر سود" Date="93-12-10" />
+    <Word1100 Question="tussle" Answer="کشمکش – مجادله – نزاع" Date="93-12-10" />
+    <Word1100 Question="intrinsic" Answer="ذاتی – اصلی – باطنی – طبیعی" Date="93-12-10" />
+    <Word1100 Question="acute" Answer="حاد – بحرانی – شدید" Date="93-12-10" />
+    <Word1100 Question="gist" Answer="لب مطلب – اصل موضوع – نکات مهم" Date="93-12-10" />
+    <Word1100 Question="transient" Answer="گذرا – زودگذر – موقت – بی ثبات" Date="93-12-10" />
+    <Word1100 Question="terse" Answer="کوتاه – فشرده – مختصر" Date="93-12-10" />
+    <Word1100 Question="cogent" Answer="محکم – استوار – قاطع" Date="93-12-10" />
+    <Word1100 Question="pinnacle" Answer="اوج – نقطه اوج – قله" Date="93-12-10" />
+    <Word1100 Question="array" Answer="صف – ردیف – ترتیب – آرایش" Date="93-12-10" />
+    <Word1100 Question="obscure" Answer="مبهم – گنگ – ناشناخته – گمنام" Date="93-12-10" />
+    <Word1100 Question="ardent" Answer="گرم – سوزان" Date="93-12-10" />
+    <Word1100 Question="culminate" Answer="منتهی شدن به – انجامیدن به" Date="93-12-10" />
+    <Word1100 Question="constrict" Answer="محدود کردن – مقید کردن – جمع کردن" Date="93-12-10" />
+    <Word1100 Question="prodigy" Answer="اعجوبه – نابغه – پدیده شگفت" Date="93-12-10" />
+    <Word1100 Question="bereft" Answer="بی بهره" Date="93-12-10" />
+    <Word1100 Question="falter" Answer="به تردید افتادن – مردود بودن – تزلزل نشان دادن" Date="93-12-10" />
+    <Word1100 Question="exultation" Answer="خوشحالی – شادی – وجد – شعف" Date="93-12-10" />
+    <Word1100 Question="vitriolic" Answer="خصمانه – تلخ – گزنده – نیشدار" Date="93-12-10" />
+    <Word1100 Question="invective" Answer="ناسزا – دشنام – فحش" Date="93-12-10" />
+    <Word1100 Question="besmirch" Answer="لوث کردن – لکه دار کردن – کثیف کردن" Date="93-12-10" />
+    <Word1100 Question="voluminous" Answer="حجیم – بزرگ – زیاد – فراوان" Date="93-12-10" />
+    <Word1100 Question="retrospect" Answer="بازنگری – با نگاهی به گذشته" Date="93-12-10" />
+    <Word1100 Question="egostist" Answer="خودخواه – خود پرست – خود ستا" Date="93-12-10" />
+    <Word1100 Question="humility" Answer="فروتنی – تواضع – خضوع" Date="93-12-10" />
+    <Word1100 Question="pungent" Answer="تند – تیز – گزنده – نیشدار – تلخ" Date="93-12-10" />
+    <Word1100 Question="inveterate" Answer="ریشه دار – دیرینه – قهار – باسابقه" Date="93-12-10" />
+    <Word1100 Question="adamant" Answer="قاطع – سرسخت – قاطعانه" Date="93-12-10" />
+    <Word1100 Question="vulnerable" Answer="آسیب پذیر – شکننده – حساس – ضعیف" Date="93-12-10" />
+    <Word1100 Question="bedlam" Answer="آشفته بازار – حمام زنانه – شلوغی – بازار شام" Date="93-12-10" />
+    <Word1100 Question="eacophony" Answer="ناهمگونی – بدآوایی – گوشخراش" Date="93-12-10" />
+    <Word1100 Question="exploit" Answer="بهره برداری کردن از – بهره کشی از" Date="93-12-10" />
+    <Word1100 Question="propinquity" Answer="نزدیکی – مجاورت" Date="93-12-10" />
+    <Word1100 Question="disgruntled" Answer="ناراضی – ناخشنود – دمغ" Date="93-12-10" />
+    <Word1100 Question="infallible" Answer="خطا ناپذیر – معصوم – بی گناه" Date="93-12-10" />
+    <Word1100 Question="panacea" Answer="نوشدارو – داروی همه دردها" Date="93-12-10" />
+    <Word1100 Question="eradicate" Answer="ریشه کن کردن – از بین بردن – نابود کردن" Date="93-12-10" />
+    <Word1100 Question="impede" Answer="جلوگیری کردن از – مانع شدن – سد راه شدن" Date="93-12-10" />
+    <Word1100 Question="sedate" Answer="موقر – متین – آرام – با وقار" Date="93-12-10" />
+    <Word1100 Question="equanimity" Answer="آرامش – متانت – خویشتن داری – بردباری" Date="93-12-10" />
+    <Word1100 Question="compatible" Answer="سازگار – هماهنگ – جور – متناسب" Date="93-12-10" />
+    <Word1100 Question="serenity" Answer="آرامش – سکوت – صفا" Date="93-12-10" />
+    <Word1100 Question="revere" Answer="احترام قائل شدن – حرمت گذاشتن – تقدیر کردن" Date="93-12-10" />
+    <Word1100 Question="irrational" Answer="غیر منطقی – نا معقول – پوچ – بی معنی" Date="93-12-10" />
+    <Word1100 Question="avarice" Answer="حرص – طمع – آز – مال پرستی" Date="93-12-10" />
+    <Word1100 Question="insatiable" Answer="سیری ناپذیری – ارضا نشدنی" Date="93-12-10" />
+    <Word1100 Question="nadir" Answer="پایین ترین حد – نهایت افت" Date="93-12-10" />
+    <Word1100 Question="moribund" Answer="مشرف به موت – دم مرگ – رو به نابودی" Date="93-12-10" />
+    <Word1100 Question="lithe" Answer="انعطاف پذیر – چابک – فرز" Date="93-12-10" />
+    <Word1100 Question="obese" Answer="فربه – بسیار چاق" Date="93-12-10" />
+    <Word1100 Question="adherent" Answer="هوادار – طرفدار – مرید – پیرو" Date="93-12-10" />
+    <Word1100 Question="bliss" Answer="سعادت – خوشبختی – لذت – شادکامی" Date="93-12-10" />
+    <Word1100 Question="pathetic" Answer="غم انگیز – رقت انگیز – اسف بار – غیر قابل قبول" Date="93-12-10" />
+    <Word1100 Question="exhort" Answer="تشویق کردن – ترغیب کردن – توصیه کردن" Date="93-12-10" />
+    <Word1100 Question="apathy" Answer="بی تفاوتی – بی علاقگی – دل مردگی – سردی" Date="93-12-10" />
+    <Word1100 Question="fracas" Answer="دعوا – کتک کاری – جر و بحث – جال و جنجال" Date="93-12-10" />
+    <Word1100 Question="inebriated" Answer="مست – سر مست – شنگول – شاد" Date="93-12-10" />
+    <Word1100 Question="adversary" Answer="حریف – رقیب – دشمن – مخالف" Date="93-12-10" />
+    <Word1100 Question="indolent" Answer="تنبل – سست – بی حال" Date="93-12-10" />
+    <Word1100 Question="gusto" Answer="شور و شوق – حرارت – عشق – لذت" Date="93-12-10" />
+    <Word1100 Question="garrulous" Answer="پرحرف – پرچانه – وراج" Date="93-12-10" />
+    <Word1100 Question="banal" Answer="پیش پا افتاده – مبتذل – عادی – لوس – خسته کننده" Date="93-12-10" />
+    <Word1100 Question="platitude" Answer="حرف معمولی – حرف کلیشه ای – حرف مبتذل" Date="93-12-10" />
+    <Word1100 Question="pique" Answer="آزردگی – دلخوری – رنجش – خشم" Date="93-12-10" />
+    <Word1100 Question="dilettante" Answer="آماتور – مبتدی – ناشی" Date="93-12-10" />
+    <Word1100 Question="atypical" Answer="غیر عادی – غیر معمول – عجیب" Date="93-12-10" />
+    <Word1100 Question="nondescript" Answer="بی هویت – نامشخص" Date="93-12-10" />
+    <Word1100 Question="wane" Answer="در حال کاهش – در حال افول" Date="93-12-10" />
+    <Word1100 Question="extinct" Answer="منقرض – منهدم – نابود" Date="93-12-10" />
+    <Word1100 Question="idyllic" Answer="خوش و خرم – با صفا – آرام – ساده" Date="93-12-10" />
+    <Word1100 Question="galvanize" Answer="برانگیختن – تحریک کردن – به هیجان آوردن" Date="93-12-10" />
+    <Word1100 Question="encumbrance" Answer="وبال گردن – مایه ی دردسر – مزاحم" Date="93-12-10" />
+    <Word1100 Question="gaudy" Answer="زرق و برق – رنگ وارنگ – براق" Date="93-12-10" />
+    <Word1100 Question="condescend" Answer="لطف کردن – منت گذاشتن" Date="93-12-10" />
+    <Word1100 Question="candor" Answer="صداقت – صراحت – رک گویی" Date="93-12-10" />
+    <Word1100 Question="mortify" Answer="خجالت دادن – سرافکنده کردن – شرمنده کردن" Date="93-12-10" />
+    <Word1100 Question="jocose" Answer="خنده دار – شوخی آمیز – شاد – بذله گو" Date="93-12-10" />
+    <Word1100 Question="malign" Answer="بد گویی کردن از – تهمت زدن به – غیبت کردن" Date="93-12-10" />
+    <Word1100 Question="omnipotent" Answer="مقتدر – قدرتمند – قادر مطلق" Date="93-12-10" />
+    <Word1100 Question="zenith" Answer="اوج – نقطه ی اوج" Date="93-12-10" />
+    <Word1100 Question="fledgling" Answer="نوپا – تازه کار – بی تجربه – ناشی" Date="93-12-10" />
+    <Word1100 Question="peremptory" Answer="مستبد – تحکیم آمیز – قاطع" Date="93-12-10" />
+    <Word1100 Question="precedent" Answer="سابقه – پیشینه – سنت – رسم" Date="93-12-10" />
+    <Word1100 Question="wheedle" Answer="چرب زبانی کردن – چاپلوسی کردن" Date="93-12-10" />
+    <Word1100 Question="rustic" Answer="روستایی – دهاتی" Date="93-12-10" />
+    <Word1100 Question="jubilant" Answer="شاد – سرمست – شادمان – خوشحال" Date="93-12-10" />
+    <Word1100 Question="decorum" Answer="ادب – نزاکت – لیاقت" Date="93-12-10" />
+    <Word1100 Question="charlatan" Answer="شیاد – شارلاتان – دکتر قلابی" Date="93-12-10" />
+    <Word1100 Question="heresy" Answer="بدعت – خروج از دین" Date="93-12-10" />
+    <Word1100 Question="prudent" Answer="محتاط – دور اندیش – عاقلانه – سنجیده" Date="93-12-10" />
+    <Word1100 Question="ostensible" Answer="ظاهری – صوری – آشکار – نمایان" Date="93-12-10" />
+    <Word1100 Question="fervid" Answer="مشتاق – پر شوق – پر حرارت – پر احساس – داغ" Date="93-12-10" />
+    <Word1100 Question="spurious" Answer="کاذب – بی اساس – تقلبی – قلابی – جعلی" Date="93-12-10" />
+    <Word1100 Question="propagate" Answer="اشاعه دادن – ترویج دادن – پخش کردن" Date="93-12-10" />
+    <Word1100 Question="anomaly" Answer="بی قاعده – نا بهنجاری – خلاف قاعده" Date="93-12-10" />
+    <Word1100 Question="innocuous" Answer="بی خطر – بی ضرر – بی آزار" Date="93-12-10" />
+    <Word1100 Question="surfeit" Answer="زیادی – فراوانی – انبوه – یک عالمه" Date="93-12-10" />
+    <Word1100 Question="milieu" Answer="محیط اجتماعی – محیط فرهنگی" Date="93-12-10" />
+    <Word1100 Question="strident" Answer="گوش خراش – تیز – خشن – سرسخت" Date="93-12-10" />
+    <Word1100 Question="concomitant" Answer="ملازم – همراه – توام – مقارن – هم زمان" Date="93-12-10" />
+    <Word1100 Question="lassitude" Answer="خستگی – رخوت – بی حوصلگی – ضعف" Date="93-12-10" />
+    <Word1100 Question="deleterious" Answer="مضر – زیان بار – زیان بخش" Date="93-12-10" />
+    <Word1100 Question="efficacy" Answer="تاثیر – اثر بخش – فایده – سودمندی – کارآیی" Date="93-12-10" />
+    <Word1100 Question="dissent" Answer="مخالفت کردن – اختلاف داشتن – توافق نداشتن" Date="93-12-10" />
+    <Word1100 Question="ferment" Answer="شورش – نا آرامی – طغیان – آشوب" Date="93-12-10" />
+    <Word1100 Question="attenuate" Answer="ضعیف کردن – ضعیف شدن – نحیف شدن" Date="93-12-10" />
+    <Word1100 Question="attenuated" Answer="ضعیف" Date="93-12-10" />
+    <Word1100 Question="arbiter" Answer="داور – حکم – میانجی – قاضی" Date="93-12-10" />
+    <Word1100 Question="incumbent" Answer="واجب – ناگزیر – لازم" Date="93-12-10" />
+    <Word1100 Question="profound" Answer="عمیق – ژرف" Date="93-12-10" />
+    <Word1100 Question="alleviate" Answer="سبک کردن – تخفیف دادن – کم کردن" Date="93-12-10" />
+    <Word1100 Question="prodigious" Answer="عظیم – فوق العاده – چشمگیر – اعجاب آور" Date="93-12-10" />
+    <Word1100 Question="expedite" Answer="تسریع کردن – پیش بردن – تسهیل کردن" Date="93-12-10" />
+    <Word1100 Question="celerity" Answer="چابکی تحرک – فرزی – سرعت" Date="93-12-10" />
+    <Word1100 Question="usurp" Answer="غصب کردن – به ناحق گرفتن – به زور گرفتن" Date="93-12-10" />
+    <Word1100 Question="paltry" Answer="جزئی – اندک – خیلی کم – بی ارزش" Date="93-12-10" />
+    <Word1100 Question="condone" Answer="بخشیدن – عفو کردن – نادیده گرفتن" Date="93-12-10" />
+    <Word1100 Question="trivial" Answer="جزئی – ناچیز – پیش پا افتاده" Date="93-12-10" />
+    <Word1100 Question="bizzarre" Answer="عجیب و غریب – شگفت – باور نکردنی" Date="93-12-10" />
+    <Word1100 Question="menial" Answer="حقیر – بی اهمیت – پست – چاکر – نوکر" Date="93-12-10" />
+    <Word1100 Question="venerable" Answer="محترم – ارجمند – گرامی" Date="93-12-10" />
+    <Word1100 Question="extraneous" Answer="نامربوط – بی ربط – خارجی – بیرونی" Date="93-12-10" />
+    <Word1100 Question="ambiguous" Answer="مبهم – گنگ – دوپهلو – نامشخص" Date="93-12-10" />
+    <Word1100 Question="succinct" Answer="کوتاه – مختصر – فشرده" Date="93-12-10" />
+    <Word1100 Question="archaic" Answer="منسوخ – مهجور – قدیمی" Date="93-12-10" />
+    <Word1100 Question="emulate" Answer="رقابت کردن با – برتری جستن با – هم چشمی کردن با" Date="93-12-10" />
+    <Word1100 Question="facetious" Answer="شوخی خنده دار – طنز آمیز – گزنده – بذله گو" Date="93-12-10" />
+    <Word1100 Question="rabid" Answer="متعصب -افراطی – خشک مغز – دیوانه" Date="93-12-10" />
+    <Word1100 Question="salubrious" Answer="سالم – پاکیزه – آبرومند – خوش نام" Date="93-12-10" />
+    <Word1100 Question="complacent" Answer="از خود راضی – خود پسند – مغرور – مغرورانه" Date="93-12-10" />
+    <Word1100 Question="somber" Answer="عبوس – دمغ – گرفته – غمگین" Date="93-12-10" />
+    <Word1100 Question="debilitate" Answer="تضعیف کردن – ناتوان کردن – رنجور کردن" Date="93-12-10" />
+    <Word1100 Question="impetuous" Answer="عجولانه – شتابزده – نسنجیده" Date="93-12-10" />
+    <Word1100 Question="occult" Answer="پنهان – فراطبیعی – اسرار آمیز – سری" Date="93-12-10" />
+    <Word1100 Question="discreet" Answer="عاقل – با بصیرت – محتاط – رازدار – تودار" Date="93-12-10" />
+    <Word1100 Question="foment" Answer="ایجاد کردن – به راه انداختن – بر پا کردن" Date="93-12-10" />
+    <Word1100 Question="glean" Answer="جمع آوری کردن – گرد آوردن – به دست آوردن" Date="93-12-10" />
+    <Word1100 Question="quarry" Answer="شکار – طعمه – معدن سنگ" Date="93-12-10" />
+    <Word1100 Question="slovenly" Answer="شلخته – ژولیده – نامرتب" Date="93-12-10" />
+    <Word1100 Question="abjure" Answer="ترک کردن – کنار گذاشتن – دست کشیدن از" Date="93-12-10" />
+    <Word1100 Question="reproach" Answer="سرزنش کردن – انتقاد کردن – مواخذه کردن" Date="93-12-10" />
+    <Word1100 Question="penitent" Answer="پشیمان – نادم – متاسف – توبه کار" Date="93-12-10" />
+    <Word1100 Question="evanescent" Answer="زود گذر – گذرا – ناپایدار – فانی" Date="93-12-10" />
+    <Word1100 Question="tantamount" Answer="در حکم – برابر – معادل – به منزله" Date="93-12-10" />
+    <Word1100 Question="propensity" Answer="کشش – گرایش – میل – تمایل – رغبت" Date="93-12-10" />
+    <Word1100 Question="wary" Answer="محتاط – مواظب – مراقب – نگران" Date="93-12-10" />
+    <Word1100 Question="allay" Answer="آرام کردن – تسکین دادن – رفع کردن – برطرف کردن" Date="93-12-10" />
+    <Word1100 Question="deter" Answer="منصرف کردن – مانع شدن – بازداشتن" Date="93-12-10" />
+    <Word1100 Question="connoisseur" Answer="خبره – وارد – متخصص" Date="93-12-10" />
+    <Word1100 Question="34th week" Answer="هفته سی و چهارم" Date="93-12-10" />
+    <Word1100 Question="site" Answer="محل – جا – زمین" Date="93-12-10" />
+    <Word1100 Question="vigil" Answer="شب زنده داری – احیا – بیدار ماندن" Date="93-12-10" />
+    <Word1100 Question="cumbersome" Answer="پر زحمت – پر دردسر – دست و پا گیر" Date="93-12-10" />
+    <Word1100 Question="interrogate" Answer="سوال کردن از – توضیح خواستن از – بازجویی کردن" Date="93-12-10" />
+    <Word1100 Question="divulge" Answer="افشا کردن – فاش کردن – برملا کردن" Date="93-12-10" />
+    <Word1100 Question="fluctuate" Answer="نوسان داشتن – بالا و پایین رفتن – افت و خیز کردن" Date="93-12-10" />
+    <Word1100 Question="unmitigated" Answer="مطلق – محض – کامل – تمام عیار" Date="93-12-10" />
+    <Word1100 Question="commodious" Answer="جا دار – فضا دار – بزرگ – وسیع" Date="93-12-10" />
+    <Word1100 Question="antiquated" Answer="کهنه – قدیمی – از مد افتاده – منسوخ" Date="93-12-10" />
+    <Word1100 Question="disheveled" Answer="ژولیده – آشفته – نا مرتب – نا منظم" Date="93-12-10" />
+    <Word1100 Question="tenacious" Answer="سفت – محکم – سر سخت – یک دنده – قوی" Date="93-12-10" />
+    <Word1100 Question="facade" Answer="نما – ظاهر – صورت – ظاهر سازی" Date="93-12-10" />
+    <Word1100 Question="asinine" Answer="ابله – احمق – نادان – احمقانه" Date="93-12-10" />
+    <Word1100 Question="grimace" Answer="اخم – اخم و تخم – قیافه – شکلک – ادا" Date="93-12-10" />
+    <Word1100 Question="calumny" Answer="افترا – تهمت – بهتان" Date="93-12-10" />
+    <Word1100 Question="pittance" Answer="حقوق ناچیز – حقوق بخور و نمیر – شندر غاز" Date="93-12-10" />
+    <Word1100 Question="au courant" Answer="مطلع – با خبر – در جریان روز – جدید – مدرن" Date="93-12-10" />
+    <Word1100 Question="fastidious" Answer="سخت گیر – مشکل پسند – وسواسی – ایرادی" Date="93-12-10" />
+    <Word1100 Question="noisome" Answer="ناراحت کننده – زننده – مشمئز کننده – نفرت انگیز" Date="93-12-10" />
+    <Word1100 Question="unkempt" Answer="بهم ریخته – ژولیده – نا مرتب – نا منظم" Date="93-12-10" />
+    <Word1100 Question="parable" Answer="حکایت – قصه – داستان – تمثیل" Date="93-12-10" />
+    <Word1100 Question="whimsical" Answer="خنده دار – مضحک – طنز آمیز – شوخی آمیز" Date="93-12-10" />
+    <Word1100 Question="lampoon" Answer="مسخره کردن – ریشخند زدن" Date="93-12-10" />
+    <Word1100 Question="countenance" Answer="تحمل کردن – صحه گذاشتن بر – حمایت کردن" Date="93-12-10" />
+    <Word1100 Question="sanctimonious" Answer="مقدس نما – مقدس – زاهد" Date="93-12-10" />
+    <Word1100 Question="equanimity" Answer="آرامش – ملایمت – متانت – خویشتن داری" Date="93-12-10" />
+    <Word1100 Question="effrontery" Answer="گستاخی – جسارت – وقاحت – پر رویی – بی شرمی" Date="93-12-10" />
+    <Word1100 Question="nonentity" Answer="آدم بی کفایت – آدم حقیر -هیچ کاره" Date="93-12-10" />
+    <Word1100 Question="flabbergasted" Answer="هاج و واج – مات و مبهوت – انگشت به دهان" Date="93-12-10" />
+    <Word1100 Question="debacle" Answer="شکست کامل – سقوط – فروپاشی – ویرانی" Date="93-12-10" />
+    <Word1100 Question="vivacious" Answer="شاد – سر زنده – با نشاط – پر شور" Date="93-12-10" />
+    <Word1100 Question="gaunt" Answer="لاغر – نحیف" Date="93-12-10" />
+    <Word1100 Question="mien" Answer="ظاهر – حالت – قیافه – چهره" Date="93-12-10" />
+    <Word1100 Question="hirsute" Answer="پر مو – مو دار – پشمالو – ژولیده مو" Date="93-12-10" />
+    <Word1100 Question="refute" Answer="رد کردن – باطل کردن" Date="93-12-10" />
+    <Word1100 Question="pensive" Answer="فکور – غرق در فکر – متفکرانه" Date="93-12-10" />
+    <Word1100 Question="whet" Answer="برانگیختن – تحریک کردن – ترغیب کردن – هوس اندختن" Date="93-12-10" />
+    <Word1100 Question="stupor" Answer="گیجی – منگی – بیهوشی – بی حسی" Date="93-12-10" />
+    <Word1100 Question="wince" Answer="اخم کردن – چهره در هم کشیدن – یکه خوردن" Date="93-12-10" />
+    <Word1100 Question="cliche" Answer="کلیشه – حرف قالبی – حرف تکراری – حرف مبتذل" Date="93-12-10" />
+    <Word1100 Question="genre" Answer="نوع – گونه – اثر" Date="93-12-10" />
+    <Word1100 Question="candid" Answer="رک و راست – صاف و پوست کنده – صادق – صادقانه" Date="93-12-10" />
+    <Word1100 Question="unsavory" Answer="ناخوشایند – بد – زشت – ناشایست – نادرست" Date="93-12-10" />
+    <Word1100 Question="degrade" Answer="تحقیر کردن – کوچک کردن – خوار کردن – ضایع کردن" Date="93-12-10" />
+    <Word1100 Question="venial" Answer="قابل بخشش – بخشودنی – قابل اغماض – قابل گذشت" Date="93-12-10" />
+    <Word1100 Question="epitome" Answer="مظهر – نمونه – تجلی – جوهر – عصاره" Date="93-12-10" />
+    <Word1100 Question="dexterity" Answer="مهارت – چیره دستی – چالاکی – چابکی – تیز هوشی" Date="93-12-10" />
+    <Word1100 Question="grotesque" Answer="مضحک – مسخره – خنده دار – عجیب و غریب – شنیع – زشت" Date="93-12-10" />
+    <Word1100 Question="compassion" Answer="همدردی – دلسوزی – شفقت – غمخواری – رحم" Date="93-12-10" />
+    <Word1100 Question="repugnant" Answer="نفرت انگیز – تهوع آور – مشمئز کننده" Date="93-12-10" />
+    <Word1100 Question="acme" Answer="اوج کمال – اوج – نهایت – حد اعلای" Date="93-12-10" />
+    <Word1100 Question="copious" Answer="فراوان – زیاد – مفصل – بسیار – پر کار" Date="93-12-10" />
+    <Word1100 Question="vehemently" Answer="به تندی – به شدت – قاطعانه – شدیدا" Date="93-12-10" />
+    <Word1100 Question="depict" Answer="توصیف کردن – شرح دادن – نشان دادن – مجسم کردن" Date="93-12-10" />
+    <Word1100 Question="naive" Answer="ساده – زود باور – معصوم – پاک – بی آلایش" Date="93-12-10" />
+    <Word1100 Question="perfidious" Answer="جفاکار – غدار – پیمان شکن – بی وفا" Date="93-12-10" />
+    <Word1100 Question="covet" Answer="مشتاق بودن – آرزوی چیزی را داشتن – چشم طمع داشتن" Date="93-12-10" />
+    <Word1100 Question="ingratiate" Answer="خود شیرینی کردن – چاپلوسی کردن – دل به دست آوردن" Date="93-12-10" />
+    <Word1100 Question="penury" Answer="فقر – تنگدستی – تهی دستی" Date="93-12-10" />
+    <Word1100 Question="ignominious" Answer="شرم آور – ننگین – خفت بار – فضاحت بار" Date="93-12-10" />
+    <Word1100 Question="confront" Answer="مواجه شدن به – روبرو شدن با – روبرو کردن با" Date="93-12-10" />
+    <Word1100 Question="antipathy" Answer="تنفر – انزجار – بیزاری – ضدیت – تضاد" Date="93-12-10" />
+    <Word1100 Question="servile" Answer="نوکر صفت – شایسته نوکری – دون – پست" Date="93-12-10" />
+    <Word1100 Question="volition" Answer="اختیار – درخواست – به خواست خود – به میل خود" Date="93-12-10" />
+    <Word1100 Question="sojourn" Answer="اقامت موقت" Date="93-12-10" />
+    <Word1100 Question="austere" Answer="پرهیزکار – پارسا – زهد – زاهدانه" Date="93-12-10" />
+    <Word1100 Question="felicitous" Answer="شاد – شیرین – لذت بخش – مناسب – بجا – شایسته" Date="93-12-10" />
+    <Word1100 Question="halcyon" Answer="خوب – آرام – خوش – شاد – به یاد ماندنی -روزگار خوش" Date="93-12-10" />
+    <Word1100 Question="tenable" Answer="قابل دفاع – قابل قبول – باور کردنی – معقول" Date="93-12-10" />
+    <Word1100 Question="superfluous" Answer="زیاد – زائد – مازاد" Date="93-12-10" />
+    <Word1100 Question="motivate" Answer="برانگیختن – تشویق و ترغیب" Date="93-12-10" />
+    <Word1100 Question="retionalize" Answer="توجیه کردن منطقی – معقول جلو دادن – عقلانی کردن" Date="93-12-10" />
+    <Word1100 Question="therapy" Answer="درمان – معالجه – مداوا" Date="93-12-10" />
+    <Word1100 Question="nascent" Answer="نو پا – نو بنیاد – نو ظهور – نو شکفته" Date="93-12-10" />
+    <Word1100 Question="iconoclast" Answer="بت شکن" Date="93-12-10" />
+    <Word1100 Question="erudite" Answer="فاضل – عالم – دانشمند" Date="93-12-10" />
+    <Word1100 Question="phobia" Answer="هراس – ترس" Date="93-12-10" />
+    <Word1100 Question="germane" Answer="مربوط – وابسته – مرتبط – مناسب – درخور" Date="93-12-10" />
+    <Word1100 Question="vertigo" Answer="سرگیجه" Date="93-12-10" />
+    <Word1100 Question="conducive" Answer="موجب – سرچشمه – منشا – مساعد – مناسب" Date="93-12-10" />
+    <Word1100 Question="glib" Answer="چرب زبان" Date="93-12-10" />
+    <Word1100 Question="homogenous" Answer="همگون – متشابه – همانند – همگن – متجانس" Date="93-12-10" />
+    <Word1100 Question="malleable" Answer="انعطاف پذیر – پذیرا – سازگار – سر به راه" Date="93-12-10" />
+    <Word1100 Question="legerdemain" Answer="تردستی – شعبده بازی – شیرین کاری" Date="93-12-10" />
+    <Word1100 Question="trend" Answer="جهت حرکت – میل – تمایل – گرایش – روند" Date="93-12-10" />
+    <Word1100 Question="stagnant" Answer="راکد – بی رونق – ساکن" Date="93-12-10" />
+    <Word1100 Question="fatal" Answer="کشنده – مهلک – مرگبار – مخرب – خطرناک" Date="93-12-10" />
+    <Word1100 Question="passe" Answer="کهنه – قدیمی – از مد افتاده" Date="93-12-10" />
+    <Word1100 Question="procrastinate" Answer="تعلل کردن – مسامحه کردن – پوشت گوش انداختن" Date="93-12-10" />
+    <Word1100 Question="facet" Answer="جنبه – وجه – بعد – سطح" Date="93-12-10" />
+    <Word1100 Question="foist" Answer="قالب کردن – جا زدن – انداختن" Date="93-12-10" />
+    <Word1100 Question="stigmatize" Answer="لکه دار کردن – بدنام کردن – بی آبرو کردن" Date="93-12-10" />
+    <Word1100 Question="capitulate" Answer="تسلیم شدن – سر فرود آوردن" Date="93-12-10" />
+    <Word1100 Question="audacity" Answer="جسارت – شجاعت – بی باکی – بی شرمی" Date="93-12-10" />
+    <Word1100 Question="tantalize" Answer="عذاب کردن – اذیت کردن – کسی را دست انداختن" Date="93-12-10" />
+    <Word1100 Question="retort" Answer="با تندی جواب دادن – با عصبانیت گفتن" Date="93-12-10" />
+    <Word1100 Question="reticent" Answer="تودار – خوددار – کم حرف – ساکت – خاموش" Date="93-12-10" />
+    <Word1100 Question="tacit" Answer="ضمنی – مفهوم" Date="93-12-10" />
+    <Word1100 Question="chicanery" Answer="فریب کاری – شیادی – سفسطه – نقیض گویی" Date="93-12-10" />
+    <Word1100 Question="docile" Answer="سر به راه – رام – آرام – حرف شنو" Date="93-12-10" />
+    <Word1100 Question="saga" Answer="حماسه – حماسه اسکاندویناوی – داستان حماسی بلند" Date="93-12-10" />
+    <Word1100 Question="belated" Answer="بی موقع – با تاخیر – دیر هنگام – معوقه" Date="93-12-10" />
+    <Word1100 Question="decrepit" Answer="فرتوت – شکسته – سالخورده – از کار افتاده" Date="93-12-10" />
+    <Word1100 Question="imperturbable" Answer="آرام – خونسرد – خوددار" Date="93-12-10" />
+    <Word1100 Question="vacillate" Answer="مردد بودن – تردید داشتن – دودل بودن" Date="93-12-10" />
+    <Word1100 Question="staunch" Answer="وفادار – ثابت قدم – مصمم" Date="93-12-10" />
+    <Word1100 Question="opprobrium" Answer="اهانت – سرزنش – نکوهش – تحقیر" Date="93-12-10" />
+    <Word1100 Question="machiavellian" Answer="ترفند باز – حقه باز – حیله گر – نیرنگ بازانه" Date="93-12-10" />
+    <Word1100 Question="unconscionable" Answer="شرم آور – خجالت آور – نا معقول" Date="93-12-10" />
+    <Word1100 Question="pandemonium" Answer="آشوب – بی نظمی – غوغا – قشقرق" Date="93-12-10" />
+    <Word1100 Question="flay" Answer="پوست کندن – گوشمالی دادن – غارت کردن – چاپیدن" Date="93-12-10" />
+    <Word1100 Question="demeanor" Answer="رفتار – طرز رفتار – ژست – حالت" Date="93-12-10" />
+    <Word1100 Question="delineation" Answer="ترسیم – توصیف – تشریح – توضیح" Date="93-12-10" />
+    <Word1100 Question="vindicate" Answer="تبرئه کردن – توجیه کردن" Date="93-12-10" />
+    <Word1100 Question="heinous" Answer="فجیع – شنیع – شریر – خبیث" Date="93-12-10" />
+    <Word1100 Question="turpitude" Answer="فساد – عمل خلاف عفت – ابتذال – انحطاط" Date="93-12-10" />
+    <Word1100 Question="infraction" Answer="نقض – شکستن – تخطی – تخلف – قانون شکنی" Date="93-12-10" />
+    <Word1100 Question="callous" Answer="سنگ دل – بی رحم – بی عاطفه – بی رحمانه" Date="93-12-10" />
+    <Word1100 Question="redress" Answer="جبران کردن – اصلاح کردن – چاره کردن" Date="93-12-10" />
+    <Word1100 Question="vituperation" Answer="مذمت – ناسزاگویی – فحاشی – فحش – نکوهش" Date="93-12-10" />
+    <Word1100 Question="rhetoric" Answer="بلاغت – سخنوری – خطابه – زبان بازی" Date="93-12-10" />
+    <Word1100 Question="clique" Answer="جرگه – دارودسته – باند – فرقه – دسته" Date="93-12-10" />
+    <Word1100 Question="extol" Answer="تحسین کردن – تمجید کردن – ستایش کردن – ستودن" Date="93-12-10" />
+    <Word1100 Question="mentor" Answer="مشاور – معلم – مربی – استاد – مرشد" Date="93-12-10" />
+    <Word1100 Question="facile" Answer="راحت – آسان – باد آورده – سهل الوصول – فصیح – روان" Date="93-12-10" />
+    <Word1100 Question="cant" Answer="ریا – تزویر – دورویی" Date="93-12-10" />
+    <Word1100 Question="magnanimous" Answer="بلند نظر – بخشنده – بزرگوار – سخاوتمند" Date="93-12-10" />
+    <Word1100 Question="vilify" Answer="هتاکی کردن به – توهین کردن به – بهتان زدن به" Date="93-12-10" />
+    <Word1100 Question="elucidate" Answer="روشن کردن – توضیح دادن" Date="93-12-10" />
+    <Word1100 Question="vapid" Answer="بی روح – ملامت بار – کسل کننده – بی مزه" Date="93-12-10" />
+    <Word1100 Question="unwieldy" Answer="گنده – سنگین – بد هیکل" Date="93-12-10" />
+    <Word1100 Question="proximity" Answer="نزدیکی – مجاورت – همسایگی" Date="93-12-10" />
+    <Word1100 Question="lassitude" Answer="خستگی – ضعف – کسالت – بی حالی" Date="93-12-10" />
+    <Word1100 Question="vitiate" Answer="خراب کردن – ضایع کردن – فاسد کردن – باطل کردن" Date="93-12-10" />
+    <Word1100 Question="augment" Answer="افزایش دادن – افزودن – زیاد کردن – بهبود بخشیدن" Date="93-12-10" />
+    <Word1100 Question="fatuous" Answer="ابلهانه – احمقانه – ابله – بی شعور – خرفت" Date="93-12-10" />
+    <Word1100 Question="contort" Answer="درهم کشیدن – کج و معوج کردن – تحریف کردن" Date="93-12-10" />
+    <Word1100 Question="repertoire" Answer="گنجینه – منبع – مخزن – مجموعه – خزانه – کلکسیون" Date="93-12-10" />
+    <Word1100 Question="imperceptible" Answer="نا محسوس – آهسته – تدریجی – غیر قابل درک" Date="93-12-10" />
+    <Word1100 Question="curry" Answer="چاپلوسی کردن – خودشیرینی کردن – خوش خدمتی کردن" Date="93-12-10" />
+    <Word1100 Question="pall" Answer="خسته کننده – ملال آور" Date="93-12-10" />
+    <Word1100 Question="succulent" Answer="آبدار – پر آب" Date="93-12-10" />
+    <Word1100 Question="satiety" Answer="سیری – اشباع – به حد اشباع – دلزدگی" Date="93-12-10" />
+    <Word1100 Question="intrinsic" Answer="درونی – باطنی – ذاتی – فطری" Date="93-12-10" />
+    <Word1100 Question="potpourri" Answer="گلچین – گزیده – گزینه – عطر گل" Date="93-12-10" />
+    <Word1100 Question="sanction" Answer="تایید کردن – تصویب کردن – پذیرفتن – مجاز دانستن" Date="93-12-10" />
+    <Word1100 Question="denote" Answer="دلالت کردن بر – معنی دادن – اشاره داشتن به" Date="93-12-10" />
+    <Word1100 Question="allude" Answer="تلویحا گفتن – به طور ضمنی اظهار داشتن – اشاره کردن" Date="93-12-10" />
+    <Word1100 Question="insidious" Answer="موذیانه – مکارانه – خائنانه – مکار – حیله گر" Date="93-12-10" />
+    <Word1100 Question="propriety" Answer="ادب – نزاکت – اخلاق – رفتار صحیح" Date="93-12-10" />
+    <Word1100 Question="advent" Answer="ظهور – پیدایش – حلول" Date="93-12-10" />
+    <Word1100 Question="impious" Answer="کافر – بی دین – خدا نشناس" Date="93-12-10" />
+    <Word1100 Question="proffer" Answer="تقدیم – عرضه – پیشنهاد" Date="93-12-10" />
+    <Word1100 Question="spate" Answer="هجوم – سیل – موج – رگبار" Date="93-12-10" />
+    <Word1100 Question="shibboleth" Answer="بیان رایج – اسم رمز – عقیده پوسیده – شعار کهنه" Date="93-12-10" />
+    <Word1100 Question="bogus" Answer="قلابی – ساختگی – دروغی – جعلی – بدلی" Date="93-12-10" />
+    <Word1100 Question="substantiate" Answer="اثبات کردن – دلیل آوردن برای – مستند کردن" Date="93-12-10" />
+    <Word1100 Question="nutritive" Answer="غذایی – تغذیه ای – مغذی" Date="93-12-10" />
+    <Word1100 Question="raucous" Answer="گوش خراش – نخراشیده – ناهنجار – ناخوشایند" Date="93-12-10" />
+    <Word1100 Question="quandary" Answer="شک – تردید — سردرگمی – بلاتکلیفی" Date="93-12-10" />
+    <Word1100 Question="callous" Answer="سنگدل – بی عاطفه – بی رحم – بی احساس" Date="93-12-10" />
+    <Word1100 Question="expedient" Answer="مناسب – صلاح – مصلحت – مصلحت آمیز" Date="93-12-10" />
+    <Word1100 Question="negligible" Answer="اندک – ناچیز – جزئی – بی اهمیت – قابل چشم پوشی" Date="93-12-10" />
+    <Word1100 Question="blase" Answer="بی اعتنا – بی تفاوت – خونسرد – دلزده – سیر" Date="93-12-10" />
+    <Word1100 Question="ennui" Answer="خستگی – بی حوصلگی – احساس – بیهودگی" Date="93-12-10" />
+    <Word1100 Question="comely" Answer="ملیح – قشنگ – جذاب – شایسته" Date="93-12-10" />
+    <Word1100 Question="frenetic" Answer="جنون آمیز – دیوانه وار – هیجان زده" Date="93-12-10" />
+    <Word1100 Question="artifice" Answer="مکر – حیله گری – شیادی – ترفند – حیله – حقه" Date="93-12-10" />
+    <Word1100 Question="diversity" Answer="تنوع – گوناگونی – تعدد – اختلاف – تفاوت" Date="93-12-10" />
+    <Word1100 Question="qualm" Answer="عذاب وجدان – دغدغه ی خاطره – دل نگرانی" Date="93-12-10" />
+    <Word1100 Question="expurgate" Answer="تطهیر کردن – هرزه زدایی کردن – پاکسازی کردن" Date="93-12-10" />
+    <Word1100 Question="begrudge" Answer="دریغ داشتن – غبطه خوردن – حسرت خوردن" Date="93-12-10" />
+    <Word1100 Question="artless" Answer="بی آلایش – صاف و صادق – معصوم – ساده و طبیعی" Date="93-12-10" />
+    <Word1100 Question="gratuity" Answer="انعام – پاداش – حق سنوات خدمت – مبلغ باز خرید" Date="93-12-10" />
+    <Word1100 Question="manifest" Answer="آشکار – روشن – واضح – بدیهی" Date="93-12-10" />
+    <Word1100 Question="delve" Answer="کند و کاو کردن – تحقیق کردن – بررسی کردن" Date="93-12-10" />
+    <Word1100 Question="capricious" Answer="دمدمی – هوس باز – بوالهوس – ناپایدار" Date="93-12-10" />
+    <Word1100 Question="requisite" Answer="لازم – ضروری – نیاز – شرط لازم" Date="93-12-10" />
+    <Word1100 Question="replenish" Answer="دوباره تهیه کردن – دوباره تکمیل کردن" Date="93-12-10" />
+    <Word1100 Question="roster" Answer="برنامه – فهرست – صورت اسامی – جدول نوبت" Date="93-12-10" />
+    <Word1100 Question="stunt" Answer="بازداشتن از – مانع شدن" Date="93-12-10" />
+    <Word1100 Question="stunted" Answer="از رشد باز مانده" Date="93-12-10" />
+    <Word1100 Question="atrophy" Answer="تحلیل رفتن – ضعیف – لاغر شدن – پلاسیدن" Date="93-12-10" />
+    <Word1100 Question="maim" Answer="معلول کردن – علیل کردن – ناقص کردن" Date="93-12-10" />
+    <Word1100 Question="ameliorate" Answer="بهبود بخشیدن – اصلاح کردن – بهتر شدن" Date="93-12-10" />
+    <Word1100 Question="cynic" Answer="بدبین – بد گمان – عیب جو" Date="93-12-10" />
+    <Word1100 Question="unctuous" Answer="چاپلوسانه – متملقانه – تملق آمیز" Date="93-12-10" />
+    <Word1100 Question="benevolent" Answer="نیک خواه – خیر خواه – خیر اندیش" Date="93-12-10" />
+    <Word1100 Question="subservient" Answer="پست – مادون – چاپلوس – مطیع" Date="93-12-10" />
+    <Word1100 Question="iniquity" Answer="ظلم – بی عدالتی – حق کشی – رذالت" Date="93-12-10" />
+    <Word1100 Question="largess" Answer="گشاده دستی – سخاوت – بذل و بخشش" Date="93-12-10" />
+    <Word1100 Question="criterion" Answer="معیار – ملاک – ضابطه – سنجه – میزان – مقیاس" Date="93-12-10" />
+    <Word1100 Question="repent" Answer="پشیمان شدن – افسوس خوردن – توبه کردن" Date="93-12-10" />
+    <Word1100 Question="mollify" Answer="آرام کردن – فرونشاندن – کاهش دادن – دلجویی کردن" Date="93-12-10" />
+    <Word1100 Question="mercenary" Answer="مادی – پولکی – پول دوست – طمعکار – مزدور" Date="93-12-10" />
+    <Word1100 Question="pariah" Answer="منفور – از طبقه پست – آدم رانده شده" Date="93-12-10" />
+    <Word1100 Question="aloof" Answer="دور – به کنار – کناره گیر – منزوی – گوشه گیر" Date="93-12-10" />
+    <Word1100 Question="pragmatic" Answer="عملی – عمل گرایانه – واقع بینانه – واقع بین" Date="93-12-10" />
+    <Word1100 Question="vestige" Answer="اثر – رد – نشان – باقیمانده – بقایا" Date="93-12-10" />
+    <Word1100 Question="guise" Answer="کسوت – هیئت – ظاهر – سیما – قیافه" Date="93-12-10" />
+    <Word1100 Question="nullify" Answer="فسخ کردن – باطل کردن – خنثی کردن – بی اثر کردن" Date="93-12-10" />
+    <Word1100 Question="delug" Answer="سیل – طوفان – غرق کردن – آب گرفتن" Date="93-12-10" />
+    <Word1100 Question="futility" Answer="بیهودگی – بی فایدگی – پوچی – کار عبث" Date="93-12-10" />
+    <Word1100 Question="carnage" Answer="قتل عام – خونریزی – کشت و کشتار – حمام خون" Date="93-12-10" />
+    <Word1100 Question="technology" Answer="تکنولوژی – فناوری – فنی" Date="93-12-10" />
+    <Word1100 Question="libel" Answer="افترا – هتک حرمت – بهتان – مایه ی آبروریزی" Date="93-12-10" />
+    <Word1100 Question="defamatory" Answer="افترا آمیز – موهن – رسوا کننده – بد نام کننده" Date="93-12-10" />
+    <Word1100 Question="plaintiff" Answer="شاکی – خواهان – مدعی" Date="93-12-10" />
+    <Word1100 Question="canard" Answer="خبر دروغ – شایعه ی بی اساس – گزارش غلط" Date="93-12-10" />
+    <Word1100 Question="deprecate" Answer="مخالفت کردن با – انتقاد کردن از – محکوم کردن" Date="93-12-10" />
+    <Word1100 Question="reputed" Answer="شناخته شده – مشهور" Date="93-12-10" />
+    <Word1100 Question="frail" Answer="شکننده – ظریف – ضعیف – کم بنیه" Date="93-12-10" />
+    <Word1100 Question="potent" Answer="موثر – قوی – پر قدرت – محکم" Date="93-12-10" />
+    <Word1100 Question="excoriate" Answer="سرزنش کردن – ملامت کردن – به سختی انتقاد کردن" Date="93-12-10" />
+    <Word1100 Question="devout" Answer="دین دار – مومن – متدین – با خدا – با اخلاص" Date="93-12-10" />
+    <Word1100 Question="diminutive" Answer="ریز – ریز نقش – کوچک – کوچولو – فسقلی – نقلی" Date="93-12-10" />
+    <Word1100 Question="profuse" Answer="فراوان – بی شمار – انبوه – بسیار – زیاد" Date="93-12-10" />
+    <Word1100 Question="dulcet" Answer="ملایم – دلپزیر – گوش نواز" Date="93-12-10" />
+    <Word1100 Question="impromptu" Answer="فی البداهه – بدون برنامه ریزی" Date="93-12-10" />
+    <Word1100 Question="malevolent" Answer="بد خواهانه – بد اندیشه – مغرضانه – موذیانه" Date="93-12-10" />
+    <Word1100 Question="wisful" Answer="آرزومند – مشتاق – خواهان – حسرت بار" Date="93-12-10" />
+    <Word1100 Question="raiment" Answer="جامه – پوشش -لباس" Date="93-12-10" />
+    <Word1100 Question="brigand" Answer="راهزن – سارق – دزد گردنه" Date="93-12-10" />
+    <Word1100 Question="corpulent" Answer="فربه – چاق – تنومند" Date="93-12-10" />
+    <Word1100 Question="rail" Answer="گله کردن از – شکایت کردن از – نالیدن از" Date="93-12-10" />
+    <Word1100 Question="raconteur" Answer="قصه گو" Date="93-12-10" />
+    <Word1100 Question="sullen" Answer="عبوس – بد عنق – گرفته – بد اخم" Date="93-12-10" />
+    <Word1100 Question="rift" Answer="شکاف – چاک – اختلاف – دودستگی – نفاق" Date="93-12-10" />
+    <Word1100 Question="emissary" Answer="سفیر – فرستاده مخصوص – پیک – قاصد" Date="93-12-10" />
+    <Word1100 Question="ruminate" Answer="در فکر فرو رفتن – تامل کردن – ژرف اندیشی کردن" Date="93-12-10" />
+    <Word1100 Question="taut" Answer="کشیده – سفت – منقبض – گرفته – مضطرب" Date="93-12-10" />
+    <Word1100 Question="livid" Answer="عصبانی – خشمگین – بر افروخته" Date="93-12-10" />
+    <Word1100 Question="martinet" Answer="آدم سخت گیر – آدم مقرراتی – آدم خشک" Date="93-12-10" />
+    <Word1100 Question="yen" Answer="میل – علاقه – اشتیاق – آرزو" Date="93-12-10" />
+    <Word1100 Question="bagatelle" Answer="چیز نا قابل – چیز بی مقدار – چیز بی ارزش" Date="93-12-10" />
+    <Word1100 Question="callow" Answer="خام – بی تجربه – نا پخته – چشم و گوش بسته" Date="93-12-10" />
+    <Word1100 Question="appalled" Answer="منزجر – بیزار – متنفر – شوکه – وحشت زده" Date="93-12-10" />
+    <Word1100 Question="penchant" Answer="علاقه شدید – میل وافر – تمایل زیاد – رغبت" Date="93-12-10" />
+    <Word1100 Question="decapitate" Answer="گردن زدن – سر بریدن – سر از تن جدا کردن" Date="93-12-10" />
+    <Word1100 Question="termagant" Answer="سلیطه – پتیاره – داد و بیداد کردن" Date="93-12-10" />
+    <Word1100 Question="ascertain" Answer="فهمیدن – پی بردن – دریافتن – روشن ساختن" Date="93-12-10" />
+    <Word1100 Question="dormant" Answer="معلق – مسکوت – نهفته – بالقوه – غیر فعال" Date="93-12-10" />
+    <Word1100 Question="burgeon" Answer="شکفتن – جوانه زدن – شکوفا شدن – رونق گرفتن" Date="93-12-10" />
+    <Word1100 Question="potentate" Answer="فرمانروای مطلق – حاکم – پادشاه" Date="93-12-10" />
+    <Word1100 Question="disseminate" Answer="پخش کردن – پراکندن – منتشر کردن – گسترش دادن" Date="93-12-10" />
+    <Word1100 Question="derive" Answer="استخراج کردن – بیرون کشیدن – گرفتن – استنتاج کردن" Date="93-12-10" />
+    <Word1100 Question="derived" Answer="اشتقاقی – مشتق شده" Date="93-12-10" />
+    <Word1100 Question="prerogative" Answer="امتیاز – اختیار – حق قانونی – حق انحصاری" Date="93-12-10" />
+    <Word1100 Question="nepotism" Answer="پارتی بازی" Date="93-12-10" />
+    <Word1100 Question="dearth" Answer="کمبود – قحطی" Date="93-12-10" />
+    <Word1100 Question="internecine" Answer="خانمان برانداز – خانمان سوز – خونین – مرگبار" Date="93-12-10" />
+    <Word1100 Question="tyro" Answer="آدم بی تجربه – مبتدی – تازه کار – نو آموز" Date="93-12-10" />
+    <Word1100 Question="sophistry" Answer="سفسطه – مغلطه – تحریف" Date="93-12-10" />
+    <Word1100 Question="factitious" Answer="مصنوعی – ساختگی – غیر طبیعی" Date="93-12-10" />
+    <Word1100 Question="encomium" Answer="ثنا – مدح – ستایش – تمجید – مدیحه" Date="93-12-10" />
+    <Word1100 Question="obloquy" Answer="بی آبرویی – رسوایی – بی حرمتی – فحش – ناسزا" Date="93-12-10" />
+    <Word1100 Question="hyperbole" Answer="مبالغه – اغراق" Date="93-12-10" />
+    <Word1100 Question="munificent" Answer="سخاوتمند – بخشنده – کریم – گشاده دست" Date="93-12-10" />
+    <Word1100 Question="prevarication" Answer="کتمان حقیقت – کلی بافی – لفاظی – طفره روی" Date="93-12-10" />
+    <Word1100 Question="charisma" Answer="جذبه – هیبت – جاذبه – ابهت – کرامت" Date="93-12-10" />
+    <Word1100 Question="genocide" Answer="نسل کشی – قوم کشی – قتل عام" Date="93-12-10" />
+  </Words1100>
+</LeitnerBox>

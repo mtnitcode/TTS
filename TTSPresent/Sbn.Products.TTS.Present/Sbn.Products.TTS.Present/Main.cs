@@ -891,6 +891,7 @@ namespace Sbn.Products.TTS.Present
                             {
                                 if (f._ReceiverIPAddress == sData[0])
                                 {
+                                    f.rtBox_Main.ScrollToCaret();
 
                                     if (sData[2].StartsWith("Attach"))
                                     {
@@ -899,6 +900,8 @@ namespace Sbn.Products.TTS.Present
                                     }
                                     else if (sData[2].StartsWith("Emot"))
                                     {
+                                        f.rtBox_Main.ScrollToCaret();
+
                                         var sem = sData[2].Split('=')[1];
                                         int c = 0;
                                         foreach (string s in f.semoticons)
@@ -907,10 +910,15 @@ namespace Sbn.Products.TTS.Present
                                                 f.rtBox_Main.InsertImage(f.emoticons[c]);
                                             c++;
                                         }
+                                        f.rtBox_Main.ScrollToCaret();
+
                                     }
                                     else
                                     {
-                                        f.rtBox_Main.InsertTextAsRtf("\n" + sData[2] + "\n", new Font(this.Font, FontStyle.Bold | FontStyle.Underline), RtfColor.Blue, RtfColor.Yellow);
+                                        f.rtBox_Main.ScrollToCaret();
+                                        f.rtBox_Main.InsertTextAsRtf("\n" );
+                                        f.rtBox_Main.InsertTextAsRtf(sData[2] , new Font(this.Font, FontStyle.Bold | FontStyle.Underline), RtfColor.Blue, RtfColor.Yellow);
+                                        f.rtBox_Main.InsertTextAsRtf("\n");
                                         //f.rtBox_Main.Text += "\n" + sData[2] + "\n";
                                         //f.rtBox_Main.SelectionStart = f.txtDialogues.Text.Length;
                                         f.rtBox_Main.ScrollToCaret();
@@ -940,6 +948,7 @@ namespace Sbn.Products.TTS.Present
                                 frmCH.cmdNames.Enabled = false;
                                 frmCH.TopMost = true;
                                 frmCH.Show();
+                                frmCH.rtBox_Main.ScrollToCaret();
 
                                 if (sData[2].StartsWith("Attach"))
                                 {
@@ -990,12 +999,15 @@ namespace Sbn.Products.TTS.Present
         private void ShowImageInChat(string[] sData, frmChat f)
         {
             string s = sData[2].Split('=')[1];
+            f.rtBox_Main.ScrollToCaret();
+            f.rtBox_Main.InsertTextAsRtf("\n");
+            f.rtBox_Main.ScrollToCaret();
 
             List<string> ex = new List<string> { ".jpg", ".png", ".bmp" };
-            if (ex.Contains(Path.GetExtension(s)))
+            if (ex.Contains(Path.GetExtension(s).ToLower()))
             {
 
-                using (var bmp = Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\" + Path.GetFileName(s)))
+                using (var bmp = Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\Attachments\\" + Path.GetFileName(s)))
                 {
                     if (bmp.Size.Width > f.rtBox_Main.Width - 50)
                     {
@@ -1008,12 +1020,18 @@ namespace Sbn.Products.TTS.Present
                     }
                     else
                         f.rtBox_Main.InsertImage(bmp);
+
                 }
             }
 
             //f.rtBox_Main.InsertTextAsRtf("\n");
+            f.rtBox_Main.ScrollToCaret();
+            f.rtBox_Main.InsertTextAsRtf("\n");
 
             f.rtBox_Main.InsertLink(AppDomain.CurrentDomain.BaseDirectory + "\\Attachments\\" + Path.GetFileName(s));
+            f.rtBox_Main.ScrollToCaret();
+            f.rtBox_Main.InsertTextAsRtf("\n");
+            f.rtBox_Main.ScrollToCaret();
 
             //f.rtBox_Main.InsertTextAsRtf("\n");
 
