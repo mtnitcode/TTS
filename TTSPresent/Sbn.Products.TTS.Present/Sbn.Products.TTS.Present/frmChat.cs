@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -34,6 +35,9 @@ namespace Sbn.Products.TTS.Present
 
 
         }
+        public Image[] emoticons;
+        public string[] semoticons = new string[9];
+
         private void frmChat_Load(object sender, EventArgs e)
         {
             
@@ -41,10 +45,61 @@ namespace Sbn.Products.TTS.Present
             string sIP = sName[0];
             _ReceiverIPAddress = sIP;
 
-            
-            
-        }
+            // Load Emoticon Images
+            emoticons = new Image[9];
+            emoticons[0] = new Bitmap( TTS.Present.Properties.Resources.AngelSmile);
+            semoticons[0] = "AngelSmile";
+            emoticons[1] = new Bitmap(TTS.Present.Properties.Resources.AngrySmile);
+            semoticons[1] = "AngrySmile";
+            emoticons[2] = new Bitmap(TTS.Present.Properties.Resources.Beer);
+            semoticons[2] = "Beer";
+            emoticons[3] = new Bitmap(TTS.Present.Properties.Resources.BrokenHeart);
+            semoticons[3] = "BrokenHeart";
+            emoticons[4] = new Bitmap(TTS.Present.Properties.Resources.ConfusedSmile);
+            semoticons[4] = "ConfusedSmile";
+            emoticons[5] = new Bitmap(TTS.Present.Properties.Resources.CrySmile);
+            semoticons[5] = "CrySmile";
+            emoticons[6] = new Bitmap(TTS.Present.Properties.Resources.DevilSmile);
+            semoticons[6] = "DevilSmile";
+            emoticons[7] = new Bitmap(TTS.Present.Properties.Resources.EmbarassedSmile);
+            semoticons[7] = "EmbarassedSmile";
+            emoticons[8] = new Bitmap(TTS.Present.Properties.Resources.ThumbsUp);
+            semoticons[8] = "ThumbsUp";
 
+
+            // Create Emoticon DropDownMenu
+            EmoticonMenuItem _menuItem;
+            int _count = 0;
+            foreach (Image _emoticon in emoticons)
+            {
+                _menuItem = new EmoticonMenuItem(_emoticon);
+                _menuItem.Name = semoticons[_count];
+                _menuItem.Click += new EventHandler(cmenu_Emoticons_Click);
+                if (_count % 3 == 0)
+                    _menuItem.BarBreak = true;
+
+                cmenu_Emoticons.MenuItems.Add(_menuItem);
+                ++_count;
+            }
+
+        }
+        // When an emoticon is clicked, insert its image into to RTF
+        private void cmenu_Emoticons_Click(object _sender, EventArgs _args)
+        {
+            EmoticonMenuItem _item = (EmoticonMenuItem)_sender;
+            try
+            {
+                TCPClient.SendMessage(_ReceiverIPAddress, Main._LocalIPAddress + ";#;" + Main._Name + ";#;" + "Emot=" + ((EmoticonMenuItem)_sender).Name, int.Parse(Utility._ChatPort));
+                //SendTCP(s, _ReceiverIPAddress, int.Parse(Utility._ChatPort));
+
+                rtBox_Main.InsertImage(_item.Image);
+
+            }
+            catch (Exception _e)
+            {
+                MessageBox.Show("Rtf Image Insert Error\n\n" + _e.ToString()) ;
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -57,13 +112,13 @@ namespace Sbn.Products.TTS.Present
 
                 TCPClient.SendMessage(_ReceiverIPAddress, Main._LocalIPAddress + ";#;" + Main._Name + ";#;" + this.txtText.Text , int.Parse(Utility._ChatPort));
 
-                this.txtDialogues.Text += "\n" + " شما : " + this.txtText.Text + "\n";
+
+                rtBox_Main.InsertTextAsRtf("\n" + " شما : " + this.txtText.Text + "\n");
+
 
                 this.txtText.Text = "";
 
-                this.txtDialogues.SelectionStart = this.txtDialogues.Text.Length;
-
-                this.txtDialogues.ScrollToCaret();
+                rtBox_Main.ScrollToCaret();
             }
             catch(Exception ex)
             {
@@ -86,7 +141,6 @@ namespace Sbn.Products.TTS.Present
                // if (_Projects.Count == 0)
                 {
 
-
 					List<string> lines = File.ReadAllLines(Utility._Receivers).ToList();
 
                     foreach(string sl in lines)
@@ -95,11 +149,8 @@ namespace Sbn.Products.TTS.Present
                         address = sl;
                         if (sl.Split(';').Length >= 2)
                             address = sl.Split(';')[0];
-
                         this.cmdNames.Items.Add(address);
-
                     }
-
                 }
             }
             catch (Exception ex)
@@ -138,7 +189,7 @@ namespace Sbn.Products.TTS.Present
                 System.IO.StreamWriter sw = null;
                 sw = System.IO.File.AppendText(Main._AddressAction + "\\" + this.cmdNames.Text.Replace("/", "").Replace(".", "") + ".txt");
 
-                string[] sss = this.txtDialogues.Text.Split('\n');
+                string[] sss = this.rtBox_Main.Text.Split('\n');
                 foreach (string s in sss)
                 {
                     sw.WriteLine(s + "\n");
@@ -170,7 +221,7 @@ namespace Sbn.Products.TTS.Present
         private void btnSave_Click(object sender, EventArgs e)
         {
             SaveDialog();
-            this.txtDialogues.Text = "";
+            this.rtBox_Main.Text = "";
             this.Hide();
         }
         public bool ThumbnailCallback()
@@ -183,8 +234,11 @@ namespace Sbn.Products.TTS.Present
 
             foreach (string s in ls)
             {
-                string[] ex = { ".jpg", ".png" };
-                if (Array.Exists(ex, ext => ext.StartsWith(Path.GetExtension(s))))
+
+                List<string> ex =new List<string>  { ".jpg", ".png"  , ".bmp"};
+                var exte = Path.GetExtension(s);
+
+                if (ex.Contains(exte))
                 {
 
                     using (var bmp = Bitmap.FromFile(s))
@@ -198,19 +252,32 @@ namespace Sbn.Products.TTS.Present
                             Image thumb = bmp.GetThumbnailImage((int)wscale, (int)hscale, ThumbnailCallback, IntPtr.Zero);
 
                             rtBox_Main.InsertImage(thumb);
-
-
                             //
 
-                            TCPClient.SendMessage(_ReceiverIPAddress, "Attach=" + s, int.Parse(Utility._ChatPort));
-
+                            TCPClient.SendMessage(_ReceiverIPAddress, Main._LocalIPAddress + ";#;" + Main._Name + ";#;" + "Attach=" + s, int.Parse(Utility._ChatPort));
+                            SendTCP(s, _ReceiverIPAddress, int.Parse(Utility._ChatPort));
                             //
                         }
                         else
                             rtBox_Main.InsertImage(bmp);
                     }
 
+
+                    //rtBox_Main.Text+= "\n";
                     rtBox_Main.InsertLink(s);
+                    //rtBox_Main.Text += "\n";
+
+                    //  rtBox_Main.InsertTextAsRtf("\n");
+
+                }
+                else
+                {
+                    TCPClient.SendMessage(_ReceiverIPAddress, Main._LocalIPAddress + ";#;" + Main._Name + ";#;" + "Attach=" + s, int.Parse(Utility._ChatPort));
+                    SendTCP(s, _ReceiverIPAddress, int.Parse(Utility._ChatPort));
+
+                    rtBox_Main.InsertLink(s);
+
+                    //rtBox_Main.Text += "\n";
 
                 }
             }
@@ -262,5 +329,73 @@ namespace Sbn.Products.TTS.Present
             }
         }
 
+        private void rtBox_Main_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            try
+            {
+                Process.Start(e.LinkText.Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\\\", "\\"));
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
+    public class EmoticonMenuItem : MenuItem
+    {
+
+        private const int ICON_WIDTH = 19;
+        private const int ICON_HEIGHT = 19;
+        private const int ICON_MARGIN = 4;
+        private Color backgroundColor, selectionColor, selectionBorderColor;
+        private Image image;
+        public Image Image
+        {
+            get { return image; }
+            set { image = value; }
+        }
+
+        public EmoticonMenuItem()
+        {
+            this.OwnerDraw = true;
+            backgroundColor = SystemColors.ControlLightLight;
+            selectionColor = Color.FromArgb(50, 0, 0, 150);
+            selectionBorderColor = SystemColors.Highlight;
+        }
+
+        public EmoticonMenuItem(Image _image) : this()
+        {
+            image = _image;
+        }
+
+        protected override void OnMeasureItem(MeasureItemEventArgs _args)
+        {
+            _args.ItemWidth = ICON_WIDTH + ICON_MARGIN;
+            _args.ItemHeight = ICON_HEIGHT + 2 * ICON_MARGIN;
+        }
+
+        protected override void OnDrawItem(DrawItemEventArgs _args)
+        {
+            Graphics _graphics = _args.Graphics;
+            Rectangle _bounds = _args.Bounds;
+
+            DrawBackground(_graphics, _bounds, ((_args.State & DrawItemState.Selected) != 0));
+            _graphics.DrawImage(image, _bounds.X + ((_bounds.Width - ICON_WIDTH) / 2), _bounds.Y + ((_bounds.Height - ICON_HEIGHT) / 2));
+        }
+
+        private void DrawBackground(Graphics _graphics, Rectangle _bounds, bool _selected)
+        {
+            if (_selected)
+            {
+                _graphics.FillRectangle(new SolidBrush(selectionColor), _bounds);
+                _graphics.DrawRectangle(new Pen(selectionBorderColor), _bounds.X, _bounds.Y,
+                    _bounds.Width - 1, _bounds.Height - 1);
+            }
+            else
+            {
+                _graphics.FillRectangle(new SolidBrush(backgroundColor), _bounds);
+            }
+        }
+    }
+
 }

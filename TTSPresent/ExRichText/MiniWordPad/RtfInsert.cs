@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -118,18 +118,19 @@ namespace RtfInsert
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(12);
-            this.panel1.Size = new System.Drawing.Size(754, 370);
+            this.panel1.Size = new System.Drawing.Size(754, 286);
             this.panel1.TabIndex = 1;
             // 
             // rtBox_Main
             // 
             this.rtBox_Main.AllowDrop = true;
             this.rtBox_Main.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtBox_Main.DetectUrls = true;
             this.rtBox_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtBox_Main.HiglightColor = Khendys.Controls.RtfColor.White;
             this.rtBox_Main.Location = new System.Drawing.Point(12, 12);
             this.rtBox_Main.Name = "rtBox_Main";
-            this.rtBox_Main.Size = new System.Drawing.Size(730, 346);
+            this.rtBox_Main.Size = new System.Drawing.Size(730, 262);
             this.rtBox_Main.TabIndex = 0;
             this.rtBox_Main.Text = "";
             this.rtBox_Main.TextColor = Khendys.Controls.RtfColor.Black;
@@ -139,7 +140,7 @@ namespace RtfInsert
             // RtfInsert
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(754, 370);
+            this.ClientSize = new System.Drawing.Size(754, 286);
             this.Controls.Add(this.panel1);
             this.Menu = this.mainMenu1;
             this.Name = "RtfInsert";
@@ -229,7 +230,7 @@ namespace RtfInsert
 			_fonts[1] = new Font(FontFamily.GenericSansSerif, 12f);
 			_fonts[2] = new Font(FontFamily.GenericMonospace, 8f);
 
-			_about[0] = "This text and images are ";
+			_about[0] = "This متن تستی and images are ";
 			_about[1] = "being inserted on the\n";
 			_about[2] = "Click ";
 			_about[3] = "event of this menu item.\n\n";

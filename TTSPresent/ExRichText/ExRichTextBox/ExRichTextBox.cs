@@ -497,9 +497,12 @@ namespace Khendys.Controls {
 			// Apppend a space before starting actual text (for clarity)
 			_doc.Append(@" ");
 
-			// Append actual text, however, replace newlines with RTF \par.
-			// Any other special text should be handled here (e.g.) tabs, etc.
-			_doc.Append(_text.Replace("\n", @"\par "));
+            // Append actual text, however, replace newlines with RTF \par.
+            // Any other special text should be handled here (e.g.) tabs, etc.
+
+            var txt = GetRtfUnicodeEscapedString(_text);
+
+            _doc.Append(txt.Replace("\n", @"\par "));
 
 			// RTF isn't strict when it comes to closing control words, but what the
 			// heck ...
@@ -532,30 +535,43 @@ namespace Khendys.Controls {
 
 			return _doc.ToString();
 		}
+        static string GetRtfUnicodeEscapedString(string s)
+        {
+            var sb = new StringBuilder();
+            foreach (var c in s)
+            {
+                if (c == '\\' || c == '{' || c == '}')
+                    sb.Append(@"\" + c);
+                else if (c <= 0x7f)
+                    sb.Append(c);
+                else
+                    sb.Append("\\u" + Convert.ToUInt32(c) + "?");
+            }
+            return sb.ToString();
+        }
+        #endregion
 
-		#endregion
+        #region Insert Image
 
-		#region Insert Image
-
-		/// <summary>
-		/// Inserts an image into the RichTextBox.  The image is wrapped in a Windows
-		/// Format Metafile, because although Microsoft discourages the use of a WMF,
-		/// the RichTextBox (and even MS Word), wraps an image in a WMF before inserting
-		/// the image into a document.  The WMF is attached in HEX format (a string of
-		/// HEX numbers).
-		/// 
-		/// The RTF Specification v1.6 says that you should be able to insert bitmaps,
-		/// .jpegs, .gifs, .pngs, and Enhanced Metafiles (.emf) directly into an RTF
-		/// document without the WMF wrapper. This works fine with MS Word,
-		/// however, when you don't wrap images in a WMF, WordPad and
-		/// RichTextBoxes simply ignore them.  Both use the riched20.dll or msfted.dll.
-		/// </summary>
-		/// <remarks>
-		/// NOTE: The image is inserted wherever the caret is at the time of the call,
-		/// and if any text is selected, that text is replaced.
-		/// </remarks>
-		/// <param name="_image"></param>
-		public void InsertImage(Image _image) {
+        /// <summary>
+        /// Inserts an image into the RichTextBox.  The image is wrapped in a Windows
+        /// Format Metafile, because although Microsoft discourages the use of a WMF,
+        /// the RichTextBox (and even MS Word), wraps an image in a WMF before inserting
+        /// the image into a document.  The WMF is attached in HEX format (a string of
+        /// HEX numbers).
+        /// 
+        /// The RTF Specification v1.6 says that you should be able to insert bitmaps,
+        /// .jpegs, .gifs, .pngs, and Enhanced Metafiles (.emf) directly into an RTF
+        /// document without the WMF wrapper. This works fine with MS Word,
+        /// however, when you don't wrap images in a WMF, WordPad and
+        /// RichTextBoxes simply ignore them.  Both use the riched20.dll or msfted.dll.
+        /// </summary>
+        /// <remarks>
+        /// NOTE: The image is inserted wherever the caret is at the time of the call,
+        /// and if any text is selected, that text is replaced.
+        /// </remarks>
+        /// <param name="_image"></param>
+        public void InsertImage(Image _image) {
 
 			StringBuilder _rtf = new StringBuilder();
 

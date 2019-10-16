@@ -265,4 +265,31 @@
   <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AngelSmile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AngelSmile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AngrySmile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AngrySmile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrokenHeart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BrokenHeart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConfusedSmile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConfusedSmile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CrySmile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrySmile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DevilSmile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DevilSmile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EmbarassedSmile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EmbarassedSmile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThumbsUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ThumbsUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

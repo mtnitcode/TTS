@@ -1,6 +1,5 @@
 ﻿using Gma.UserActivityMonitor;
 using Khendys.Controls;
-using Sbn.Controls.EventCalendar;
 using Sbn.Controls.FDate.Utils;
 using Sbn.Libs.TCPListener;
 using System;
@@ -16,6 +15,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using Sbn.Controls.EventCalendar;
 
 namespace Sbn.Products.TTS.Present
 {
@@ -405,8 +405,7 @@ namespace Sbn.Products.TTS.Present
                 {
                     if (!f.Visible) f.Show();
 
-                    f.txtDialogues.SelectionStart = f.txtDialogues.Text.Length;
-                    f.txtDialogues.ScrollToCaret();
+                    f.rtBox_Main.ScrollToCaret();
 
                     fFind = true;
                     f.Show();
@@ -893,18 +892,32 @@ namespace Sbn.Products.TTS.Present
                                 if (f._ReceiverIPAddress == sData[0])
                                 {
 
-                                    f.rtBox_Main.InsertTextAsRtf("\n" + sData[2]+"\n", new Font(this.Font, FontStyle.Bold | FontStyle.Underline), RtfColor.Blue, RtfColor.Yellow);
-                                    //f.rtBox_Main.Text += "\n" + sData[2] + "\n";
-                                    //f.rtBox_Main.SelectionStart = f.txtDialogues.Text.Length;
-                                    f.rtBox_Main.ScrollToCaret();
+                                    if (sData[2].StartsWith("Attach"))
+                                    {
+                                        ShowImageInChat(sData, f);
 
+                                    }
+                                    else if (sData[2].StartsWith("Emot"))
+                                    {
+                                        var sem = sData[2].Split('=')[1];
+                                        int c = 0;
+                                        foreach (string s in f.semoticons)
+                                        {
+                                            if (s == sem)
+                                                f.rtBox_Main.InsertImage(f.emoticons[c]);
+                                            c++;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        f.rtBox_Main.InsertTextAsRtf("\n" + sData[2] + "\n", new Font(this.Font, FontStyle.Bold | FontStyle.Underline), RtfColor.Blue, RtfColor.Yellow);
+                                        //f.rtBox_Main.Text += "\n" + sData[2] + "\n";
+                                        //f.rtBox_Main.SelectionStart = f.txtDialogues.Text.Length;
+                                        f.rtBox_Main.ScrollToCaret();
+                                    }
 
-                                    f.txtDialogues.Text += "\n" + sData[2] + "\n";
                                     f.TopMost = true;
                                     if (!f.Visible) f.Show();
-
-                                    f.txtDialogues.SelectionStart = f.txtDialogues.Text.Length;
-                                    f.txtDialogues.ScrollToCaret();
 
                                     fFind = true;
                                     f.WindowState = FormWindowState.Normal;
@@ -923,23 +936,34 @@ namespace Sbn.Products.TTS.Present
                                 frmCH._ReceiverIPAddress = sData[0];
                                 frmCH.cmdNames.Text = sData[0] + "/" + sData[1];
                                 frmCH.Text = sData[0] + "/" + sData[1];
-                                frmCH.txtDialogues.Text += "\n" + sData[2] + "\n";
-
-
-
 
                                 frmCH.cmdNames.Enabled = false;
                                 frmCH.TopMost = true;
                                 frmCH.Show();
 
+                                if (sData[2].StartsWith("Attach"))
+                                {
+                                    ShowImageInChat(sData, frmCH);
 
-                                frmCH.rtBox_Main.InsertTextAsRtf("\n" + sData[2] + "\n", new Font(this.Font, FontStyle.Bold | FontStyle.Underline), RtfColor.Blue, RtfColor.Yellow);
-                                //f.rtBox_Main.Text += "\n" + sData[2] + "\n";
-                                //f.rtBox_Main.SelectionStart = f.txtDialogues.Text.Length;
-                                frmCH.rtBox_Main.ScrollToCaret();
-
-                                frmCH.txtDialogues.SelectionStart = frmCH.txtDialogues.Text.Length;
-                                frmCH.txtDialogues.ScrollToCaret();
+                                }
+                                else if (sData[2].StartsWith("Emot"))
+                                {
+                                    var sem = sData[2].Split('=')[1];
+                                    int c = 0;
+                                    foreach (string s in frmCH.semoticons)
+                                    {
+                                        if (s == sem)
+                                            frmCH.rtBox_Main.InsertImage(frmCH.emoticons[c]);
+                                        c++;
+                                    }
+                                }
+                                else
+                                {
+                                    frmCH.rtBox_Main.InsertTextAsRtf("\n" + sData[2] + "\n", new Font(this.Font, FontStyle.Bold | FontStyle.Underline), RtfColor.Blue, RtfColor.Yellow);
+                                    //f.rtBox_Main.Text += "\n" + sData[2] + "\n";
+                                    //f.rtBox_Main.SelectionStart = f.txtDialogues.Text.Length;
+                                    frmCH.rtBox_Main.ScrollToCaret();
+                                }
 
                                 _ChatForms.Add(frmCH);
                                 frmCH.TopMost = false;
@@ -961,6 +985,43 @@ namespace Sbn.Products.TTS.Present
 			}
 			//
 			this.timer1.Start();
+        }
+
+        private void ShowImageInChat(string[] sData, frmChat f)
+        {
+            string s = sData[2].Split('=')[1];
+
+            List<string> ex = new List<string> { ".jpg", ".png", ".bmp" };
+            if (ex.Contains(Path.GetExtension(s)))
+            {
+
+                using (var bmp = Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory + "\\" + Path.GetFileName(s)))
+                {
+                    if (bmp.Size.Width > f.rtBox_Main.Width - 50)
+                    {
+                        float wscale = ((f.rtBox_Main.Width - 50) / (float)bmp.Size.Width) * bmp.Size.Width;
+
+                        float hscale = ((f.rtBox_Main.Width - 50) / (float)bmp.Size.Width) * bmp.Size.Height;
+                        Image thumb = bmp.GetThumbnailImage((int)wscale, (int)hscale, ThumbnailCallback, IntPtr.Zero);
+
+                        f.rtBox_Main.InsertImage(thumb);
+                    }
+                    else
+                        f.rtBox_Main.InsertImage(bmp);
+                }
+            }
+
+            //f.rtBox_Main.InsertTextAsRtf("\n");
+
+            f.rtBox_Main.InsertLink(AppDomain.CurrentDomain.BaseDirectory + "\\Attachments\\" + Path.GetFileName(s));
+
+            //f.rtBox_Main.InsertTextAsRtf("\n");
+
+        }
+
+        public bool ThumbnailCallback()
+        {
+            return false;
         }
         static List<string> _Displayed = new List<string>();
         private void CheckReminder()

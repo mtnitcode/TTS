@@ -95,17 +95,18 @@ namespace Sbn.Libs.TCPListener
 
                         int totalrecbytes = 0;
                         FileStream Fs = null;
-                        if (_BinaryFilePending)
-                        {
-                            string[] atts = _ReceivedData.Split('=');
-                            Fs = new FileStream(AppDomain.CurrentDomain.BaseDirectory + "\\" + Path.GetFileName(atts[1]), FileMode.OpenOrCreate, FileAccess.Write);
-                        }
+
                         // Loop to receive all the data sent by the client.
                         while ((i = stream.Read(bytes, 0, bytes.Length)) != 0 )
                         {
                             try
                             {
-
+                                if (_BinaryFilePending && _ReceivedData.IndexOf("Attach") >=0 && Fs == null)
+                                {
+                                    if (!Directory.Exists(AppDomain.CurrentDomain.BaseDirectory + "\\Attachments")) Directory.CreateDirectory(AppDomain.CurrentDomain.BaseDirectory + "\\Attachments");
+                                    string[] atts = _ReceivedData.Split('=');
+                                    Fs = new FileStream(AppDomain.CurrentDomain.BaseDirectory + "\\Attachments\\" + Path.GetFileName(atts[1]), FileMode.OpenOrCreate, FileAccess.Write);
+                                }
                                 if (!_BinaryFilePending)
                                 {
                                     // Translate data bytes to a ASCII string.
@@ -128,19 +129,19 @@ namespace Sbn.Libs.TCPListener
                                     stream.Write(msg, 0, msg.Length);
                                     //Console.WriteLine("Sent: {0}", data);
 
-                                    if(data.StartsWith("Attach"))
+                                    if (data.IndexOf("Attach")>=0)
                                     {
+
                                         _BinaryFilePending = true;
-                            string[] atts = _ReceivedData.Split('=');
-                                        ReceivedData(atts[1]);
+                                        string[] atts = _ReceivedData.Split('=');
+                                        ReceivedData(data);
 
                                     }
                                     else if (data != "Alive?")
                                         ReceivedData(_ReceivedData);
 
-
                                 }
-                                else
+                                else if (Fs != null)
                                 {
                                     Fs.Write(bytes, 0, i);
                                     totalrecbytes += i;
@@ -154,7 +155,7 @@ namespace Sbn.Libs.TCPListener
 
                         }
 
-                        if (_BinaryFilePending)
+                        if (_BinaryFilePending && Fs != null)
                         {
                             _ReceivedData = "";
                             _BinaryFilePending = false;

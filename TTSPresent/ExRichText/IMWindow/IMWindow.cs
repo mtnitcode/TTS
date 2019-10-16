@@ -91,146 +91,153 @@ namespace IMWindow {
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-			this.rtbox_MessageHistory = new Khendys.Controls.ExRichTextBox();
-			this.rtbox_SendMessage = new Khendys.Controls.ExRichTextBox();
-			this.lbl_MessageHistory = new System.Windows.Forms.Label();
-			this.pnl_SendMessage = new System.Windows.Forms.Panel();
-			this.chBox_ShowRtf = new System.Windows.Forms.CheckBox();
-			this.btn_SendMessage = new System.Windows.Forms.Button();
-			this.tbar_SendMessage = new System.Windows.Forms.ToolBar();
-			this.tbBtn_Font = new System.Windows.Forms.ToolBarButton();
-			this.tbBtn_Emoticons = new System.Windows.Forms.ToolBarButton();
-			this.cmenu_Emoticons = new System.Windows.Forms.ContextMenu();
-			this.pnl_MessageHistory = new System.Windows.Forms.Panel();
-			this.fdlg_SendMessage = new System.Windows.Forms.FontDialog();
-			this.pnl_SendMessage.SuspendLayout();
-			this.pnl_MessageHistory.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// rtbox_MessageHistory
-			// 
-			this.rtbox_MessageHistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.rtbox_MessageHistory.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.rtbox_MessageHistory.HiglightColor = Khendys.Controls.RtfColor.White;
-			this.rtbox_MessageHistory.Location = new System.Drawing.Point(0, 23);
-			this.rtbox_MessageHistory.Name = "rtbox_MessageHistory";
-			this.rtbox_MessageHistory.ReadOnly = true;
-			this.rtbox_MessageHistory.Size = new System.Drawing.Size(512, 158);
-			this.rtbox_MessageHistory.TabIndex = 0;
-			this.rtbox_MessageHistory.Text = "";
-			this.rtbox_MessageHistory.TextColor = Khendys.Controls.RtfColor.Black;
-			// 
-			// rtbox_SendMessage
-			// 
-			this.rtbox_SendMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.rtbox_SendMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.rtbox_SendMessage.HiglightColor = Khendys.Controls.RtfColor.White;
-			this.rtbox_SendMessage.Location = new System.Drawing.Point(0, 39);
-			this.rtbox_SendMessage.Name = "rtbox_SendMessage";
-			this.rtbox_SendMessage.Size = new System.Drawing.Size(424, 89);
-			this.rtbox_SendMessage.TabIndex = 1;
-			this.rtbox_SendMessage.Text = "";
-			this.rtbox_SendMessage.TextColor = Khendys.Controls.RtfColor.Black;
-			// 
-			// lbl_MessageHistory
-			// 
-			this.lbl_MessageHistory.Dock = System.Windows.Forms.DockStyle.Top;
-			this.lbl_MessageHistory.Name = "lbl_MessageHistory";
-			this.lbl_MessageHistory.Size = new System.Drawing.Size(512, 23);
-			this.lbl_MessageHistory.TabIndex = 2;
-			this.lbl_MessageHistory.Text = "Chat History";
-			// 
-			// pnl_SendMessage
-			// 
-			this.pnl_SendMessage.Controls.AddRange(new System.Windows.Forms.Control[] {
-																						  this.chBox_ShowRtf,
-																						  this.rtbox_SendMessage,
-																						  this.btn_SendMessage,
-																						  this.tbar_SendMessage});
-			this.pnl_SendMessage.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.pnl_SendMessage.Location = new System.Drawing.Point(0, 181);
-			this.pnl_SendMessage.Name = "pnl_SendMessage";
-			this.pnl_SendMessage.Size = new System.Drawing.Size(512, 128);
-			this.pnl_SendMessage.TabIndex = 3;
-			// 
-			// chBox_ShowRtf
-			// 
-			this.chBox_ShowRtf.Checked = true;
-			this.chBox_ShowRtf.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.chBox_ShowRtf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.chBox_ShowRtf.Location = new System.Drawing.Point(192, 8);
-			this.chBox_ShowRtf.Name = "chBox_ShowRtf";
-			this.chBox_ShowRtf.Size = new System.Drawing.Size(136, 24);
-			this.chBox_ShowRtf.TabIndex = 4;
-			this.chBox_ShowRtf.Text = "Show Rtf Codes";
-			this.chBox_ShowRtf.CheckedChanged += new System.EventHandler(this.chBox_ShowRtf_CheckedChanged);
-			// 
-			// btn_SendMessage
-			// 
-			this.btn_SendMessage.Dock = System.Windows.Forms.DockStyle.Right;
-			this.btn_SendMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn_SendMessage.Location = new System.Drawing.Point(424, 39);
-			this.btn_SendMessage.Name = "btn_SendMessage";
-			this.btn_SendMessage.Size = new System.Drawing.Size(88, 89);
-			this.btn_SendMessage.TabIndex = 3;
-			this.btn_SendMessage.Text = "Send";
-			this.btn_SendMessage.Click += new System.EventHandler(this.btn_SendMessage_Click);
-			// 
-			// tbar_SendMessage
-			// 
-			this.tbar_SendMessage.Buttons.AddRange(new System.Windows.Forms.ToolBarButton[] {
-																								this.tbBtn_Font,
-																								this.tbBtn_Emoticons});
-			this.tbar_SendMessage.DropDownArrows = true;
-			this.tbar_SendMessage.Name = "tbar_SendMessage";
-			this.tbar_SendMessage.ShowToolTips = true;
-			this.tbar_SendMessage.Size = new System.Drawing.Size(512, 39);
-			this.tbar_SendMessage.TabIndex = 2;
-			this.tbar_SendMessage.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.tbar_SendMessage_ButtonClick);
-			// 
-			// tbBtn_Font
-			// 
-			this.tbBtn_Font.Text = "Font";
-			this.tbBtn_Font.ToolTipText = "Change the font for messages you send";
-			// 
-			// tbBtn_Emoticons
-			// 
-			this.tbBtn_Emoticons.DropDownMenu = this.cmenu_Emoticons;
-			this.tbBtn_Emoticons.Style = System.Windows.Forms.ToolBarButtonStyle.DropDownButton;
-			this.tbBtn_Emoticons.Text = "Emoticons";
-			this.tbBtn_Emoticons.ToolTipText = "Insert an emoticon";
-			// 
-			// pnl_MessageHistory
-			// 
-			this.pnl_MessageHistory.Controls.AddRange(new System.Windows.Forms.Control[] {
-																							 this.rtbox_MessageHistory,
-																							 this.lbl_MessageHistory});
-			this.pnl_MessageHistory.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pnl_MessageHistory.Name = "pnl_MessageHistory";
-			this.pnl_MessageHistory.Size = new System.Drawing.Size(512, 181);
-			this.pnl_MessageHistory.TabIndex = 4;
-			// 
-			// fdlg_SendMessage
-			// 
-			this.fdlg_SendMessage.ShowColor = true;
-			// 
-			// IMWindow
-			// 
-			this.AcceptButton = this.btn_SendMessage;
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(512, 309);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this.pnl_MessageHistory,
-																		  this.pnl_SendMessage});
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "IMWindow";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-			this.Text = "IM Window";
-			this.Load += new System.EventHandler(this.IMWindow_Load);
-			this.pnl_SendMessage.ResumeLayout(false);
-			this.pnl_MessageHistory.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.rtbox_MessageHistory = new Khendys.Controls.ExRichTextBox();
+            this.rtbox_SendMessage = new Khendys.Controls.ExRichTextBox();
+            this.lbl_MessageHistory = new System.Windows.Forms.Label();
+            this.pnl_SendMessage = new System.Windows.Forms.Panel();
+            this.chBox_ShowRtf = new System.Windows.Forms.CheckBox();
+            this.btn_SendMessage = new System.Windows.Forms.Button();
+            this.tbar_SendMessage = new System.Windows.Forms.ToolBar();
+            this.tbBtn_Font = new System.Windows.Forms.ToolBarButton();
+            this.tbBtn_Emoticons = new System.Windows.Forms.ToolBarButton();
+            this.cmenu_Emoticons = new System.Windows.Forms.ContextMenu();
+            this.pnl_MessageHistory = new System.Windows.Forms.Panel();
+            this.fdlg_SendMessage = new System.Windows.Forms.FontDialog();
+            this.pnl_SendMessage.SuspendLayout();
+            this.pnl_MessageHistory.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // rtbox_MessageHistory
+            // 
+            this.rtbox_MessageHistory.AllowDrop = true;
+            this.rtbox_MessageHistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtbox_MessageHistory.DetectUrls = true;
+            this.rtbox_MessageHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbox_MessageHistory.HiglightColor = Khendys.Controls.RtfColor.White;
+            this.rtbox_MessageHistory.Location = new System.Drawing.Point(0, 23);
+            this.rtbox_MessageHistory.Name = "rtbox_MessageHistory";
+            this.rtbox_MessageHistory.ReadOnly = true;
+            this.rtbox_MessageHistory.Size = new System.Drawing.Size(512, 158);
+            this.rtbox_MessageHistory.TabIndex = 0;
+            this.rtbox_MessageHistory.Text = "";
+            this.rtbox_MessageHistory.TextColor = Khendys.Controls.RtfColor.Black;
+            // 
+            // rtbox_SendMessage
+            // 
+            this.rtbox_SendMessage.AllowDrop = true;
+            this.rtbox_SendMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtbox_SendMessage.DetectUrls = true;
+            this.rtbox_SendMessage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbox_SendMessage.HiglightColor = Khendys.Controls.RtfColor.White;
+            this.rtbox_SendMessage.Location = new System.Drawing.Point(0, 50);
+            this.rtbox_SendMessage.Name = "rtbox_SendMessage";
+            this.rtbox_SendMessage.Size = new System.Drawing.Size(424, 78);
+            this.rtbox_SendMessage.TabIndex = 1;
+            this.rtbox_SendMessage.Text = "";
+            this.rtbox_SendMessage.TextColor = Khendys.Controls.RtfColor.Black;
+            // 
+            // lbl_MessageHistory
+            // 
+            this.lbl_MessageHistory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_MessageHistory.Location = new System.Drawing.Point(0, 0);
+            this.lbl_MessageHistory.Name = "lbl_MessageHistory";
+            this.lbl_MessageHistory.Size = new System.Drawing.Size(512, 23);
+            this.lbl_MessageHistory.TabIndex = 2;
+            this.lbl_MessageHistory.Text = "Chat History";
+            // 
+            // pnl_SendMessage
+            // 
+            this.pnl_SendMessage.Controls.Add(this.chBox_ShowRtf);
+            this.pnl_SendMessage.Controls.Add(this.rtbox_SendMessage);
+            this.pnl_SendMessage.Controls.Add(this.btn_SendMessage);
+            this.pnl_SendMessage.Controls.Add(this.tbar_SendMessage);
+            this.pnl_SendMessage.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_SendMessage.Location = new System.Drawing.Point(0, 181);
+            this.pnl_SendMessage.Name = "pnl_SendMessage";
+            this.pnl_SendMessage.Size = new System.Drawing.Size(512, 128);
+            this.pnl_SendMessage.TabIndex = 3;
+            // 
+            // chBox_ShowRtf
+            // 
+            this.chBox_ShowRtf.Checked = true;
+            this.chBox_ShowRtf.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chBox_ShowRtf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chBox_ShowRtf.Location = new System.Drawing.Point(333, 6);
+            this.chBox_ShowRtf.Name = "chBox_ShowRtf";
+            this.chBox_ShowRtf.Size = new System.Drawing.Size(136, 24);
+            this.chBox_ShowRtf.TabIndex = 4;
+            this.chBox_ShowRtf.Text = "Show Rtf Codes";
+            this.chBox_ShowRtf.CheckedChanged += new System.EventHandler(this.chBox_ShowRtf_CheckedChanged);
+            // 
+            // btn_SendMessage
+            // 
+            this.btn_SendMessage.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_SendMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SendMessage.Location = new System.Drawing.Point(424, 50);
+            this.btn_SendMessage.Name = "btn_SendMessage";
+            this.btn_SendMessage.Size = new System.Drawing.Size(88, 78);
+            this.btn_SendMessage.TabIndex = 3;
+            this.btn_SendMessage.Text = "Send";
+            this.btn_SendMessage.Click += new System.EventHandler(this.btn_SendMessage_Click);
+            // 
+            // tbar_SendMessage
+            // 
+            this.tbar_SendMessage.Buttons.AddRange(new System.Windows.Forms.ToolBarButton[] {
+            this.tbBtn_Font,
+            this.tbBtn_Emoticons});
+            this.tbar_SendMessage.DropDownArrows = true;
+            this.tbar_SendMessage.Location = new System.Drawing.Point(0, 0);
+            this.tbar_SendMessage.Name = "tbar_SendMessage";
+            this.tbar_SendMessage.ShowToolTips = true;
+            this.tbar_SendMessage.Size = new System.Drawing.Size(512, 50);
+            this.tbar_SendMessage.TabIndex = 2;
+            this.tbar_SendMessage.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.tbar_SendMessage_ButtonClick);
+            // 
+            // tbBtn_Font
+            // 
+            this.tbBtn_Font.Name = "tbBtn_Font";
+            this.tbBtn_Font.Text = "Font";
+            this.tbBtn_Font.ToolTipText = "Change the font for messages you send";
+            // 
+            // tbBtn_Emoticons
+            // 
+            this.tbBtn_Emoticons.DropDownMenu = this.cmenu_Emoticons;
+            this.tbBtn_Emoticons.Name = "tbBtn_Emoticons";
+            this.tbBtn_Emoticons.Style = System.Windows.Forms.ToolBarButtonStyle.DropDownButton;
+            this.tbBtn_Emoticons.Text = "Emoticons";
+            this.tbBtn_Emoticons.ToolTipText = "Insert an emoticon";
+            // 
+            // pnl_MessageHistory
+            // 
+            this.pnl_MessageHistory.Controls.Add(this.rtbox_MessageHistory);
+            this.pnl_MessageHistory.Controls.Add(this.lbl_MessageHistory);
+            this.pnl_MessageHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_MessageHistory.Location = new System.Drawing.Point(0, 0);
+            this.pnl_MessageHistory.Name = "pnl_MessageHistory";
+            this.pnl_MessageHistory.Size = new System.Drawing.Size(512, 181);
+            this.pnl_MessageHistory.TabIndex = 4;
+            // 
+            // fdlg_SendMessage
+            // 
+            this.fdlg_SendMessage.ShowColor = true;
+            // 
+            // IMWindow
+            // 
+            this.AcceptButton = this.btn_SendMessage;
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.ClientSize = new System.Drawing.Size(512, 309);
+            this.Controls.Add(this.pnl_MessageHistory);
+            this.Controls.Add(this.pnl_SendMessage);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "IMWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "IM Window";
+            this.Load += new System.EventHandler(this.IMWindow_Load);
+            this.pnl_SendMessage.ResumeLayout(false);
+            this.pnl_SendMessage.PerformLayout();
+            this.pnl_MessageHistory.ResumeLayout(false);
+            this.ResumeLayout(false);
 
 		}
 		#endregion

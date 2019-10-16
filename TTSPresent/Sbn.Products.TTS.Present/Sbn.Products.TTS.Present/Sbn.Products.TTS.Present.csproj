@@ -178,6 +178,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmChat.resx">
       <DependentUpon>frmChat.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClock.resx">
       <DependentUpon>frmClock.cs</DependentUpon>
@@ -251,6 +252,24 @@
     <None Include="Resources\save_as.png" />
     <None Include="Resources\check_boxes.png" />
     <None Include="Resources\Refresh.png" />
+    <Content Include="Emoticons\AngelSmile.png" />
+    <Content Include="Emoticons\AngrySmile.png" />
+    <Content Include="Emoticons\Beer.png" />
+    <Content Include="Emoticons\BrokenHeart.png" />
+    <Content Include="Emoticons\ConfusedSmile.png" />
+    <Content Include="Emoticons\CrySmile.png" />
+    <Content Include="Emoticons\DevilSmile.png" />
+    <Content Include="Emoticons\EmbarassedSmile.png" />
+    <Content Include="Emoticons\ThumbsUp.png" />
+    <None Include="Resources\AngelSmile.png" />
+    <None Include="Resources\AngrySmile.png" />
+    <None Include="Resources\Beer.png" />
+    <None Include="Resources\BrokenHeart.png" />
+    <None Include="Resources\ConfusedSmile.png" />
+    <None Include="Resources\CrySmile.png" />
+    <None Include="Resources\DevilSmile.png" />
+    <None Include="Resources\EmbarassedSmile.png" />
+    <None Include="Resources\ThumbsUp.png" />
     <Content Include="xml\user.xml" />
     <None Include="Resources\page_magnifier.png" />
     <None Include="Resources\cancel.png" />
