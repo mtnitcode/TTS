@@ -986,7 +986,7 @@ namespace Sbn.Products.TTS.Present
                                 _ChatForms.Add(frmCH);
                                 frmCH.TopMost = false;
 
-                            }
+                            }   
                         }
                     }
                     catch
