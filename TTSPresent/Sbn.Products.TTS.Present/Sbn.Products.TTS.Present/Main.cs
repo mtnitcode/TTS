@@ -367,6 +367,7 @@ namespace Sbn.Products.TTS.Present
             {
                 MessageBox.Show("اشکال در بازیابی  فهرست مخاطبان!");
                 _thread.Abort();
+                _thread = null;
 
             }
 
@@ -546,7 +547,7 @@ namespace Sbn.Products.TTS.Present
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(ex.Message, "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -610,7 +611,7 @@ namespace Sbn.Products.TTS.Present
             {
                 Main._EndOfProcessNetwork = false;
 
-                List<string> Clients = new List<string>();
+                //List<string> Clients = new List<string>();
                 string[] ips = Main._LocalIPAddress.Split('.');
                 for (int i = 1; i <= 255; i++)
                 {
@@ -651,8 +652,10 @@ namespace Sbn.Products.TTS.Present
                                 sp[0] = ";#;";
 
                                 string[] sData = ss.Split(sp, StringSplitOptions.None);
-                                Clients.Add(ip + "/" + sData[1]);
+                                Main._TempAliveClient.Add(ip + "/" + sData[1]);
                                 //this.tspmChat.DropDownItems.Add(ip + "/" + sData[1]);
+                                sock.Close();
+
                             }
                         }
                         else
@@ -686,13 +689,19 @@ namespace Sbn.Products.TTS.Present
 
                 }
 
-                Main._TempAliveClient = Clients;
+                //Main._TempAliveClient = Clients;
                 Main._EndOfProcessNetwork = true;
 
             }
             catch (Exception ex)
             {
+                Main._EndOfProcessNetwork = true;
 
+            }
+            finally
+            {
+                _thread.Abort();
+                _thread = null;
             }
 
         }
@@ -1054,7 +1063,6 @@ namespace Sbn.Products.TTS.Present
 				//this.cmdProjects.Text, this.txtReminder.Text, this.txtDescription.Text, this.chRepeate.Checked, this.chCalculateTime.Checked, sDate0, sEDate0
 
 
-
 				var Appointments = new List<Appointment>();
 
 				System.DateTime dt0 = System.DateTime.Now;
@@ -1228,6 +1236,11 @@ namespace Sbn.Products.TTS.Present
             {
                 _thread.Abort();
             }
+            if (_thread != null)
+                _thread.Abort();
+
+            _thread = null;
+
         }
 
         private void خروجToolStripMenuItem_Click(object sender, EventArgs e)
