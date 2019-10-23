@@ -258,7 +258,7 @@ namespace Khendys.Controls {
 			rtfFontFamily.Add(FontFamily.GenericMonospace.Name, RtfFontFamilyDef.Modern);
 			rtfFontFamily.Add(FontFamily.GenericSansSerif, RtfFontFamilyDef.Swiss);
 			rtfFontFamily.Add(FontFamily.GenericSerif, RtfFontFamilyDef.Roman);
-            rtfFontFamily.Add(new FontFamily("Tahoma"), RtfFontFamilyDef.Roman);
+            //rtfFontFamily.Add(new FontFamily("Tahoma"), RtfFontFamilyDef.Roman);
 			rtfFontFamily.Add(FF_UNKNOWN, RtfFontFamilyDef.Unknown);
 
 			// Get the horizontal and vertical resolutions at which the object is

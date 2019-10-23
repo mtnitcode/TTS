@@ -61,19 +61,17 @@
             // 
             // cmdNames
             // 
-            this.cmdNames.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdNames.FormattingEnabled = true;
-            this.cmdNames.Location = new System.Drawing.Point(440, 7);
+            this.cmdNames.Location = new System.Drawing.Point(66, 7);
             this.cmdNames.Name = "cmdNames";
-            this.cmdNames.Size = new System.Drawing.Size(214, 22);
+            this.cmdNames.Size = new System.Drawing.Size(251, 22);
             this.cmdNames.Sorted = true;
             this.cmdNames.TabIndex = 9;
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(660, 10);
+            this.label4.Location = new System.Drawing.Point(17, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 14);
             this.label4.TabIndex = 10;
@@ -81,10 +79,9 @@
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(321, 6);
+            this.button2.Location = new System.Drawing.Point(326, 6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 23);
+            this.button2.Size = new System.Drawing.Size(110, 23);
             this.button2.TabIndex = 11;
             this.button2.Text = "اضافه به فهرست";
             this.button2.UseVisualStyleBackColor = true;
@@ -94,7 +91,7 @@
             // 
             this.btnSave.Location = new System.Drawing.Point(12, 85);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(87, 40);
+            this.btnSave.Size = new System.Drawing.Size(87, 34);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "ذخیره و بستن";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -113,7 +110,7 @@
             this.tbar_SendMessage.Margin = new System.Windows.Forms.Padding(0);
             this.tbar_SendMessage.Name = "tbar_SendMessage";
             this.tbar_SendMessage.ShowToolTips = true;
-            this.tbar_SendMessage.Size = new System.Drawing.Size(711, 36);
+            this.tbar_SendMessage.Size = new System.Drawing.Size(631, 36);
             this.tbar_SendMessage.TabIndex = 15;
             this.tbar_SendMessage.TextAlign = System.Windows.Forms.ToolBarTextAlign.Right;
             // 
@@ -162,8 +159,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.btnSave);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.splitContainer1.Size = new System.Drawing.Size(711, 536);
-            this.splitContainer1.SplitterDistance = 393;
+            this.splitContainer1.Size = new System.Drawing.Size(631, 480);
+            this.splitContainer1.SplitterDistance = 351;
             this.splitContainer1.TabIndex = 16;
             // 
             // rtBox_Main
@@ -179,7 +176,7 @@
             this.rtBox_Main.Name = "rtBox_Main";
             this.rtBox_Main.ReadOnly = true;
             this.rtBox_Main.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rtBox_Main.Size = new System.Drawing.Size(711, 393);
+            this.rtBox_Main.Size = new System.Drawing.Size(631, 351);
             this.rtBox_Main.TabIndex = 13;
             this.rtBox_Main.TabStop = false;
             this.rtBox_Main.Text = "";
@@ -198,7 +195,7 @@
             this.txtText.HiglightColor = Khendys.Controls.RtfColor.White;
             this.txtText.Location = new System.Drawing.Point(105, 39);
             this.txtText.Name = "txtText";
-            this.txtText.Size = new System.Drawing.Size(603, 94);
+            this.txtText.Size = new System.Drawing.Size(523, 80);
             this.txtText.TabIndex = 17;
             this.txtText.Text = "";
             this.txtText.TextColor = Khendys.Controls.RtfColor.Black;
@@ -209,7 +206,7 @@
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 569);
+            this.ClientSize = new System.Drawing.Size(633, 513);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cmdNames);
