@@ -61,8 +61,9 @@
             // 
             // cmdNames
             // 
+            this.cmdNames.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdNames.FormattingEnabled = true;
-            this.cmdNames.Location = new System.Drawing.Point(131, 7);
+            this.cmdNames.Location = new System.Drawing.Point(440, 7);
             this.cmdNames.Name = "cmdNames";
             this.cmdNames.Size = new System.Drawing.Size(214, 22);
             this.cmdNames.Sorted = true;
@@ -70,8 +71,9 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(351, 10);
+            this.label4.Location = new System.Drawing.Point(660, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 14);
             this.label4.TabIndex = 10;
@@ -79,7 +81,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 6);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(321, 6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 23);
             this.button2.TabIndex = 11;
@@ -110,7 +113,7 @@
             this.tbar_SendMessage.Margin = new System.Windows.Forms.Padding(0);
             this.tbar_SendMessage.Name = "tbar_SendMessage";
             this.tbar_SendMessage.ShowToolTips = true;
-            this.tbar_SendMessage.Size = new System.Drawing.Size(419, 36);
+            this.tbar_SendMessage.Size = new System.Drawing.Size(711, 36);
             this.tbar_SendMessage.TabIndex = 15;
             this.tbar_SendMessage.TextAlign = System.Windows.Forms.ToolBarTextAlign.Right;
             // 
@@ -138,6 +141,11 @@
             // 
             // splitContainer1
             // 
+            this.splitContainer1.AllowDrop = true;
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(2, 35);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -150,12 +158,12 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tbar_SendMessage);
-            this.splitContainer1.Panel2.Controls.Add(this.btnSave);
             this.splitContainer1.Panel2.Controls.Add(this.txtText);
+            this.splitContainer1.Panel2.Controls.Add(this.btnSave);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.splitContainer1.Size = new System.Drawing.Size(419, 516);
-            this.splitContainer1.SplitterDistance = 378;
+            this.splitContainer1.Size = new System.Drawing.Size(711, 536);
+            this.splitContainer1.SplitterDistance = 393;
             this.splitContainer1.TabIndex = 16;
             // 
             // rtBox_Main
@@ -170,25 +178,28 @@
             this.rtBox_Main.Location = new System.Drawing.Point(0, 0);
             this.rtBox_Main.Name = "rtBox_Main";
             this.rtBox_Main.ReadOnly = true;
-            this.rtBox_Main.Size = new System.Drawing.Size(419, 378);
+            this.rtBox_Main.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.rtBox_Main.Size = new System.Drawing.Size(711, 393);
             this.rtBox_Main.TabIndex = 13;
             this.rtBox_Main.TabStop = false;
             this.rtBox_Main.Text = "";
             this.rtBox_Main.TextColor = Khendys.Controls.RtfColor.Black;
             this.rtBox_Main.WordWrap = false;
             this.rtBox_Main.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.rtBox_Main_LinkClicked);
+            this.rtBox_Main.MouseUp += new System.Windows.Forms.MouseEventHandler(this.rtBox_Main_MouseUp);
             // 
             // txtText
             // 
             this.txtText.AllowDrop = true;
-            this.txtText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtText.DetectUrls = true;
             this.txtText.HiglightColor = Khendys.Controls.RtfColor.White;
             this.txtText.Location = new System.Drawing.Point(105, 39);
             this.txtText.Name = "txtText";
-            this.txtText.Size = new System.Drawing.Size(311, 85);
-            this.txtText.TabIndex = 14;
+            this.txtText.Size = new System.Drawing.Size(603, 94);
+            this.txtText.TabIndex = 17;
             this.txtText.Text = "";
             this.txtText.TextColor = Khendys.Controls.RtfColor.Black;
             this.txtText.OnDroped += new System.EventHandler(this.rtBox_Main_OnDroped);
@@ -198,18 +209,19 @@
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 550);
+            this.ClientSize = new System.Drawing.Size(713, 569);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cmdNames);
             this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "frmChat";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "گفتگو";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmChat_FormClosing);
             this.Load += new System.EventHandler(this.frmChat_Load);
@@ -230,12 +242,12 @@
         public System.Windows.Forms.ComboBox cmdNames;
         private System.Windows.Forms.Button btnSave;
         public Khendys.Controls.ExRichTextBox rtBox_Main;
-        public Khendys.Controls.ExRichTextBox txtText;
         private System.Windows.Forms.ToolBar tbar_SendMessage;
         private System.Windows.Forms.ToolBarButton tbBtn_Font;
         private System.Windows.Forms.ToolBarButton tbBtn_Emoticons;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.ContextMenu cmenu_Emoticons;
+        private Khendys.Controls.ExRichTextBox txtText;
     }
 }

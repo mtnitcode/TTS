@@ -83,6 +83,7 @@ namespace Sbn.Products.TTS.Present
                 ++_count;
             }
 
+
         }
         // When an emoticon is clicked, insert its image into to RTF
         private void cmenu_Emoticons_Click(object _sender, EventArgs _args)
@@ -113,6 +114,7 @@ namespace Sbn.Products.TTS.Present
 
                 TCPClient.SendMessage(_ReceiverIPAddress, Main._LocalIPAddress + ";#;" + Main._Name + ";#;" + this.txtText.Text , int.Parse(Utility._ChatPort));
 
+                rtBox_Main.SelectionStart = rtBox_Main.Text.Length;
                 rtBox_Main.ScrollToCaret();
 
                 rtBox_Main.InsertTextAsRtf("\n");
@@ -122,6 +124,7 @@ namespace Sbn.Products.TTS.Present
 
                 this.txtText.Text = "";
 
+                rtBox_Main.SelectionStart = rtBox_Main.Text.Length;
                 rtBox_Main.ScrollToCaret();
             }
             catch(Exception ex)
@@ -343,6 +346,17 @@ namespace Sbn.Products.TTS.Present
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void rtBox_Main_MouseUp(object sender, MouseEventArgs e)
+        {
+            rtBox_Main.SelectionStart = rtBox_Main.Text.Length;
+            this.rtBox_Main.ScrollToCaret();
+        }
+
+        private void textBox1_DragDrop(object sender, DragEventArgs e)
+        {
+
         }
     }
     public class EmoticonMenuItem : MenuItem

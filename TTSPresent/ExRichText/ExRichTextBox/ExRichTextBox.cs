@@ -258,6 +258,7 @@ namespace Khendys.Controls {
 			rtfFontFamily.Add(FontFamily.GenericMonospace.Name, RtfFontFamilyDef.Modern);
 			rtfFontFamily.Add(FontFamily.GenericSansSerif, RtfFontFamilyDef.Swiss);
 			rtfFontFamily.Add(FontFamily.GenericSerif, RtfFontFamilyDef.Roman);
+            rtfFontFamily.Add(new FontFamily("Tahoma"), RtfFontFamilyDef.Roman);
 			rtfFontFamily.Add(FF_UNKNOWN, RtfFontFamilyDef.Unknown);
 
 			// Get the horizontal and vertical resolutions at which the object is
@@ -271,6 +272,8 @@ namespace Khendys.Controls {
                 Multiline = true;
                 DragDrop += new DragEventHandler(MyTextBox_DragDrop);
                 DragEnter += new DragEventHandler(MyTextBox_DragEnter);
+
+
         }
 
 		/// <summary>
@@ -466,6 +469,11 @@ namespace Khendys.Controls {
 			// Append the standard RTF document area control string
 			_doc.Append(RTF_DOCUMENT_PRE);
 
+            
+            _doc.Append(@"\qr");
+            _doc.Append(@"\ltrpar");
+
+
             // Set the highlight color (the color behind the text) to the
             // third color in the color table.  See GetColorTable for more details.
             _doc.Append(@"\highlight2");
@@ -534,6 +542,8 @@ namespace Khendys.Controls {
 
 			// Close the document area control string
 			_doc.Append(RTF_DOCUMENT_POST);
+
+
 
 			return _doc.ToString();
 		}
