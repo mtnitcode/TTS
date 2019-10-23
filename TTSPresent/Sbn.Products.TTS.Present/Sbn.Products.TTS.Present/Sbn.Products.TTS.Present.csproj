@@ -38,10 +38,6 @@
     <ApplicationIcon>Clock.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AnalogClockControl, Version=1.0.5457.19637, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Sayban\DebugVersions\Controls\AnalogClock\AnalogClockControl.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Office.Interop.Outlook, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
@@ -340,6 +336,10 @@
     <None Include="Resources\sheduled_task.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\AnalogClockControl\AnalogClockControl\AnalogClockControl.csproj">
+      <Project>{6fe72a43-cfae-4b7a-84e2-01d4a3b2965c}</Project>
+      <Name>AnalogClockControl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Calendar\DayView\DayView.csproj">
       <Project>{4a161594-924a-4496-8995-c83fd8faad1f}</Project>
       <Name>DayView</Name>
